@@ -1,0 +1,21 @@
+# Planejamento do professor
+PLANEJAMENTO.md
+
+# Gabaritos das questões de múltipla escolha — vivem em trilha-gabaritos.
+# Esta linha existe para o caso de uma cópia local aparecer por engano.
+gabaritos/
+
+# Arquivos temporários de ferramentas de modelagem
+*.drawio.bkp
+*.puml.bak
+~$*
+
+# Editor e sistema operacional
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Python (ferramentas de slides)
+__pycache__/
+*.pyc

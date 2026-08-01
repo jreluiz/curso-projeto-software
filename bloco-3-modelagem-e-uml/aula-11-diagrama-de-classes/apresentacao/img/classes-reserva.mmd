@@ -1,0 +1,39 @@
+---
+config:
+  theme: base
+  # fontFamily precisa ser chave de topo — dentro de themeVariables é ignorada
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+---
+classDiagram
+    direction LR
+    class Solicitante {
+        +String nome
+        +String matricula
+    }
+    class Reserva {
+        +DateTime inicio
+        +DateTime fim
+        +String finalidade
+    }
+    class Espaco {
+        +String codigo
+        +int capacidade
+    }
+    class Recurso {
+        +String nome
+    }
+    class ConfirmacaoDeUso {
+        +DateTime momento
+    }
+
+    Solicitante "1" --> "0..*" Reserva : faz
+    Reserva "0..*" --> "1" Espaco : ocupa
+    Espaco "1" o-- "0..*" Recurso : oferece
+    Reserva "1" *-- "0..1" ConfirmacaoDeUso

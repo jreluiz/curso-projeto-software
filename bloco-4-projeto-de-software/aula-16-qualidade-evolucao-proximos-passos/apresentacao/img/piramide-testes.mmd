@@ -1,0 +1,29 @@
+---
+config:
+  theme: base
+  # fontFamily precisa ser chave de topo — dentro de themeVariables é ignorada
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+---
+%% A pirâmide é conceitualmente vertical, mas em TB o Marp a
+%% encolhe (ver PLANEJAMENTO §10). Em LR ela vira "da base
+%% para o topo", da esquerda para a direita, e fica legível.
+flowchart LR
+    C["<b>Unidade</b><br/>muitos — segundos<br/><i>quebra? você sabe onde</i>"]
+    B["<b>Integração</b><br/>alguns — minutos<br/><i>quebra? em qual junção</i>"]
+    A["<b>Aceite / ponta a ponta</b><br/>poucos — dezenas de minutos<br/><i>quebra? algo, em algum lugar</i>"]
+
+    C --> B --> A
+
+    classDef base fill:#e7f2f0,stroke:#0f766e,stroke-width:4px,color:#0f2f2b
+    classDef meio fill:#fdf1e6,stroke:#e76f00,stroke-width:3px,color:#3a2000
+    classDef topo fill:#fdeeeb,stroke:#c0392b,stroke-width:3px,color:#3a0f0a
+    class C base
+    class B meio
+    class A topo
