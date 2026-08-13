@@ -123,14 +123,28 @@ Esses blocos são **opcionais**. Se você ainda não chegou em herança no outro
 - 🔗 [Links úteis](recursos/links-uteis.md)
 - 📖 [Curso de Git e GitHub](https://github.com/jreluiz/curso-git-github) (pré-requisito)
 
-## 📖 Livros-base
+## 📚 Bibliografia
 
-São duas literaturas diferentes, e o curso não força uma só:
+**Livros-base — são dois, porque são duas literaturas diferentes, e o curso não força uma só:**
 
-- **Blocos 1 e 2** — SOMMERVILLE, Ian. *Engenharia de Software*. 10. ed. São Paulo: Pearson. Processos, agilidade e requisitos;
-- **Blocos 3 e 4** — BEZERRA, Eduardo. *Princípios de Análise e Projeto de Sistemas com UML*. 3. ed. Rio de Janeiro: Elsevier. UML e projeto orientado a objetos, no nível certo para quem está começando.
+| Obra | Onde ela é a referência |
+|---|---|
+| SOMMERVILLE, Ian. **Engenharia de Software**. 10. ed. São Paulo: Pearson. | **Blocos 1 e 2** — processos, agilidade, entrega contínua e requisitos |
+| BEZERRA, Eduardo. **Princípios de Análise e Projeto de Sistemas com UML**. 3. ed. Rio de Janeiro: Elsevier. | **Blocos 3 e 4** — UML e projeto orientado a objetos, no nível certo para quem está começando |
 
-As aulas marcam com `> 📖` onde aprofundar cada tema. O curso é autocontido — o livro é o passo seguinte, não um pré-requisito.
+**Bibliografia de apoio:**
+
+| Obra | Onde ela ajuda mais |
+|---|---|
+| PRESSMAN, Roger S.; MAXIM, Bruce R. **Engenharia de software: uma abordagem profissional**. 9. ed. Porto Alegre: AMGH, 2021. | Bloco 1 — a segunda opinião sobre processos e qualidade; onde o Sommerville é conciso, ele é detalhista |
+| VAZQUEZ, Carlos Eduardo; SIMÕES, Guilherme Siqueira. **Engenharia de requisitos: software orientado ao negócio**. Rio de Janeiro: Brasport, 2016. | Bloco 2 — elicitação e especificação em português, com o foco na conversa com o cliente |
+| FOWLER, Martin. **UML essencial**. 3. ed. Porto Alegre: Bookman, 2005. | Bloco 3 — o que cada diagrama significa, em poucas páginas, quando a dúvida é só de notação |
+| GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. **Padrões de projeto: soluções reutilizáveis de software orientado a objetos**. Porto Alegre: Bookman, 2000. | Aula 15 — a fonte original dos padrões; é livro de **consulta**, não de leitura corrida |
+| MARTIN, Robert C. **Arquitetura limpa: o guia do artesão para estrutura e design de software**. Rio de Janeiro: Alta Books, 2019. | Bloco 4 — princípios de projeto e fronteiras entre camadas, depois da Aula 13 |
+
+**O que é gratuito e cabe numa tarde:** o [Manifesto Ágil em português](https://agilemanifesto.org/iso/ptbr/manifesto.html) — quatro valores e doze princípios, e a Aula 03 discute cada um —, o [Guia do Scrum](https://scrumguides.org/download.html) e o [Refactoring Guru](https://refactoring.guru/pt-br/design-patterns), que apresenta os padrões da Aula 15 com diagrama e código.
+
+As aulas marcam com `> 📖` onde aprofundar cada tema. **O curso é autocontido** — o livro é o passo seguinte, não um pré-requisito. As demais referências online estão em [Links úteis](recursos/links-uteis.md).
 
 ---
 
