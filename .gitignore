@@ -1,6 +1,9 @@
 # Planejamento do professor
 PLANEJAMENTO.md
 
+# Documentos de trabalho do professor (diagnósticos, decisões de reformulação)
+docs/
+
 # Gabaritos das questões de múltipla escolha — vivem em trilha-gabaritos.
 # Esta linha existe para o caso de uma cópia local aparecer por engano.
 gabaritos/
@@ -19,3 +22,8 @@ Thumbs.db
 # Python (ferramentas de slides)
 __pycache__/
 *.pyc
+
+# Node — o mermaid-cli que o verificar-aulas.py usa para renderizar os blocos
+# Mermaid. São 432 MB e 31 mil arquivos: o package.json e o package-lock.json
+# são versionados, a pasta instalada não. Reinstale com `npm install` em ferramentas/.
+node_modules/

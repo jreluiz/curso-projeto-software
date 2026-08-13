@@ -84,21 +84,9 @@ Se o bloco acima aparece como um diagrama para você aqui nesta página, está t
 
 > 💡 Erro que todo mundo comete uma vez: esquecer a palavra `mermaid` depois das três crases. Sem ela o GitHub mostra o código-fonte do diagrama, e a página fica com cara de que você entregou pela metade.
 
-O guia de sintaxe do curso, com um exemplo pronto de cada diagrama, está em [notações UML no repositório](notacoes-uml.md).
+O guia do curso, com um exemplo pronto de cada artefato — matriz RACI, EAP, Gantt, matriz de risco, quadro Kanban e burndown —, está em [artefatos de gestão](artefatos-de-gestao.md).
 
-## 4. PlantUML (a partir da Aula 10)
-
-Serve para **um único diagrama do curso**: o de casos de uso, que o Mermaid não desenha. Também não precisa instalar:
-
-- **[PlantUML Web Server](https://www.plantuml.com/plantuml/uml/)** — cole o `@startuml…@enduml`, clique em `SVG` e salve o arquivo na pasta da aula;
-- **Extensão [PlantUML do VS Code](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)** — `Alt+D` abre o preview enquanto você digita; exporta pela paleta de comandos. É o caminho mais confortável se você já usa o VS Code;
-- **Linha de comando**, se preferir e já tiver Java: `plantuml -tsvg diagrama.puml`.
-
-**Commite sempre os dois arquivos**, `.puml` e `.svg`: a fonte é o que se edita e se revisa, a imagem é o que aparece na página.
-
-> ⚠️ O `.svg` do PlantUML Web Server sai com um nome genérico. Renomeie antes de commitar, e use o mesmo nome do `.puml`.
-
-## 5. O que você **não** precisa instalar
+## 4. O que você **não** precisa instalar
 
 Vale dizer explicitamente, porque a lista costuma assustar quem chega:
 
@@ -107,26 +95,13 @@ Vale dizer explicitamente, porque a lista costuma assustar quem chega:
 | IDE pesada (IntelliJ, Eclipse) | Não escrevemos código neste curso |
 | Java, Node, Python | Idem |
 | Banco de dados | Idem |
-| Ferramenta paga de diagrama (Lucidchart, Visio) | Tudo aqui é texto versionado |
+| Ferramenta paga de diagrama ou de gestão (Lucidchart, Visio, MS Project) | Tudo aqui é texto versionado |
 | Astah, StarUML, Enterprise Architect | Bons programas, mas geram binário que não entra em *diff* |
+| PlantUML | Saiu do curso junto com os diagramas de casos de uso |
 
-Se você **quiser** rascunhar em ferramenta gráfica — [draw.io](https://app.diagrams.net/) é gratuito e tem estêncil de UML — rascunhe à vontade.
+Se você **quiser** rascunhar em ferramenta gráfica — [draw.io](https://app.diagrams.net/) é gratuito — rascunhe à vontade.
 
 > 📏 **Regra do curso:** rascunhe onde quiser, **entregue em texto**. Imagem não faz *diff*, não recebe comentário de linha no Pull Request e envelhece mal.
-
-## 6. Para o trabalho em dupla
-
-O [trabalho do Bloco 2](../projetos/trabalho-em-dupla.md) acontece via Pull Requests, então vale conferir antes que você lembra do fluxo:
-
-```bash
-git checkout -b requisitos-nao-funcionais    # ninguém commita direto no main
-# ... escreve ...
-git add . && git commit -m "Adiciona requisitos não-funcionais"
-git push -u origin requisitos-nao-funcionais
-# abre o Pull Request no GitHub e pede revisão
-```
-
-Se alguma linha aí em cima causou estranheza, revisite o [Curso de Git e GitHub](https://github.com/jreluiz/curso-git-github) — especialmente branches e Pull Request. É pré-requisito por um motivo.
 
 ## ✅ Checklist final
 
@@ -135,8 +110,7 @@ Se alguma linha aí em cima causou estranheza, revisite o [Curso de Git e GitHub
 - [ ] Editor com preview de Markdown funcionando;
 - [ ] Um diagrama Mermaid de teste renderizou **no GitHub** — copie o da seção 3 e confira na página, não só no editor;
 - [ ] [mermaid.live](https://mermaid.live) salvo nos favoritos;
-- [ ] [PlantUML Web Server](https://www.plantuml.com/plantuml/uml/) salvo nos favoritos (só será usado na Aula 10);
-- [ ] Você consegue criar um branch, abrir um Pull Request e comentar numa linha específica.
+- [ ] Você abriu o [guia de artefatos de gestão](artefatos-de-gestao.md) e viu os seis exemplos renderizados.
 
 ---
 

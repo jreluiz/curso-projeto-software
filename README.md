@@ -3,82 +3,88 @@
 > 📋 Pré-requisito: [Curso de Git e GitHub](https://github.com/jreluiz/curso-git-github) concluído.
 > 🎒 Não é preciso saber programar. Aqui não se escreve código — escreve-se a decisão que vem antes do código.
 
-Software que dá errado raramente dá errado na hora de programar. Dá errado antes: no requisito que ninguém entendeu igual, na classe que faz coisas demais, na arquitetura escolhida por moda. Este curso é sobre esse "antes".
+Software que dá errado raramente dá errado na hora de programar. Dá errado antes: no prazo que ninguém recalculou, no risco que não tinha dono, na decisão que duas pessoas achavam que a outra ia tomar. Este curso é sobre esse "antes".
 
 ## 🎯 Objetivos do curso
 
 Ao final do curso, você será capaz de:
 
-- Explicar **por que existe uma engenharia em volta do código** e o que muda quando um programa vira produto de software;
-- Escolher um **modelo de processo** para um contexto concreto — e defender a escolha, inclusive quando a resposta certa for cascata;
-- Trabalhar com **desenvolvimento ágil** sem confundir agilidade com ausência de processo;
-- **Elicitar, especificar, priorizar e validar requisitos** funcionais e não-funcionais, entregando um documento que outra pessoa consegue usar;
-- Ler e escrever os **cinco diagramas UML que se usam de verdade**: casos de uso, classes, sequência, atividades e estados;
-- Avaliar um projeto por **coesão e acoplamento**, aplicar princípios de bom projeto e reconhecer os **padrões** que resolvem problemas recorrentes;
-- Registrar uma **decisão de arquitetura** e as alternativas que você descartou — com o motivo;
-- Trabalhar como um profissional: todo artefato versionado com Git e revisado via GitHub.
+- Distinguir **projeto de operação** e reconhecer as causas recorrentes de fracasso de um projeto de software;
+- Montar uma **matriz de responsabilidades** em que cada decisão tem exatamente um responsável;
+- Escolher o **ciclo de vida** de um projeto — clássico, incremental, iterativo — e situá-lo no eixo preditivo–adaptativo, defendendo a escolha;
+- Percorrer os **cinco grupos de processo**: escrever um termo de abertura, decompor o escopo em EAP, controlar contra a linha de base e encerrar com aceite e lições aprendidas;
+- Conduzir um projeto com **Scrum**, sabendo o que cada responsabilidade decide e o que cada evento produz;
+- Usar **Design Thinking, MVP e Lean** onde cada um serve — e reconhecer o "MVP" que é só a primeira fatia do plano;
+- **Gerir risco** com natureza, probabilidade, impacto, dono e gatilho, e escolher a resposta para cada um;
+- Definir **métricas de qualidade** que apoiam decisão, e reconhecer a métrica que virou meta;
+- Decidir **o que documentar, quando e para quem** — e dizer o que a ausência custa;
+- Conduzir **versão, mudança e configuração**, entrega contínua e observabilidade;
+- Reconhecer o que **UX, ITIL, COBIT, PMBOK, governança de TI e ESG** respondem, e qual deles responde a sua pergunta;
+- Trabalhar como um profissional: todo artefato versionado com Git e justificado por escrito.
 
-> 📏 **A competência central do curso não é desenhar.** É decidir entre alternativas e sustentar a decisão por escrito. Em projeto de software, `"depende"` é uma resposta legítima — desde que você complete a frase: *depende de quê*.
+> 📏 **A competência central do curso não é preencher artefato.** É decidir entre alternativas e sustentar a decisão por escrito. Em gestão de projeto, `"depende"` é uma resposta legítima — desde que você complete a frase: *depende de quê*.
 
 ## 🗺️ Plano de aulas
 
-### Bloco 1 — Software, processos e agilidade
+### Bloco 1 — Fundamentos de projetos de software
 
 | Aula | Tema | Conteúdo |
 |:---:|------|----------|
-| 01 | [Por que engenharia de software existe](bloco-1-software-e-processos/aula-01-por-que-engenharia-de-software/README.md) | Programa × produto, por que projetos falham, custo da mudança, atributos de qualidade, papéis |
-| 02 | [Ciclo de vida e modelos de processo](bloco-1-software-e-processos/aula-02-ciclo-de-vida-e-processos/README.md) | As 4 atividades fundamentais, cascata, incremental, iterativo, dirigido a plano × ágil |
-| 03 | [Desenvolvimento ágil](bloco-1-software-e-processos/aula-03-desenvolvimento-agil/README.md) | Manifesto, Scrum, Kanban e WIP, práticas do XP, o ágil teatral |
-| 04 | [Como o software chega ao usuário](bloco-1-software-e-processos/aula-04-entrega-continua-e-devops/README.md) | Integração contínua, pipeline, entrega × implantação, DevOps, métricas DORA, *feature flag* |
+| 01 | [Por que gerir um projeto de software](bloco-1-fundamentos-de-projetos/aula-01-por-que-gerir-um-projeto/README.md) | Projeto × operação, por que projetos falham, conflitos, papéis, matriz RACI |
+| 02 | [Ciclos de vida](bloco-1-fundamentos-de-projetos/aula-02-ciclos-de-vida/README.md) | Clássico, incremental, iterativo, o eixo preditivo–adaptativo e o híbrido |
+| 03 | [Os processos de um projeto](bloco-1-fundamentos-de-projetos/aula-03-os-processos-de-um-projeto/README.md) | Os cinco grupos, termo de abertura, EAP, linha de base, encerramento |
+| 04 | [Arquitetura como decisão de projeto](bloco-1-fundamentos-de-projetos/aula-04-arquitetura-como-decisao/README.md) | O que é arquitetura, camadas, monolito × microsserviços, ADR |
 
-### Bloco 2 — Requisitos
-
-| Aula | Tema | Conteúdo |
-|:---:|------|----------|
-| 05 | [O que é um requisito](bloco-2-requisitos/aula-05-o-que-e-um-requisito/README.md) | Funcional × não-funcional, LGPD e acessibilidade, stakeholders, requisito × solução |
-| 06 | [Elicitação](bloco-2-requisitos/aula-06-elicitacao/README.md) | Entrevista, observação, análise de documentos, workshop, prototipação |
-| 07 | [Especificação: documento e histórias](bloco-2-requisitos/aula-07-especificacao-e-historias/README.md) | História de usuário, INVEST, critérios de aceite, BDD e Gherkin, regras de negócio |
-| 08 | [Análise, priorização e validação](bloco-2-requisitos/aula-08-analise-priorizacao-validacao/README.md) | Ambiguidade, MoSCoW, esforço × valor, backlog, rastreabilidade, mudança de escopo |
-
-### Bloco 3 — Modelagem e UML
+### Bloco 2 — Metodologias em gestão de projeto
 
 | Aula | Tema | Conteúdo |
 |:---:|------|----------|
-| 09 | [Por que modelar e o que é UML](bloco-3-modelagem-e-uml/aula-09-por-que-modelar-e-uml/README.md) | Modelo × realidade, os 14 diagramas e os 5 que importam, quanto UML é suficiente |
-| 10 | [Casos de uso](bloco-3-modelagem-e-uml/aula-10-casos-de-uso/README.md) | Ator e fronteira, `include`/`extend`, a especificação textual dos três fluxos, granularidade |
-| 11 | [Diagrama de classes](bloco-3-modelagem-e-uml/aula-11-diagrama-de-classes/README.md) | Visibilidade, associação e multiplicidade, agregação × composição, herança, análise × projeto |
-| 12 | [Modelagem dinâmica](bloco-3-modelagem-e-uml/aula-12-modelagem-dinamica/README.md) | Sequência, atividades e estados — e qual usar para qual pergunta |
+| 05 | [O Manifesto Ágil, lido devagar](bloco-2-metodologias-de-gestao/aula-05-manifesto-agil/README.md) | Os quatro valores, os doze princípios, o que o Manifesto não diz, o ágil teatral |
+| 06 | [Scrum](bloco-2-metodologias-de-gestao/aula-06-scrum/README.md) | As três responsabilidades, os cinco eventos, os três artefatos e seus compromissos |
+| 07 | [Quem responde pelo quê](bloco-2-metodologias-de-gestao/aula-07-quem-responde-pelo-que/README.md) | Gerente de projeto, Product Owner, stakeholders e a matriz poder × interesse |
+| 08 | [Descobrir, enxugar, melhorar](bloco-2-metodologias-de-gestao/aula-08-design-thinking-mvp-lean/README.md) | Design Thinking, MVP com hipótese, Lean e Six Sigma — e quando usar cada um |
 
-### Bloco 4 — Projeto de software
+### Bloco 3 — Ferramentas e qualidade
 
 | Aula | Tema | Conteúdo |
 |:---:|------|----------|
-| 13 | [Princípios de bom projeto](bloco-4-projeto-de-software/aula-13-principios-de-projeto/README.md) | Coesão, acoplamento, separação de responsabilidades, SOLID em dose gentil |
-| 14 | [Arquitetura de software](bloco-4-projeto-de-software/aula-14-arquitetura-de-software/README.md) | Camadas, MVC, monolito × microsserviços, componentes e implantação, C4, ADR |
-| 15 | [Padrões de projeto](bloco-4-projeto-de-software/aula-15-padroes-de-projeto/README.md) | Strategy, Observer, Facade, Singleton, Factory Method — e o padrão pelo padrão |
-| 16 | [Qualidade, evolução e próximos passos](bloco-4-projeto-de-software/aula-16-qualidade-evolucao-proximos-passos/README.md) | Verificação × validação, testes, dívida técnica, LGPD, IA no desenvolvimento |
+| 09 | [Risco](bloco-3-ferramentas-e-qualidade/aula-09-risco/README.md) | Risco × problema, causa–evento–efeito, matriz probabilidade × impacto, as quatro respostas |
+| 10 | [Qualidade que se mede](bloco-3-ferramentas-e-qualidade/aula-10-qualidade-que-se-mede/README.md) | Verificação × validação, sistema de qualidade, métricas, DORA, maturidade |
+| 11 | [Documentação](bloco-3-ferramentas-e-qualidade/aula-11-documentacao/README.md) | Por que e quando documentar, documentação como qualidade, o custo da ausência |
+| 12 | [Ferramentas e comunicação](bloco-3-ferramentas-e-qualidade/aula-12-ferramentas-e-comunicacao/README.md) | EAP, Gantt e marco; backlog, quadro e burndown; WIP; plano de comunicação |
 
-## 🧭 O sistema-guia
+### Bloco 4 — Projeto de software avançado
 
-Um único sistema atravessa as 16 aulas, crescendo a cada conceito: a **Reserva de Espaços do Campus** — laboratórios, salas de estudo e o auditório, hoje reservados por e-mail e planilha, com duas turmas caindo na mesma sala de vez em quando.
+| Aula | Tema | Conteúdo |
+|:---:|------|----------|
+| 13 | [Versão, mudança e configuração](bloco-4-projeto-avancado/aula-13-versao-mudanca-configuracao/README.md) | Controle de versão, item de configuração, baseline, integração contínua, CI/CD |
+| 14 | [Entregar e sustentar](bloco-4-projeto-avancado/aula-14-entregar-e-sustentar/README.md) | Entrega × implantação, pipeline, feature flag, observabilidade, os quatro tipos de manutenção |
+| 15 | [O usuário do outro lado](bloco-4-projeto-avancado/aula-15-o-usuario-do-outro-lado/README.md) | Análise e projeto de interface, UX × UI, projeto de interação, acessibilidade |
+| 16 | [Governança](bloco-4-projeto-avancado/aula-16-governanca/README.md) | Governança de TI, PMI e PMBOK, ITIL, COBIT, ESG e o mapa do curso |
 
-Ele foi escolhido por dois motivos. O primeiro: **você é usuário dele**, então não precisamos gastar meia aula explicando o negócio antes de chegar ao conceito. O segundo: ele tem **poucas peças e muita tensão** — dá para segurar o domínio inteiro na cabeça e ainda assim discutir de verdade, que é exatamente o que um curso de projeto precisa:
+## 🏢 Os projetos das aulas
 
-- **Interessados que se contradizem** — o professor precisa da sala para a banca de amanhã; o grupo de alunos reservou há duas semanas;
-- **Fluxo com exceções** — a reserva cancelada, a que a manutenção derruba, a que ninguém apareceu para usar;
-- **Requisitos não-funcionais que não são decorativos** — o pico cai na semana de provas, quase todo acesso vem do celular no meio do campus, e a sala acessível precisa ser encontrável;
-- **Regras de negócio que nenhum diagrama expressa sozinho** — banca tem prioridade sobre estudo em grupo até 24 h antes; reserva não confirmada em 15 minutos libera o espaço.
+**Não há um sistema-guia único.** Cada aula trabalha um projeto do catálogo [`recursos/projetos-para-praticar.md`](recursos/projetos-para-praticar.md) — doze contextos com prazo, equipe, orçamento e as tensões que dão o que discutir.
 
-📄 **O documento completo do sistema-guia** — contexto, interessados, vocabulário do domínio, o fluxo e as 8 regras de negócio — está em [recursos/sistema-guia.md](recursos/sistema-guia.md). São duas páginas. Leia antes da Aula 05; a partir dali quase toda aula volta a ele.
+Cada bloco ancora em dois deles, para que você não precise ler um cenário novo a cada exercício:
 
-> ⚠️ Por ser o sistema trabalhado nas aulas, a Reserva de Espaços **não pode** ser usada nos projetos. Para isso existe o [catálogo de sistemas para praticar](recursos/sistemas-para-praticar.md).
+| Bloco | Projetos-âncora |
+|---|---|
+| **1 — Fundamentos** | Empréstimo de equipamentos · Ouvidoria municipal |
+| **2 — Metodologias** | Achados e perdidos do campus · Marketplace de serviços autônomos |
+| **3 — Ferramentas e qualidade** | Prontuário de clínica-escola · Frota e manutenção preventiva |
+| **4 — Projeto avançado** | Delivery de restaurante · Assembleia e votação digital |
 
-## 📦 Projetos práticos
+Todo contexto de que você precisa vem **no enunciado do exercício**. Nenhum exercício manda você "considerar um sistema qualquer".
 
-| Projeto | Quando | Modalidade |
-|---------|:---:|------------|
-| [Trabalho em dupla — Documento de requisitos via Pull Request](projetos/trabalho-em-dupla.md) | Bloco 2 | Dupla (PRs revisados) |
-| [Projeto final — Dossiê de projeto de software](projetos/projeto-final.md) | Bloco 4 | Individual |
+## 📝 Como você é avaliado
+
+| Instrumento | O que é |
+|---|---|
+| **Exercícios em sala** | 5 por aula, feitos e discutidos na aula, entregues no seu repositório |
+| **Revisão** | 8 questões por aula, para conferir se o conceito ficou |
+
+O **5º exercício de cada aula é o Desafio 🌶️**, e ele é sempre o mesmo tipo de tarefa: defender uma decisão por escrito, com as alternativas que você descartou e **o que se perde** com a sua escolha. É o exercício que mais se parece com o trabalho real.
 
 ## 🔁 O ritual Git de toda aula
 
@@ -91,7 +97,7 @@ git pull                                  # atualiza (se você usa mais de um PC
 
 # ── Durante a aula ──
 mkdir aula-XX-tema && cd aula-XX-tema      # uma pasta por aula
-# ... lê o caso, decide, desenha o diagrama, escreve a justificativa ...
+# ... lê o caso, decide, monta o artefato, escreve a justificativa ...
 git add .
 git commit -m "Resolve exercícios da aula XX"   # commit por exercício concluído
 
@@ -99,52 +105,55 @@ git commit -m "Resolve exercícios da aula XX"   # commit por exercício conclu�
 git push                                   # sem push = sem entrega!
 ```
 
-> 📏 **Regra do curso (e do mercado):** todo artefato vem acompanhado da **justificativa por escrito**. Um diagrama sem argumento é um desenho bonito — e some na primeira pergunta de quem vai construir o sistema.
+> 📏 **Regra do curso (e do mercado):** todo artefato vem acompanhado da **justificativa por escrito**. Uma matriz bem preenchida com a decisão errada dentro não vale nada — e a justificativa é o que permite descobrir isso antes.
 
 ## 🛠️ Ambiente
 
-Consulte o [guia de preparação do ambiente](recursos/ambiente.md). O resumo é curto: **um editor de texto e o seu repositório de exercícios**. Os diagramas são escritos em [Mermaid](https://mermaid.js.org/), que o GitHub renderiza sozinho; o único diagrama que o Mermaid não desenha — o de casos de uso — sai em PlantUML, e nem isso exige instalação.
+Consulte o [guia de preparação do ambiente](recursos/ambiente.md). O resumo é curto: **um editor de texto e o seu repositório de exercícios**. Os artefatos são escritos em tabela Markdown ou em [Mermaid](https://mermaid.js.org/), que o GitHub renderiza sozinho. **Nada a instalar.**
 
 ## 🤝 Fazendo POO em paralelo?
 
-Provavelmente sim, e o curso conta com isso — mas **não depende disso**. Sempre que um conceito daqui encostar em classe, herança ou interface, aparece um bloco assim:
+Provavelmente sim, e o curso conta com isso — mas **não depende disso**. Onde um assunto daqui encosta no código do outro curso, aparece um bloco assim:
 
 > 🧩 **Ponte com POO:** o que você está vendo lá, com o nome que ele tem aqui.
 
-Esses blocos são **opcionais**. Se você ainda não chegou em herança no outro curso, pule — nenhuma aula deste curso deixa de fazer sentido sem eles.
+Esses blocos são **opcionais** e raros. Nenhuma aula deixa de fazer sentido sem eles.
 
 ## ⚡ Links rápidos
 
-- 🧭 [Sistema-guia: Reserva de Espaços](recursos/sistema-guia.md) — o documento que o cliente entregaria a você
-- 📐 [Notações UML no repositório](recursos/notacoes-uml.md) — qual diagrama em Mermaid, qual em PlantUML e por quê
-- 🧯 [Erros comuns](recursos/erros-comuns.md) — do requisito que era solução ao microsserviço para três usuários
-- 🏢 [Sistemas para praticar](recursos/sistemas-para-praticar.md) — 12 contextos para exercícios e projetos
+- 📅 [Cronograma da turma 2026/2](CRONOGRAMA.md) — as datas dos encontros, se você está cursando isto numa turma
+- 🏢 [Projetos para praticar](recursos/projetos-para-praticar.md) — os 12 contextos que abastecem os exercícios
+- 📐 [Artefatos de gestão](recursos/artefatos-de-gestao.md) — RACI, EAP, Gantt, matriz de risco e quadro Kanban, em Mermaid ou tabela
+- 🧯 [Erros comuns](recursos/erros-comuns.md) — 35 patologias de gestão, com sintoma, causa e cura
 - 📚 [Glossário PT/EN](recursos/glossario.md) — para não travar por vocabulário na literatura em inglês
 - 🔗 [Links úteis](recursos/links-uteis.md)
 - 📖 [Curso de Git e GitHub](https://github.com/jreluiz/curso-git-github) (pré-requisito)
 
 ## 📚 Bibliografia
 
-**Livros-base — são dois, porque são duas literaturas diferentes, e o curso não força uma só:**
+**Livros-base — são três, uma literatura por natureza de assunto:**
 
 | Obra | Onde ela é a referência |
 |---|---|
-| SOMMERVILLE, Ian. **Engenharia de Software**. 10. ed. São Paulo: Pearson. | **Blocos 1 e 2** — processos, agilidade, entrega contínua e requisitos |
-| BEZERRA, Eduardo. **Princípios de Análise e Projeto de Sistemas com UML**. 3. ed. Rio de Janeiro: Elsevier. | **Blocos 3 e 4** — UML e projeto orientado a objetos, no nível certo para quem está começando |
+| SOMMERVILLE, Ian. **Engenharia de Software**. 10. ed. São Paulo: Pearson. | **Blocos 1 e 4** — processos, ciclos de vida, arquitetura, gerência de configuração, entrega e evolução |
+| CRUZ, Fábio. **Scrum e Agile em Projetos: guia completo**. 2. ed. Rio de Janeiro: Brasport, 2018. | **Bloco 2** — Manifesto, valores e princípios, Scrum inteiro e o conjunto de técnicas ágeis |
+| PMI. **Um guia do conhecimento em gerenciamento de projetos (Guia PMBOK)**. 6. ed. Newtown Square: PMI, 2017. | **Bloco 3** — risco, qualidade e comunicação são áreas de conhecimento dele |
 
 **Bibliografia de apoio:**
 
 | Obra | Onde ela ajuda mais |
 |---|---|
-| PRESSMAN, Roger S.; MAXIM, Bruce R. **Engenharia de software: uma abordagem profissional**. 9. ed. Porto Alegre: AMGH, 2021. | Bloco 1 — a segunda opinião sobre processos e qualidade; onde o Sommerville é conciso, ele é detalhista |
-| VAZQUEZ, Carlos Eduardo; SIMÕES, Guilherme Siqueira. **Engenharia de requisitos: software orientado ao negócio**. Rio de Janeiro: Brasport, 2016. | Bloco 2 — elicitação e especificação em português, com o foco na conversa com o cliente |
-| FOWLER, Martin. **UML essencial**. 3. ed. Porto Alegre: Bookman, 2005. | Bloco 3 — o que cada diagrama significa, em poucas páginas, quando a dúvida é só de notação |
-| GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. **Padrões de projeto: soluções reutilizáveis de software orientado a objetos**. Porto Alegre: Bookman, 2000. | Aula 15 — a fonte original dos padrões; é livro de **consulta**, não de leitura corrida |
-| MARTIN, Robert C. **Arquitetura limpa: o guia do artesão para estrutura e design de software**. Rio de Janeiro: Alta Books, 2019. | Bloco 4 — princípios de projeto e fronteiras entre camadas, depois da Aula 13 |
+| PRESSMAN, Roger S.; MAXIM, Bruce R. **Engenharia de software: uma abordagem profissional**. 9. ed. Porto Alegre: AMGH, 2021. | Blocos 1 e 3 — a segunda opinião sobre processos e qualidade; onde o Sommerville é conciso, ele é detalhista |
+| MARTIN, Robert C. **Arquitetura limpa: o guia do artesão para estrutura e design de software**. Rio de Janeiro: Alta Books, 2019. | Aula 04 — fronteiras entre partes do sistema e o custo de atravessá-las |
+| SUTHERLAND, Jeff. **Scrum: a arte de fazer o dobro do trabalho na metade do tempo**. Rio de Janeiro: Sextante, 2016. | Bloco 2 — de onde o Scrum veio, contado por quem o criou |
+| ISACA. **COBIT 2019: framework — governance and management objectives**. Schaumburg: ISACA, 2018. | Aula 16 — o que a governança de TI cobra, e o que a auditoria procura |
+| AXELOS. **ITIL Foundation: ITIL 4 edition**. Norwich: TSO, 2019. | Aula 16 — a diferença entre gerir projeto e gerir serviço |
 
-**O que é gratuito e cabe numa tarde:** o [Manifesto Ágil em português](https://agilemanifesto.org/iso/ptbr/manifesto.html) — quatro valores e doze princípios, e a Aula 03 discute cada um —, o [Guia do Scrum](https://scrumguides.org/download.html) e o [Refactoring Guru](https://refactoring.guru/pt-br/design-patterns), que apresenta os padrões da Aula 15 com diagrama e código.
+> ⚠️ **O Guia PMBOK é norma de consulta, não leitura linear.** Ninguém lê as 750 páginas dele. As referências `> 📖` do Bloco 3 apontam a **área de conhecimento**, e a aula continua autocontida.
 
-As aulas marcam com `> 📖` onde aprofundar cada tema. **O curso é autocontido** — o livro é o passo seguinte, não um pré-requisito. As demais referências online estão em [Links úteis](recursos/links-uteis.md).
+**O que é gratuito e vale abrir agora:** o [Manifesto Ágil em português](https://agilemanifesto.org/iso/ptbr/manifesto.html) — quatro valores e doze princípios, e a Aula 05 discute cada um —, o [Guia do Scrum](https://scrumguides.org/download.html) e o relatório [State of DevOps](https://dora.dev/), de onde saem as métricas DORA da Aula 10.
+
+As aulas marcam com `> 📖` onde aprofundar cada tema. **O curso é autocontido** — os livros são o passo seguinte, não um pré-requisito.
 
 ---
 

@@ -5,17 +5,17 @@ As apresentações de cada aula são escritas em **Markdown** e convertidas em P
 Cada aula guarda a sua apresentação numa subpasta `apresentacao/`, ao lado do material escrito:
 
 ```
-bloco-3-modelagem-e-uml/aula-11-diagrama-de-classes/
-├── README.md                                   # a aula escrita
+bloco-3-ferramentas-e-qualidade/aula-12-ferramentas-e-comunicacao/
+├── README.md                                          # a aula escrita
 └── apresentacao/
-    ├── apresentacao-11-diagrama-de-classes.md   # a fonte   ← edite este
-    ├── apresentacao-11-diagrama-de-classes.pdf  # o gerado  ← projete este
-    └── img/
-        ├── classes-reserva.mmd                  # diagrama para projeção
-        └── classes-reserva.svg                  # gerado do .mmd
+    ├── apresentacao-12-ferramentas-e-comunicacao.md   # a fonte   ← edite este
+    ├── apresentacao-12-ferramentas-e-comunicacao.pdf  # o gerado  ← projete este
+    └── img/                                           # opcional — só se o deck tiver diagrama
+        ├── burndown.mmd                               # diagrama para projeção
+        └── burndown.svg                               # gerado do .mmd
 ```
 
-O `img/` fica **dentro** de `apresentacao/`: os diagramas são feitos para projeção e não são usados pelo README da aula.
+O `img/` fica **dentro** de `apresentacao/`: os diagramas são feitos para projeção e não são usados pelo README da aula. **Nenhum dos 16 decks atuais tem `img/`** — os diagramas do curso vivem como blocos ` ```mermaid ` nos READMEs das aulas, que o GitHub renderiza sozinho. A pasta só aparece se um deck precisar de um diagrama próprio, com rótulo curto e traço grosso para projeção.
 
 **O `.md` e o `.pdf` são versionados.** O `.md` para o `git diff` mostrar o que mudou; o `.pdf` para abrir na aula sem depender de gerar nada na hora.
 
@@ -91,12 +91,12 @@ O `.mmd` do slide é **propositalmente diferente** do bloco ` ```mermaid ` do RE
 Ao inserir, **declare a largura** — sem ela o SVG colapsa:
 
 ```markdown
-![w:1020](img/classes-reserva.svg)
+![w:1020](img/burndown.svg)
 ```
 
 Todo `.mmd` deste curso abre com o mesmo bloco `config` (tema `base`, `fontSize: 22px`, traço `#0f766e`) — copie de um existente. Sem ele o Mermaid usa o azul e o amarelo padrão, que destoam do tema.
 
-> ⚠️ O `gerar.sh` **só compila `.mmd`**. O diagrama de casos de uso é PlantUML e seu `.svg` é gerado e commitado à mão, conforme o [guia de notações](../notacoes-uml.md#6-casos-de-uso-em-plantuml). Um deck que precise dele aponta para o `.svg` já commitado, em vez de duplicá-lo em `img/`.
+> ⚠️ O `gerar.sh` **só compila `.mmd`**. Desde a reformulação de 13/08/2026 não há mais nenhum diagrama fora do Mermaid — o PlantUML saiu com os casos de uso —, então todo diagrama de deck nasce de um `.mmd` em `img/`.
 
 ## Armadilhas já resolvidas
 

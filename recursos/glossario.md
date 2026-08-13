@@ -1,12 +1,12 @@
 # 📚 Glossário PT/EN
 
-Quase toda a literatura, toda a documentação de ferramenta e metade das conversas de trabalho estão em inglês. O que trava quem está começando nesses textos raramente é o conceito — é o **vocabulário**: você já entende o que é acoplamento e mesmo assim empaca em *coupling*.
+Quase toda a literatura, toda a documentação de ferramenta e metade das conversas de trabalho estão em inglês. O que trava quem está começando nesses textos raramente é o conceito — é o **vocabulário**: você já entende o que é uma parte interessada e mesmo assim empaca em *stakeholder*.
 
 Este glossário é para consultar, não para decorar. Guarde o link.
 
-> 💡 Aqui está o vocabulário **da engenharia de software**. O vocabulário **do domínio** do sistema-guia — espaço, recurso, reserva, bloqueio — é outra coisa, e vive na [seção 5 do sistema-guia](sistema-guia.md#5-vocabulário-do-domínio). Todo projeto de software tem os dois, e confundi-los é fonte garantida de mal-entendido.
+> 💡 Aqui está o vocabulário **da gestão de projeto**. O vocabulário **do domínio** de cada projeto — item, reserva, manifestação, prontuário — é outra coisa, e vem no contexto de cada um em [projetos para praticar](projetos-para-praticar.md). Todo projeto tem os dois, e confundi-los é fonte garantida de mal-entendido.
 
-**Índice:** [Processo](#1-processo-e-ciclo-de-vida) · [Ágil](#2-ágil) · [Requisitos](#3-requisitos) · [UML](#4-modelagem-e-uml) · [Projeto](#5-projeto-e-arquitetura) · [Qualidade](#6-qualidade-testes-e-evolução) · [Entrega](#7-entrega-e-operação) · [Os que ninguém traduz](#8-os-que-ninguém-traduz) · [Falsos amigos](#9-falsos-amigos)
+**Índice:** [Processo](#1-processo-e-ciclo-de-vida) · [Ágil](#2-ágil) · [Gestão](#3-gestão-de-projeto) · [Risco e qualidade](#4-risco-e-qualidade) · [Arquitetura](#5-projeto-e-arquitetura) · [Qualidade e testes](#6-qualidade-testes-e-evolução) · [Entrega](#7-entrega-e-operação) · [Os que ninguém traduz](#8-os-que-ninguém-traduz) · [Falsos amigos](#9-falsos-amigos)
 
 ---
 
@@ -53,58 +53,47 @@ Este glossário é para consultar, não para decorar. Guarde o link.
 
 ---
 
-## 3. Requisitos
+## 3. Gestão de projeto
 
 | Português | English | O que é |
 |---|---|---|
-| Requisito | *requirement* | O que o sistema deve fazer ou qual qualidade deve ter |
-| Requisito funcional | *functional requirement* | Algo que o sistema **faz** |
-| Requisito não-funcional | *non-functional requirement* (NFR) | Uma **qualidade ou restrição** sobre como ele faz |
-| Atributo de qualidade | *quality attribute* | Outro nome para requisito não-funcional, comum em arquitetura |
-| Elicitação / levantamento | *elicitation* | Descobrir os requisitos — *elicit* é "extrair", não "perguntar" |
-| Especificação | *specification* | O documento que registra os requisitos de forma verificável |
-| Documento de requisitos | *requirements document* / *SRS* | O artefato consolidado |
-| Rastreabilidade | *traceability* | Poder ligar requisito → projeto → código → teste |
-| Verificável | *verifiable / testable* | Que permite responder objetivamente se foi cumprido |
-| Ambíguo | *ambiguous* | Que admite mais de uma leitura razoável |
-| História de usuário | *user story* | "Como ⟨papel⟩, quero ⟨ação⟩ para que ⟨benefício⟩" |
-| Critério de aceite | *acceptance criteria* | As condições que tornam a história aprovada |
-| Épico | *epic* | História grande demais, que será quebrada |
-| Regra de negócio | *business rule* | Restrição do domínio, verdadeira mesmo sem sistema nenhum |
-| Domínio | *domain* | A área de conhecimento do problema |
-| Priorização | *prioritization* | Decidir a ordem — e, portanto, o que fica de fora |
-| Negociação | *negotiation* | O que acontece quando dois requisitos não cabem juntos |
+| Projeto | *project* | Esforço temporário que produz um resultado único |
+| Operação | *operations* | Trabalho contínuo e repetitivo, que não termina com aceite |
+| Parte interessada | *stakeholder* | Quem afeta ou é afetado pelo projeto |
+| Patrocinador | *sponsor* | Quem autoriza o projeto e responde pelo recurso |
+| Gerente de projeto | *project manager* | Responde por prazo, custo, risco e comunicação |
+| Termo de abertura | *project charter* | Documento que autoriza o projeto e nomeia quem responde |
+| Escopo | *scope* | O que o projeto entrega — e, por consequência, o que ele não entrega |
+| EAP | *WBS — work breakdown structure* | Decomposição do resultado em partes cada vez menores |
+| Marco | *milestone* | Ponto do cronograma com duração zero, que sinaliza um evento |
+| Linha de base | *baseline* | A fotografia aprovada de escopo, prazo e custo |
+| Desvio | *variance* | A diferença entre o real e a linha de base |
+| Aceite | *sign-off / acceptance* | Declaração formal de que o resultado atende ao combinado |
+| Lições aprendidas | *lessons learned* | O registro do que funcionou e do que não funcionou |
+| Premissa | *assumption* | O que se assume verdadeiro sem ter certeza |
+| Restrição | *constraint* | Limite imposto de fora, que o projeto não altera |
+| Matriz de responsabilidades | *RACI matrix* | Cruza decisões com envolvidos: responsável, aprovador, consultado, informado |
 
 ---
 
-## 4. Modelagem e UML
+## 4. Risco e qualidade
 
 | Português | English | O que é |
 |---|---|---|
-| Modelagem | *modeling* | Representar o sistema de forma simplificada e proposital |
-| Caso de uso | *use case* | Objetivo de um ator que gera resultado de valor |
-| Ator | *actor* | Papel externo que interage com o sistema |
-| Fronteira do sistema | *system boundary* | A linha entre o que é o sistema e o que é o mundo |
-| Fluxo principal | *main / basic flow* | O caminho em que tudo dá certo |
-| Fluxo alternativo | *alternative flow* | Outro caminho válido para o mesmo objetivo |
-| Fluxo de exceção | *exception flow* | O que acontece quando não dá certo |
-| Pré-condição / pós-condição | *precondition / postcondition* | O que vale antes e depois do caso de uso |
-| Diagrama de classes | *class diagram* | Visão estática: as coisas do domínio e suas relações |
-| Atributo | *attribute* | Dado que a classe guarda |
-| Operação / método | *operation / method* | O que a classe sabe fazer |
-| Visibilidade | *visibility* | Público `+`, privado `-`, protegido `#`, pacote `~` |
-| Associação | *association* | Ligação estrutural entre classes |
-| Multiplicidade | *multiplicity* | Quantos objetos participam de cada lado |
-| Agregação | *aggregation* | Todo-parte em que a parte sobrevive ao todo (losango branco) |
-| Composição | *composition* | Todo-parte em que a parte morre com o todo (losango preto) |
-| Herança / generalização | *inheritance / generalization* | Relação "é-um" |
-| Diagrama de sequência | *sequence diagram* | Mensagens trocadas ao longo do tempo |
-| Linha de vida | *lifeline* | A linha vertical de cada participante |
-| Diagrama de atividades | *activity diagram* | O fluxo de trabalho, com decisões e paralelismo |
-| Diagrama de estados | *state machine diagram* | O ciclo de vida de **um** objeto |
-| Diagrama de componentes | *component diagram* | As partes construíveis e suas interfaces |
-| Diagrama de implantação | *deployment diagram* | Onde cada coisa roda |
-| Estereótipo | *stereotype* | Extensão de significado, escrita entre `«guillemets»` |
+| Risco | *risk* | Evento incerto que, se ocorrer, afeta o projeto |
+| Problema | *issue* | O que já aconteceu — resolve-se, não se monitora |
+| Probabilidade | *likelihood / probability* | Quão provável é o evento |
+| Impacto | *impact* | Quanto ele custa se acontecer |
+| Gatilho | *trigger* | O sinal de que o risco está virando problema |
+| Mitigar | *mitigate* | Reduzir probabilidade ou impacto |
+| Transferir | *transfer* | Passar o impacto a outro — seguro, contrato, terceiro |
+| Aceitar | *accept* | Decidir conviver com ele, conscientemente |
+| Evitar | *avoid* | Mudar o plano para que o risco deixe de existir |
+| Registro de riscos | *risk register* | A lista viva, com dono, resposta e gatilho |
+| Garantia da qualidade | *quality assurance* | Cuidar do **processo** que produz o resultado |
+| Controle da qualidade | *quality control* | Conferir o **resultado** produzido |
+| Maturidade | *maturity* | Quão definido e repetível é o processo da organização — não é qualidade do produto |
+| Métrica | *metric* | Medida que apoia uma decisão; quando vira meta, para de medir |
 
 ---
 
@@ -113,7 +102,6 @@ Este glossário é para consultar, não para decorar. Guarde o link.
 | Português | English | O que é |
 |---|---|---|
 | **Projeto (de software)** | **design** | As decisões de estrutura e organização — **não** é "desenho", e **não** é o *project* de gerência |
-| Projeto detalhado | *detailed design* | O nível das classes e dos métodos |
 | Arquitetura | *architecture* | As decisões caras de reverter e a relação entre as partes |
 | Coesão | *cohesion* | O quanto o que está junto trata do mesmo assunto |
 | Acoplamento | *coupling* | O quanto uma parte depende de outra |
@@ -127,7 +115,6 @@ Este glossário é para consultar, não para decorar. Guarde o link.
 | Serviço | *service* | Componente acessado remotamente, por contrato |
 | Monolito | *monolith* | Sistema implantado como uma unidade só |
 | Microsserviços | *microservices* | Vários serviços implantados de forma independente |
-| Padrão de projeto | *design pattern* | Solução recorrente para um problema em um contexto |
 | Antipadrão | *anti-pattern* | Solução comum que costuma piorar as coisas |
 | Compromisso / balanceamento | *trade-off* | Ganhar de um lado pagando do outro. **Não existe projeto sem isso** |
 | Registro de decisão de arquitetura | *Architecture Decision Record* (ADR) | Documento curto: contexto, decisão, alternativas, consequências |
@@ -237,7 +224,7 @@ Os que fazem o aluno traduzir a frase inteira ao contrário do que ela diz:
 | *pretend* | pretender | **fingir** — *intend* é que é pretender |
 | *sensible* | sensível | **sensato** — sensível é *sensitive* (e é essa a palavra em "dado sensível") |
 
-> 💡 Quando um termo em inglês não fizer sentido, tente lê-lo como se ele fosse **literal e concreto**: *elicit* é "extrair", e é por isso que elicitação não é só perguntar; *coupling* é o engate de dois vagões, e é por isso que acoplamento alto significa que um puxa o outro.
+> 💡 Quando um termo em inglês não fizer sentido, tente lê-lo como se ele fosse **literal e concreto**: *stake* é a aposta que alguém tem em jogo, e é por isso que *stakeholder* não é "quem usa o sistema", e sim quem tem algo a perder; *coupling* é o engate de dois vagões, e é por isso que acoplamento alto significa que um puxa o outro.
 
 ---
 
