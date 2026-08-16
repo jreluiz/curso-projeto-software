@@ -162,17 +162,22 @@ Na pasta `aula-05/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** Uma diretoria determinou que todos os projetos passem a ser ágeis. O seu tem escopo fechado em contrato, prazo com multa e um cliente que só aparece nas reuniões de medição — é a [Ouvidoria municipal](../../recursos/projetos-para-praticar.md#8-ouvidoria-municipal). **Escreva a resposta à diretoria**, contendo: (i) o que dá para adotar de verdade nesse contexto, e por quê; (ii) o que **não** dá, e a condição contratual ou organizacional que precisaria mudar; (iii) **o que se perde** se a determinação for cumprida só na forma. *Confere assim: se a sua resposta for "não dá" ou "dá tudo", releia — há práticas que funcionam sob contrato fechado e há promessas que não se sustentam sem mudar o contrato.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-05/
+git commit -m "Resolve exercícios da aula 05"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-05/
-git commit -m "Resolve exercícios da aula 05 (Manifesto Ágil)"
-git push
-```
 
 ---
 

@@ -162,17 +162,22 @@ Na pasta `aula-14/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** Faltam duas semanas para a temporada de inverno, quando o delivery dobra. A equipe identificou uma dívida técnica que torna cada mudança três vezes mais lenta, e o dono quer duas funcionalidades novas antes da temporada. **Escreva a decisão**, contendo: (i) o que entra e o que fica, com o critério; (ii) como você apresenta a dívida ao dono, em linguagem de dono de restaurante — sem usar o termo "dívida técnica"; (iii) **o que se perde** com a sua escolha, e o cenário em que ela se mostraria errada. *Confere assim: o item (ii) é o exercício de verdade. Se a sua explicação mencionar código, refatoração ou arquitetura, ele não vai entender — traduza para tempo e dinheiro.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-14/
+git commit -m "Resolve exercícios da aula 14"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-14/
-git commit -m "Resolve exercícios da aula 14 (entregar e sustentar)"
-git push
-```
 
 ---
 

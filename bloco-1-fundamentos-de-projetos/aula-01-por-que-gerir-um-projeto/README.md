@@ -165,17 +165,22 @@ Na pasta `aula-01/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** No projeto do audiovisual, a data do início do semestre é imóvel e o escopo pedido não cabe nela. Você é o gerente. **Escreva a decisão**: o que entra na primeira entrega, o que fica para depois, e por quê. Sua resposta precisa conter, explicitamente: (i) o critério que você usou para cortar; (ii) quem é o **A** dessa decisão e por quê; (iii) **o que se perde** com o corte, e como você comunica isso a quem vai sentir a falta. *Confere assim: se o item (iii) estiver vazio ou disser "nada relevante", você não cortou nada de verdade — reveja.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-01/
+git commit -m "Resolve exercícios da aula 01"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-01/
-git commit -m "Resolve exercícios da aula 01 (por que gerir um projeto)"
-git push
-```
 
 ---
 

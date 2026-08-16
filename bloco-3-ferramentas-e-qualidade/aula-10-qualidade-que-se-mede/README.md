@@ -162,17 +162,22 @@ Na pasta `aula-10/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** A diretoria da clínica-escola determinou meta de **95% de cobertura de testes** para todos os projetos, com bônus atrelado. **Escreva a resposta**, contendo: (i) como essa meta será atingida sem melhorar a qualidade, descrevendo o comportamento racional que ela induz; (ii) **o que você propõe no lugar** — uma medida que responda à preocupação legítima da diretoria; (iii) **o que se perde** com a sua proposta, inclusive em facilidade de acompanhamento. *Confere assim: a diretoria tem uma preocupação legítima por trás da meta — se a sua resposta não a nomear, você recusou sem entender o pedido.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-10/
+git commit -m "Resolve exercícios da aula 10"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-10/
-git commit -m "Resolve exercícios da aula 10 (qualidade que se mede)"
-git push
-```
 
 ---
 

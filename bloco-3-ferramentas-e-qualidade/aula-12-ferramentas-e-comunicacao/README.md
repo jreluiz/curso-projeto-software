@@ -162,17 +162,22 @@ Na pasta `aula-12/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** A diretoria da transportadora comprou uma ferramenta de gestão ágil e determinou a migração de todos os projetos, mantendo escopo, prazo e orçamento aprovados anualmente. **Escreva a resposta**, contendo: (i) o que a ferramenta vai de fato entregar nesse contexto, sem exagero; (ii) o que ela **não** vai entregar, e qual mudança fora da ferramenta seria necessária; (iii) **o que se perde** ao adotar mesmo assim — e por que adotar ainda pode ser a decisão certa. *Confere assim: o item (iii) precisa terminar defendendo a adoção. Se a sua resposta for só contra, você não encontrou o valor real da visibilidade, que existe mesmo em projeto preditivo.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-12/
+git commit -m "Resolve exercícios da aula 12"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-12/
-git commit -m "Resolve exercícios da aula 12 (ferramentas e comunicação)"
-git push
-```
 
 ---
 

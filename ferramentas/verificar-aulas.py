@@ -34,10 +34,12 @@ EXERCICIOS = 5          # este curso mantém 5, sendo o 5º o Desafio 🌶️ (�
 QUESTOES = 8
 DIRETAS, ENADE = 5, 3   # 5 diretas + 3 [ENADE]; TODAS com alternativas a–d (§6)
 
+# A "Entrega" deixou de ser seção de fechamento em 16/08/2026: virou a
+# subseção "### 📤 Entrega" DENTRO de "## 🏋️ Exercícios da aula", junto do
+# enunciado a que ela se refere. O fechamento passou a ter dois itens.
 FECHAMENTO = [
     "## 🏋️ Exercícios da aula",
     "## 🧠 Revisão",
-    "## ✅ Entrega",
 ]
 
 # Resto da grade antiga — proibido. A reformulação de 12/08/2026 tirou UML,
@@ -116,7 +118,7 @@ def problemas_de_aula(caminho, texto):
     if faltando:
         p.append("fechamento sem: " + ", ".join(faltando))
     elif pos != sorted(pos):
-        p.append("fechamento fora de ordem (deve ser Exercícios → Revisão → Entrega)")
+        p.append("fechamento fora de ordem (deve ser Exercícios → Revisão)")
 
     # EXCEÇÃO 3: não existe cabeçalho "### Exercício N" — é lista numerada sob
     # "## 🏋️ Exercícios da aula". Contar as ocorrências de `exNN.md`.

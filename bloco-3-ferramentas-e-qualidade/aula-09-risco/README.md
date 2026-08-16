@@ -162,17 +162,22 @@ Na pasta `aula-09/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** Monte o **registro de riscos** do [prontuário de clínica-escola](../../recursos/projetos-para-praticar.md#10-prontuário-de-clínica-escola), com no mínimo cinco riscos, todas as sete colunas preenchidas, e inclua **um risco organizacional** — daqueles constrangedores de escrever. Depois, escolha **um** risco e escreva um parágrafo defendendo por que ele deve ser atacado antes dos outros, e **o que se perde** ao priorizá-lo. *Confere assim: se todos os seus riscos forem técnicos, releia a seção 3 — o projeto tem comitê de ética, auditoria externa e uma notificação recente por dado exposto.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-09/
+git commit -m "Resolve exercícios da aula 09"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-09/
-git commit -m "Resolve exercícios da aula 09 (risco)"
-git push
-```
 
 ---
 

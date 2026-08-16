@@ -163,17 +163,22 @@ Na pasta `aula-03/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** O projeto da [Ouvidoria municipal](../../recursos/projetos-para-praticar.md#8-ouvidoria-municipal) terminou: o sistema está no ar há um mês, e a fornecedora quer emitir a última medição. O secretário cujo órgão sempre atrasa se recusa a assinar o aceite, alegando que o sistema "expõe indevidamente" os prazos do setor dele. **Escreva o encerramento do projeto** contendo: (i) o que você faz diante da recusa, e com que fundamento; (ii) o registro de lições aprendidas com três entradas, nenhuma delas nomeando pessoas; (iii) **o que se perde** se o projeto for encerrado sem esse aceite. *Confere assim: o item (i) precisa distinguir "o sistema não atende ao contratado" de "o sistema atende e eu não gostei do resultado" — são coisas diferentes, e só uma delas justifica recusar o aceite.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-03/
+git commit -m "Resolve exercícios da aula 03"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-03/
-git commit -m "Resolve exercícios da aula 03 (os processos de um projeto)"
-git push
-```
 
 ---
 

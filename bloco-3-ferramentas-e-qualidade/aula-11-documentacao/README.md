@@ -162,17 +162,22 @@ Na pasta `aula-11/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** Você assume um projeto de oito meses, cinco pessoas, com auditoria externa prevista. O patrocinador diz que "documentação é perda de tempo, o time é bom". **Escreva o mínimo de documentação do projeto**, contendo: (i) a lista do que será escrito, com leitor e razão de cada item; (ii) o que **não** será escrito, e a justificativa de cada exclusão; (iii) **o que se perde** com as exclusões, e em que cenário a decisão se mostraria errada. *Confere assim: a lista do item (ii) precisa ser maior que a do item (i). Se você não excluiu quase nada, não decidiu — só listou tudo o que existe.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-11/
+git commit -m "Resolve exercícios da aula 11"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-11/
-git commit -m "Resolve exercícios da aula 11 (documentação)"
-git push
-```
 
 ---
 

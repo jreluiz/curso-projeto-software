@@ -162,17 +162,22 @@ Na pasta `aula-08/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** A diretoria da empresa determinou uma oficina de Design Thinking de dois dias para o projeto da [Ouvidoria municipal](../../recursos/projetos-para-praticar.md#8-ouvidoria-municipal), cujo escopo está anexo ao edital. **Escreva a resposta**, contendo: (i) se a abordagem responde à pergunta que este projeto tem, com o argumento; (ii) o que você propõe no lugar, ou como você usaria os dois dias de forma que produza decisão; (iii) **o que se perde** com a sua proposta em relação à oficina pedida. *Confere assim: recusar por "não temos tempo" não é argumento — a recusa precisa se apoiar em qual pergunta o projeto tem, e essa pergunta está na seção 1.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-08/
+git commit -m "Resolve exercícios da aula 08"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-08/
-git commit -m "Resolve exercícios da aula 08 (Design Thinking, MVP e Lean)"
-git push
-```
 
 ---
 

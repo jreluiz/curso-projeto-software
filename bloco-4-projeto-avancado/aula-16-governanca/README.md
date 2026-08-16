@@ -171,17 +171,22 @@ Na pasta `aula-16/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio. Autoavaliação e mapa pessoal.** Escolha **uma decisão** que você tomaria diferente hoje, num trabalho, num projeto de outra matéria ou num sistema que você usa. Escreva: (i) a decisão como foi tomada, e por quem; (ii) como você a tomaria agora, e **qual aula deste curso** mudou a sua leitura; (iii) **o que se perde** com a sua nova escolha — porque ela também tem custo. *Confere assim: se o item (iii) estiver vazio, você trocou uma certeza por outra. O curso inteiro foi sobre o fato de que toda decisão custa algo.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-16/
+git commit -m "Resolve exercícios da aula 16"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-16/
-git commit -m "Resolve exercícios da aula 16 (governança)"
-git push
-```
 
 ---
 

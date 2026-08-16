@@ -162,17 +162,22 @@ Na pasta `aula-06/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** A diretoria pediu um painel comparando a velocidade dos três times da empresa, para "identificar o time de maior desempenho". Você é o Scrum Master de um deles. **Escreva a resposta**, contendo: (i) por que a comparação é inválida, com o argumento que sustenta isso; (ii) **o que você oferece no lugar** — uma medida que responda à pergunta legítima por trás do pedido; (iii) **o que se perde** com a sua proposta em relação ao que foi pedido. *Confere assim: recusar sem oferecer alternativa não resolve — a diretoria tem uma pergunta legítima, e o item (ii) é a parte difícil do exercício.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-06/
+git commit -m "Resolve exercícios da aula 06"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-06/
-git commit -m "Resolve exercícios da aula 06 (Scrum)"
-git push
-```
 
 ---
 

@@ -162,17 +162,22 @@ Na pasta `aula-15/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** Na assembleia digital, o cliente pediu que o voto fosse confirmado em **um único clique**, "para ser mais rápido". Você sabe que isso produz voto acidental e que a apuração precisa ser incontestável. **Escreva a decisão**, contendo: (i) o que você faz, e a heurística que sustenta; (ii) como você apresenta isso ao cliente, que pediu o contrário; (iii) **o que se perde** com a sua escolha, reconhecendo o que o pedido dele tinha de legítimo. *Confere assim: o item (iii) precisa reconhecer que ele tem um ponto — cada passo a mais é uma chance de desistir, e num público de 85 anos isso é sério. Se a sua resposta tratar o pedido como simplesmente errado, releia a seção 5.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-15/
+git commit -m "Resolve exercícios da aula 15"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-15/
-git commit -m "Resolve exercícios da aula 15 (o usuário do outro lado)"
-git push
-```
 
 ---
 

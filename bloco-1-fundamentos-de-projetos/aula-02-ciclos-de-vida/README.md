@@ -163,17 +163,22 @@ Na pasta `aula-02/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** Você assume a gestão do projeto da [semana acadêmica](../../recursos/projetos-para-praticar.md#7-semana-acadêmica-com-submissões): equipe voluntária com disponibilidade imprevisível, data do evento imóvel, orçamento comprometido. **Escreva a decisão de ciclo de vida**, respondendo as quatro perguntas da seção 6 e declarando: (i) o ciclo escolhido, e se é híbrido, o que é preditivo e o que é adaptativo; (ii) o recorte da primeira entrega, com o critério que você usou; (iii) **o que se perde** com essa escolha, e qual seria o cenário em que ela se mostraria errada. *Confere assim: o item (iii) precisa nomear um cenário concreto e verificável — "se em setembro só duas pessoas estiverem disponíveis" vale; "se der tudo errado" não vale.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-02/
+git commit -m "Resolve exercícios da aula 02"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-02/
-git commit -m "Resolve exercícios da aula 02 (ciclos de vida)"
-git push
-```
 
 ---
 

@@ -163,17 +163,22 @@ Na pasta `aula-04/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** Você é o gerente do projeto da transportadora. A equipe técnica insiste no processamento em tempo real; o gestor de frota não entende a diferença; a diretoria só quer o número da economia. **Escreva a comunicação da decisão** — meia página, endereçada aos três — contendo: (i) a decisão e a restrição do projeto que a determinou; (ii) a consequência traduzida para cada um dos três públicos, na linguagem de cada um; (iii) **o que se perde** com a escolha, dito antes que alguém descubra. *Confere assim: se o mesmo parágrafo servir para os três leitores, você escreveu um comunicado e não uma comunicação — o gestor de frota e a diretoria não precisam saber as mesmas coisas.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-04/
+git commit -m "Resolve exercícios da aula 04"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-04/
-git commit -m "Resolve exercícios da aula 04 (arquitetura como decisão)"
-git push
-```
 
 ---
 

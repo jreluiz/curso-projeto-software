@@ -163,17 +163,22 @@ Na pasta `aula-07/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** Falta um mês para a data contratada da Ouvidoria e o backlog tem quinze itens. Você é o gerente; o PO diz que quatro dos sete que você quer cortar são o que dá sentido ao produto. **Escreva a decisão**, contendo: (i) qual variável vai ceder — escopo, data, custo — e **quem tem autoridade** para decidir isso; (ii) como você leva a decisão a essa pessoa, com que informação; (iii) **o que se perde**, e por que a qualidade não está na lista de variáveis que você considerou. *Confere assim: se a sua resposta cortar os quinze itens sem envolver ninguém de fora do projeto, você decidiu no lugar de quem tinha autoridade — que é o erro que a seção 4 descreve.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-07/
+git commit -m "Resolve exercícios da aula 07"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-07/
-git commit -m "Resolve exercícios da aula 07 (quem responde pelo quê)"
-git push
-```
 
 ---
 

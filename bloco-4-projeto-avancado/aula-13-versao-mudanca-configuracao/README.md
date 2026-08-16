@@ -162,17 +162,22 @@ Na pasta `aula-13/` do seu repositório:
 
 5. **`ex05.md`** — 🌶️ **Desafio.** O dono do restaurante recusa implantação contínua: *"não quero que mexam no sistema no sábado à noite"*. Ele tem razão. **Escreva a proposta** que atende à preocupação dele sem abrir mão do que a engenharia ganha, contendo: (i) o que você adota e o que não adota, com os nomes corretos das três siglas; (ii) o que muda na prática para ele, em linguagem de dono de restaurante; (iii) **o que se perde** com a sua proposta em relação à implantação contínua plena. *Confere assim: se a sua resposta usar "CI/CD" como um bloco só, ela não distingue o que ele recusou do que ele nem sabe que existe — e é justamente aí que está o acordo.*
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-13/
+git commit -m "Resolve exercícios da aula 13"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-13/
-git commit -m "Resolve exercícios da aula 13 (versão, mudança e configuração)"
-git push
-```
 
 ---
 
