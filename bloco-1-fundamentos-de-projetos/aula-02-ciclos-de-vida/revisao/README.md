@@ -4,6 +4,10 @@
 
 **Sem gabarito, de propósito.** Cada questão termina com a seção da aula onde a resposta está. Responda **tudo primeiro**, sem consultar — só depois volte às seções indicadas e corrija.
 
+📝 **As respostas vão pelo formulário:** [responder a revisão da Aula 02](https://docs.google.com/forms/d/e/1FAIpQLSeDglESLlUGNkpFbm9ms5B5uB0n9eqC36Th-A_GFumzhZL9DQ/viewform)
+
+Leia as 8 questões aqui e decida suas respostas antes de abrir o formulário: é **uma resposta por aluno**, com conta Google, e não dá para editar depois de enviar. Ele também pede seu usuário do GitHub. Se o seu nome não estiver na lista da turma, marque a última opção e escreva o nome completo no campo seguinte.
+
 As três últimas são marcadas **[ENADE]**: trazem um **texto-base** com uma situação de projeto, seguido do comando. São mais longas de ler e cobram interpretação, não memória — as alternativas continuam simples, como nas demais.
 
 ---
