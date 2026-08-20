@@ -4,7 +4,7 @@
 
 ## 1º Bimestre — fundamentos e metodologias
 
-- [ ] **13/08** · Aula 01 — [Por que gerir um projeto de software](bloco-1-fundamentos-de-projetos/aula-01-por-que-gerir-um-projeto/README.md)
+- [x] **13/08** · Aula 01 — [Por que gerir um projeto de software](bloco-1-fundamentos-de-projetos/aula-01-por-que-gerir-um-projeto/README.md)
 - [ ] **20/08** · Aula 02 — [Ciclos de vida](bloco-1-fundamentos-de-projetos/aula-02-ciclos-de-vida/README.md)
 - [ ] **27/08** · Aula 03 — [Os processos de um projeto](bloco-1-fundamentos-de-projetos/aula-03-os-processos-de-um-projeto/README.md)
 - [ ] **03/09** · Aula 04 — [Arquitetura como decisão de projeto](bloco-1-fundamentos-de-projetos/aula-04-arquitetura-como-decisao/README.md) · fecha o Bloco 1
