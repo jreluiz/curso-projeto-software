@@ -1,0 +1,25 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#b02a1c"
+    primaryColor: "#fbeae7"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#b02a1c"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 55
+    padding: 16
+---
+flowchart TD
+    X["Sistema de empréstimo"]
+    X --> X1["Levantamento"]
+    X --> X2["Desenho"]
+    X --> X3["Construção"]
+    X --> X4["Testes"]
+
+    classDef ruim fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    class X,X1,X2,X3,X4 ruim
+    linkStyle default stroke:#b02a1c,stroke-width:3px

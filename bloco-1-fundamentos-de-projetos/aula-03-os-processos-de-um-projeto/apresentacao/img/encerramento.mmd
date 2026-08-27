@@ -1,0 +1,35 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 26
+    rankSpacing: 60
+    padding: 16
+---
+flowchart LR
+    F["ENCERRAMENTO"]
+    A["ACEITE FORMAL<br/>quem tem autoridade<br/>declara que atende"]
+    B["ARQUIVO<br/>decisões, versões,<br/>o que ficou fora"]
+    C["LIÇÕES APRENDIDAS<br/>situação e decisão,<br/>nunca culpados"]
+    A1["sem ele o projeto<br/>não termina: só para"]
+    B1["serve a quem<br/>mantiver o produto"]
+    C1["serve ao<br/>PRÓXIMO projeto"]
+
+    F --> A --> A1
+    F --> B --> B1
+    F --> C --> C1
+
+    classDef origem fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef caixa fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef nota fill:#fdfdfb,stroke:#0f766e,stroke-width:2px,color:#5c5c5c
+    class F origem
+    class A,B,C caixa
+    class A1,B1,C1 nota
+    linkStyle default stroke:#0f766e,stroke-width:3px

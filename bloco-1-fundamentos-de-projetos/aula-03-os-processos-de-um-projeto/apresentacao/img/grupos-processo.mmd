@@ -1,0 +1,30 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 38
+    padding: 14
+---
+flowchart LR
+    I["1<br/>INICIAÇÃO<br/>por que<br/>existe?"]
+    P["2<br/>PLANEJAMENTO<br/>o quê e<br/>quando?"]
+    E["3<br/>EXECUÇÃO<br/>fazer o<br/>combinado"]
+    C["4<br/>MONITORAMENTO<br/>E CONTROLE<br/>onde estamos?"]
+    F["5<br/>ENCERRAMENTO<br/>aceito?<br/>o que aprendi?"]
+
+    I --> P --> E --> C
+    C -- "replanejar" --> P
+    C --> F
+
+    classDef caixa fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    class I,P,E,C,F caixa
+    linkStyle 0,1,2,4 stroke:#0f766e,stroke-width:3.5px
+    linkStyle 3 stroke:#b02a1c,stroke-width:4.5px

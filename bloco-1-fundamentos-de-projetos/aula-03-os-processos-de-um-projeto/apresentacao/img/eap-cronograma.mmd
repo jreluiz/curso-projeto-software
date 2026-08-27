@@ -1,0 +1,31 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 34
+    rankSpacing: 44
+    padding: 14
+---
+flowchart LR
+    A["Cadastro<br/>de itens<br/>3 sem"]
+    B["Registro<br/>de saída<br/>2 sem"]
+    C["Registro<br/>de retorno<br/>2 sem"]
+    D["Penalidade<br/>por atraso<br/>1 sem"]
+    E["Migração<br/>da planilha<br/>1 sem"]
+    F["Treinamento<br/>do balcão<br/>1 sem"]
+
+    A --> B --> C --> D --> F
+    A --> E --> F
+
+    classDef caixa fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef fim fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class A,B,C,D,E caixa
+    class F fim
+    linkStyle default stroke:#0f766e,stroke-width:3.5px

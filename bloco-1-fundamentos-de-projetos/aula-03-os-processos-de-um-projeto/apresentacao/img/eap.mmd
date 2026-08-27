@@ -1,0 +1,34 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 26
+    rankSpacing: 55
+    padding: 14
+---
+flowchart TD
+    A["Sistema de empréstimo<br/>de equipamentos"]
+    A --> B["Cadastro<br/>de itens"]
+    A --> C["Empréstimo<br/>e devolução"]
+    A --> D["Reserva"]
+    A --> E["Implantação"]
+    C --> C1["Registro<br/>de saída"]
+    C --> C2["Registro<br/>de retorno"]
+    C --> C3["Penalidade<br/>por atraso"]
+    E --> E1["Migração<br/>da planilha"]
+    E --> E2["Treinamento<br/>do balcão"]
+
+    classDef produto fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef entrega fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef folha fill:#fdfdfb,stroke:#0f766e,stroke-width:2px,color:#1a1a1a
+    class A produto
+    class B,C,D,E entrega
+    class C1,C2,C3,E1,E2 folha
+    linkStyle default stroke:#0f766e,stroke-width:3px
