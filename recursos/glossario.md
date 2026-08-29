@@ -103,6 +103,11 @@ Este glossário é para consultar, não para decorar. Guarde o link.
 |---|---|---|
 | **Projeto (de software)** | **design** | As decisões de estrutura e organização — **não** é "desenho", e **não** é o *project* de gerência |
 | Arquitetura | *architecture* | As decisões caras de reverter e a relação entre as partes |
+| Estilo arquitetônico | *architectural style* | Arranjo já conhecido, com vantagens e custos mapeados: camadas, cliente-servidor, repositório, orientado a eventos |
+| Atributo de qualidade | *quality attribute* | O que o sistema precisa **ser**: desempenho, disponibilidade, segurança, manutenibilidade. É o que decide a arquitetura |
+| Requisito não funcional | *non-functional requirement* | O pedido de um atributo de qualidade. Sem número, é adjetivo — "rápido" não decide nada |
+| Cliente-servidor | *client-server* | Vários clientes pedem; um servidor concentra regras e dados |
+| MVC | *model-view-controller* | Separa a tela, os dados e quem coordena os dois — dentro da apresentação |
 | Coesão | *cohesion* | O quanto o que está junto trata do mesmo assunto |
 | Acoplamento | *coupling* | O quanto uma parte depende de outra |
 | Separação de responsabilidades | *separation of concerns* | Cada parte com um motivo para mudar — *concern* aqui é "interesse", não "preocupação" |

@@ -1,0 +1,30 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 40
+    rankSpacing: 55
+    padding: 16
+---
+flowchart TD
+    T["Telemetria"]
+    O["Oficina"]
+    V["Viagens"]
+    R[("BASE CENTRAL<br/>cadastro de veículos")]
+
+    T <--> R
+    O <--> R
+    V <--> R
+
+    classDef caixa fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef base fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class T,O,V caixa
+    class R base
+    linkStyle default stroke:#0f766e,stroke-width:3.5px

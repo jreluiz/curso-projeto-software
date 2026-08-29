@@ -1,0 +1,27 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 38
+    padding: 14
+---
+flowchart LR
+    R["1 · A RESTRIÇÃO<br/>do negócio<br/>avisar com<br/>3 dias"]
+    A["2 · O ATRIBUTO<br/>de qualidade<br/>desempenho,<br/>com número"]
+    E["3 · O ESTILO<br/>arquitetônico<br/>lote de hora<br/>em hora"]
+    D["4 · O ADR<br/>a decisão e as<br/>alternativas<br/>descartadas"]
+    C["5 · COMUNICAR<br/>traduzido para<br/>quem paga<br/>a conta"]
+
+    R --> A --> E --> D --> C
+
+    classDef caixa fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    class R,A,E,D,C caixa
+    linkStyle default stroke:#0f766e,stroke-width:3.5px

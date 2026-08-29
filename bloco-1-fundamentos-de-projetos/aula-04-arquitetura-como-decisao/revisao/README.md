@@ -47,7 +47,7 @@ No sistema de delivery, alguém buscou o número de pedidos na fila direto no ba
 - **c)** a violação da regra do estilo é um atalho razoável sob pressão, cujo custo aparece só na mudança seguinte;
 - **d)** a tela do entregador deveria ter sido implementada como um serviço independente.
 
-↩︎ *Aula 04, seção 3 — Estilos arquitetônicos: camadas*
+↩︎ *Aula 04, seção 4 — Estilos arquitetônicos*
 
 ---
 
@@ -60,7 +60,7 @@ De acordo com a aula, a razão de existir dos microsserviços é resolver um pro
 - **c)** de confiabilidade: garantir que a falha de um serviço nunca afete os demais;
 - **d)** de manutenção: reduzir o tamanho do código que cada desenvolvedor precisa entender.
 
-↩︎ *Aula 04, seção 4 — Monolito × microsserviços, com honestidade*
+↩︎ *Aula 04, seção 5 — Monolito × microsserviços, com honestidade*
 
 ---
 
@@ -73,7 +73,7 @@ A linha "alternativas descartadas" é apontada na aula como a parte que dá sent
 - **c)** documenta quem propôs cada alternativa, tornando possível cobrar depois;
 - **d)** registra sob quais premissas a decisão foi tomada, permitindo revê-la quando elas mudarem.
 
-↩︎ *Aula 04, seção 5 — Registrar a decisão: o ADR*
+↩︎ *Aula 04, seção 6 — Registrar a decisão: o ADR*
 
 ---
 
@@ -92,7 +92,7 @@ Considerando a situação descrita e o conteúdo da aula, a proposta é inadequa
 - **c)** plataformas de contratação de serviços são, por natureza, mais adequadas ao estilo em camadas;
 - **d)** a decisão foi tomada pela equipe técnica, quando caberia aos fundadores decidi-la.
 
-↩︎ *Aula 04, seção 4 — Monolito × microsserviços, com honestidade*
+↩︎ *Aula 04, seção 5 — Monolito × microsserviços, com honestidade*
 
 ---
 
@@ -111,7 +111,7 @@ Considerando a situação descrita e o conteúdo da aula, o erro da equipe foi:
 - **c)** não ter incluído a equipe de operação na conversa técnica que definiu a solução;
 - **d)** ter decidido sem que o custo da escolha aparecesse para quem pagava e para quem sustentaria a operação.
 
-↩︎ *Aula 04, seção 6 — A decisão arquitetural é do projeto, não do time técnico*
+↩︎ *Aula 04, seção 7 — A decisão arquitetural é do projeto, não do time técnico*
 
 ---
 
@@ -130,7 +130,7 @@ Considerando a situação descrita e o conteúdo da aula, o que falhou foi:
 - **c)** a decisão original, que deveria ter sido revista formalmente antes da troca de equipe;
 - **d)** a numeração dos ADRs, que impediu localizar o documento referente ao assunto discutido.
 
-↩︎ *Aula 04, seção 5 — Registrar a decisão: o ADR*
+↩︎ *Aula 04, seção 6 — Registrar a decisão: o ADR*
 
 ---
 

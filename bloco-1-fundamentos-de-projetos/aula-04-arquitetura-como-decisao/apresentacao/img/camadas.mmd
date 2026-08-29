@@ -1,0 +1,31 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 26
+    rankSpacing: 46
+    padding: 16
+    wrappingWidth: 640
+---
+flowchart TD
+    A["APRESENTAÇÃO — telas e formulários"]
+    B["NEGÓCIO — regras e validações"]
+    C["PERSISTÊNCIA — acesso aos dados"]
+    D[("BANCO DE DADOS")]
+
+    A --> B --> C --> D
+    A -. "atalho proibido" .-> C
+
+    classDef caixa fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef base fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class A,B,C caixa
+    class D base
+    linkStyle 0,1,2 stroke:#0f766e,stroke-width:3.5px
+    linkStyle 3 stroke:#b02a1c,stroke-width:3px

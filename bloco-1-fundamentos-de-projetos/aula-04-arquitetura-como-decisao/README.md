@@ -1,6 +1,6 @@
 # Aula 04 — Arquitetura como decisão de projeto
 
-> 🎯 Objetivos: distinguir decisão arquitetural de escolha de ferramenta, reconhecer os estilos arquitetônicos mais comuns e registrar uma decisão de arquitetura com as alternativas descartadas.
+> 🎯 Objetivos: distinguir decisão arquitetural de escolha de ferramenta, nomear os atributos de qualidade que determinam a escolha, reconhecer os estilos arquitetônicos mais comuns e registrar uma decisão de arquitetura com as alternativas descartadas.
 > 🎬 Slides da aula: [apresentacao-04-arquitetura-como-decisao.pdf](apresentacao/apresentacao-04-arquitetura-como-decisao.pdf)
 
 ## 1. Por que isto é assunto de gestão
@@ -40,13 +40,50 @@ Repare também que as quatro da coluna esquerda podem ser enunciadas **sem citar
 
 E as restrições que mais decidem arquitetura raramente são técnicas. No projeto da clínica-escola, o que determina onde o prontuário é guardado é **a auditoria externa e o dado de saúde protegido por lei** — não a preferência do banco. No delivery, é o restaurante **não poder parar**. Em ambos, quem conhece a restrição não é quem escreve o código, e é por isso que a decisão precisa sair da conversa técnica antes de ser fechada.
 
-## 3. Estilos arquitetônicos: camadas
+## 3. Atributos de qualidade: o que decide a escolha
+
+Essas restrições têm nome. Elas são **atributos de qualidade** — as propriedades que o sistema precisa **ter**, e não as coisas que ele precisa **fazer**.
+
+A diferença cabe numa frase: *"registrar o empréstimo de um equipamento"* é uma **função**; *"continuar registrando quando o ERP estiver fora do ar"* é um **atributo**. A primeira determina o que se programa. A segunda determina **como o sistema se divide** — e é por isso que ela é a matéria-prima da arquitetura.
+
+Os que mais decidem nos projetos deste curso:
+
+| Atributo | A pergunta que ele responde | Quem conhece a restrição |
+|---|---|---|
+| **Desempenho** | em quanto tempo o sistema precisa responder? | quem usa, no ritmo real do trabalho |
+| **Disponibilidade** | quanto tempo fora do ar é tolerável, e em que horário? | a operação |
+| **Segurança** | quem pode ver o quê, e o que a lei exige guardar? | o jurídico, a auditoria |
+| **Manutenibilidade** | quanto custa mudar uma regra daqui a um ano? | quem vai sustentar o sistema |
+| **Escalabilidade** | até que carga precisa aguentar, com que número? | quem projeta o crescimento do negócio |
+| **Custo operacional** | quanto custa manter isso ligado todo mês? | quem paga a conta |
+
+Repare na terceira coluna: **em nenhuma linha ela é "a equipe de desenvolvimento"**. Esse é o argumento inteiro da aula, agora em forma de tabela — o atributo de qualidade é um requisito, requisito tem dono, e o dono não está na conversa técnica de vinte minutos.
+
+### Atributos brigam entre si
+
+Esta é a parte que transforma arquitetura em decisão de gestão, e não em busca da opção certa: **melhorar um atributo quase sempre piora outro**.
+
+- **Segurança custa desempenho.** Cifrar o prontuário e registrar cada acesso deixa o sistema mais lento — e é obrigatório assim mesmo;
+- **Disponibilidade custa dinheiro.** Continuar funcionando com o ERP fora do ar exige guardar uma cópia local, sincronizar depois e resolver conflito. Nada disso é grátis;
+- **Manutenibilidade custa prazo agora.** Separar em camadas atrasa a primeira entrega para baratear a décima.
+
+Como não existe a opção que ganha em tudo, alguém precisa dizer **qual atributo vale o sacrifício dos outros** — e essa pessoa é do projeto, não do time técnico.
+
+Volte à transportadora com esse vocabulário. A regra *"avisar sobre manutenção com 3 dias de antecedência"* é um requisito de **desempenho**, e um requisito folgado: uma janela de três dias tolera informação com uma hora de atraso. A equipe otimizou um atributo que ninguém tinha pedido, e pagou com **custo operacional** e **disponibilidade**, que eram justamente os apertados.
+
+> ⚠️ **Atributo sem número não é requisito, é adjetivo.** *"O sistema precisa ser rápido"* não decide nada — qualquer arquitetura atende. *"A tela do entregador precisa abrir em menos de 2 segundos numa rede 4G"* elimina metade das opções na hora. Sempre que alguém disser "escalável", "seguro" ou "robusto", a pergunta seguinte é **quanto**.
+
+> 🧩 **Onde isto reaparece:** os atributos apertados de um projeto são a lista de onde procurar **risco** (Aula 09). E a qualidade que se **mede** depois, na Aula 10, é a verificação de que estes atributos foram entregues — qualidade de produto e qualidade de processo são as duas metades da mesma preocupação.
+
+## 4. Estilos arquitetônicos
 
 Um **estilo arquitetônico** é um arranjo já conhecido, com vantagens e custos mapeados. Não se inventa arquitetura do zero — escolhe-se entre estilos e se adapta.
 
 Isso é uma boa notícia de gestão: significa que a decisão pode ser tomada **comparando opções documentadas**, e não avaliando a criatividade de quem propôs. Um estilo conhecido vem com a lista dos seus próprios defeitos, e essa lista é o que permite discutir a escolha com quem não escreve código.
 
-O mais comum é o de **camadas**: o sistema se divide em faixas horizontais, e cada uma só conversa com a vizinha.
+### Camadas
+
+O mais comum. O sistema se divide em faixas horizontais, e cada uma só conversa com a vizinha.
 
 ```mermaid
 flowchart TD
@@ -63,18 +100,90 @@ O problema aparece dois meses depois, quando a regra muda: pedido cancelado não
 
 O custo do estilo é real e precisa ser dito: cada camada acrescenta indireção, e uma alteração simples atravessa três arquivos. Em sistemas pequenos, isso é peso morto — e é por isso que a decisão é de projeto, não de dogma.
 
-> 💡 **Cliente-servidor e MVC são parentes de camadas.** O primeiro separa quem pede de quem responde; o segundo separa a tela, o modelo e quem coordena os dois. Os três resolvem a mesma família de problema: **onde a mudança dói menos**.
+### Cliente-servidor
 
-Vale conhecer mais dois estilos, porque eles aparecem nos projetos do catálogo:
+Separa **quem pede** de **quem responde**. Vários clientes diferentes conversam com um servidor que concentra as regras e os dados.
 
-| Estilo | Como funciona | Onde ele aparece aqui |
+```mermaid
+flowchart LR
+    C1[Navegador<br/>do atendente] --> S[Servidor<br/>regras e dados]
+    C2[App do<br/>entregador] --> S
+    C3[Painel da<br/>cozinha] --> S
+    S --> BD[(Banco)]
+```
+
+O ganho é que a regra vive **num lugar só**, ainda que existam três telas muito diferentes. Mudar "pedido cancelado não conta na fila" conserta as três de uma vez.
+
+O custo é que o servidor vira **ponto único de falha** e o gargalo de desempenho de todo mundo. E há um custo escondido que aparece cedo no delivery: **o cliente depende da rede**. O aplicativo do entregador, que roda na moto, precisa decidir o que fazer quando o sinal cai — e essa é uma decisão de **disponibilidade** que o estilo levanta, mas não resolve sozinho.
+
+> 💡 Não confunda **camada** (*layer*, divisão lógica de responsabilidade) com **camada física** (*tier*, divisão de onde o código executa). Cliente-servidor é uma decisão de *tier*; camadas é uma decisão de *layer*. Um sistema em três camadas lógicas pode rodar inteiro numa máquina só.
+
+### MVC
+
+Organiza a **apresentação** — mora dentro da camada de cima, e não substitui as camadas. Separa a tela, os dados e quem coordena os dois.
+
+```mermaid
+flowchart LR
+    U((Usuário)) -->|age| C[Controlador<br/>recebe a ação]
+    C -->|altera| M[Modelo<br/>dados e regras]
+    M -->|notifica| V[Visão<br/>a tela]
+    V -->|mostra| U
+```
+
+A **visão** só desenha; o **modelo** guarda dado e regra; o **controlador** recebe a ação do usuário e decide o que chamar. O valor é que a mesma informação pode ser exibida de duas formas — a lista do atendente e o painel da cozinha — **sem duplicar a regra**.
+
+O custo é o de sempre: para uma tela simples, três arquivos onde caberia um.
+
+### Repositório
+
+Os módulos não conversam entre si. Todos leem e escrevem numa base central, e é ela que os integra.
+
+```mermaid
+flowchart TD
+    R[(Base central<br/>cadastro de veículos)]
+    T[Telemetria] <--> R
+    O[Oficina] <--> R
+    V[Viagens] <--> R
+```
+
+É o que acontece no sistema de frota: telemetria, oficina e viagens compartilham o cadastro dos veículos, e nenhum precisa saber que os outros existem.
+
+O ganho é a simplicidade do compartilhamento. O custo é que **todo o risco se concentra num ponto**: o formato da base vira um contrato que ninguém pode mudar sozinho, e um problema nela para o sistema inteiro.
+
+### Orientado a eventos
+
+Um módulo anuncia que **algo aconteceu**, e quem se interessa reage. Quem anuncia não sabe quem escuta.
+
+```mermaid
+flowchart LR
+    P[Pedido confirmado] --> E{{evento publicado}}
+    E --> C[Cozinha<br/>começa a preparar]
+    E --> N[Entregador<br/>é acionado]
+    E --> A[Cliente<br/>recebe o aviso]
+```
+
+É o arranjo natural do delivery: *"pedido confirmado"* precisa acionar cozinha, entregador e cliente ao mesmo tempo, e acrescentar um quarto interessado — o financeiro, digamos — não deveria exigir mexer no código do pedido.
+
+Em troca, ele **torna difícil responder "o que aconteceu com este pedido?"**, porque a história está espalhada por quem reagiu. É preciso instrumentar o sistema para reconstruí-la — assunto da Aula 14.
+
+### O que cada estilo compra, e com o que paga
+
+Aqui os estilos encontram os atributos da seção 3. É esta tabela que permite discutir a escolha com quem não escreve código:
+
+| Estilo | Favorece | Paga com |
 |---|---|---|
-| **Repositório** | os módulos não conversam entre si; todos leem e escrevem numa base central | o sistema de frota, em que telemetria, oficina e viagens compartilham o cadastro dos veículos |
-| **Orientado a eventos** | um módulo anuncia que algo aconteceu, e quem se interessa reage | o delivery, em que "pedido confirmado" precisa acionar cozinha, entregador e cliente ao mesmo tempo |
+| **Camadas** | manutenibilidade | indireção; simples fica caro |
+| **Cliente-servidor** | consistência da regra | ponto único de falha; dependência de rede |
+| **MVC** | reúso da apresentação | mais peças para telas simples |
+| **Repositório** | integração simples | risco concentrado; formato virou contrato |
+| **Orientado a eventos** | evolução sem mexer no que existe | rastrear o que aconteceu fica difícil |
+| **Pipe and filter** | processamento em etapas trocáveis | não serve a sistema interativo |
 
-Nenhum é melhor que o outro. O repositório simplifica o compartilhamento e concentra o risco num ponto só; o orientado a eventos desacopla quem anuncia de quem reage, e em troca **torna difícil responder "o que aconteceu com este pedido?"** sem uma boa instrumentação — assunto da Aula 14.
+**Nenhum é melhor que o outro** — e a coluna do meio é o que decide. Escolher estilo é escolher **qual atributo você prefere ter**, sabendo o preço.
 
-## 4. Monolito × microsserviços, com honestidade
+> ⚠️ Estilos se **combinam**, e na prática quase sempre se combinam: o delivery é cliente-servidor por fora, em camadas por dentro do servidor, MVC na tela e orientado a eventos na confirmação do pedido. A pergunta nunca é "qual estilo é este sistema?", e sim **"que estilo resolve esta parte?"**.
+
+## 5. Monolito × microsserviços, com honestidade
 
 O **monolito** é um sistema único, implantado de uma vez. Os **microsserviços** dividem o sistema em serviços independentes, cada um implantado por conta própria.
 
@@ -90,7 +199,7 @@ O ponto que a literatura de mercado costuma omitir: **microsserviços resolvem u
 
 A linha "falha isolada" da tabela merece a ressalva que quase nunca aparece: ela só vale **se o resto do sistema souber funcionar sem aquele serviço**. Se o serviço de pagamento cai e o de pedidos simplesmente para de responder, a falha não foi isolada — foi espalhada por uma rede, que é a pior versão do problema.
 
-> ⚠️ **Microsserviço para três usuários é o exemplo canônico de decisão tomada por moda.** O teste é perguntar qual problema concreto do projeto ele resolve. Se a resposta for *"escalabilidade"* sem um número de carga esperado ao lado, a decisão não tem fundamento — e vai custar meses.
+> ⚠️ **Microsserviço para três usuários é o exemplo canônico de decisão tomada por moda.** O teste é perguntar qual problema concreto do projeto ele resolve. Se a resposta for *"escalabilidade"* sem um número de carga esperado ao lado, a decisão não tem fundamento — é o adjetivo sem número da seção 3 — e vai custar meses.
 
 Três perguntas resolvem a escolha, e nenhuma é técnica:
 
@@ -100,7 +209,7 @@ Três perguntas resolvem a escolha, e nenhuma é técnica:
 
 O caminho barato, quando há dúvida, é começar monolito **com fronteiras internas bem marcadas**. Dividir depois é trabalhoso; juntar depois é pior.
 
-## 5. Registrar a decisão: o ADR
+## 6. Registrar a decisão: o ADR
 
 Uma decisão de arquitetura que não está escrita é uma decisão que vai ser refeita — geralmente por alguém que não conhece o motivo da primeira. O registro cabe em meia página, e o formato mais usado é o **ADR** (*Architecture Decision Record*).
 
@@ -115,7 +224,7 @@ Para a transportadora:
 | **Consequências** | a informação pode estar até 1 h desatualizada, o que é irrelevante para uma janela de 3 dias; a infraestrutura cabe no orçado |
 | **Revisar se** | passar a existir regra que exija reação em minutos, como bloqueio de veículo com falha crítica |
 
-Repare que a linha **situação** carrega os números — 60 veículos, 22 com telemetria, janela de 3 dias. São eles que tornam a decisão discutível: sem a janela de 3 dias, "tempo real" e "de hora em hora" viram preferência pessoal, e a discussão não fecha.
+Repare que a linha **situação** carrega os números — 60 veículos, 22 com telemetria, janela de 3 dias. São eles que tornam a decisão discutível: sem a janela de 3 dias, "tempo real" e "de hora em hora" viram preferência pessoal, e a discussão não fecha. É o atributo de qualidade da seção 3 entrando no documento **com número**.
 
 **A linha das alternativas descartadas é o ADR.** Sem ela, o documento diz "decidimos processar em lote", que qualquer um descobre lendo o código. Com ela, quem chegar em dois anos sabe **sob quais premissas** aquilo foi decidido — e se a premissa mudou, a decisão pode ser revista com segurança em vez de por palpite.
 
@@ -127,7 +236,7 @@ Três regras de uso, que fazem a diferença entre um ADR vivo e uma pasta de doc
 - **Escrito quando a decisão é tomada**, não no fim do projeto. Reconstituir o motivo três meses depois produz uma justificativa plausível, que não é a mesma coisa que a verdadeira;
 - **Meia página.** Se passar disso, virou documento de arquitetura, que é outra coisa e ninguém lê.
 
-## 6. A decisão arquitetural é do projeto, não do time técnico
+## 7. A decisão arquitetural é do projeto, não do time técnico
 
 Volte à Aula 01: toda decisão precisa de um **A**. Decisão arquitetural também.
 
@@ -147,19 +256,19 @@ Este é o fecho do Bloco 1, e as quatro aulas contam a mesma história por ângu
 
 > 💡 **O que muda do Bloco 1 para o Bloco 2:** aqui as decisões foram tomadas por alguém com autoridade formal. A partir da Aula 05, entram os métodos que distribuem essa autoridade — e a pergunta *"quem decide?"* fica mais interessante, não menos.
 
-> 📖 O Sommerville dedica um capítulo a projeto de arquitetura, com os padrões arquiteturais clássicos — camadas, repositório, cliente-servidor e *pipe and filter* — e a discussão de quando cada um se aplica. O Guia PMBOK trata do registro de decisões e premissas na área de integração.
+> 📖 O Sommerville dedica um capítulo a projeto de arquitetura, com os padrões arquiteturais clássicos — camadas, repositório, cliente-servidor e *pipe and filter* — e a discussão de quando cada um se aplica. O mesmo livro trata os atributos de qualidade como os requisitos que dirigem a arquitetura. O Guia PMBOK trata do registro de decisões e premissas na área de integração.
 
 ## 🏋️ Exercícios da aula
 
 Na pasta `aula-04/` do seu repositório:
 
-1. **`ex01.md`** — classifique cada decisão em **arquitetural** ou **não**, aplicando o teste do custo de reverter: (a) usar o mesmo banco para prontuário e dados administrativos; (b) adotar a biblioteca X para gerar PDF; (c) o sistema continuar operando com o ERP fora do ar; (d) padronizar o nome dos arquivos de log; (e) dividir o sistema em dois serviços implantados separadamente; (f) trocar a fonte da interface. *Confere assim: três de cada, e nenhuma das arquiteturais é o nome de uma tecnologia.*
+1. **`ex01.md`** — classifique cada decisão em **arquitetural** ou **não**, aplicando o teste do custo de reverter: (a) usar o mesmo banco para prontuário e dados administrativos; (b) adotar a biblioteca X para gerar PDF; (c) o sistema continuar operando com o ERP fora do ar; (d) padronizar o nome dos arquivos de log; (e) dividir o sistema em dois serviços implantados separadamente; (f) trocar a fonte da interface; (g) guardar o pedido no aparelho do entregador enquanto não houver sinal, e sincronizar depois; (h) adotar um padrão de indentação para todo o código do projeto. Para cada uma das arquiteturais, **nomeie o atributo de qualidade** que está em jogo. *Confere assim: quatro de cada, nenhuma das arquiteturais é o nome de uma tecnologia, e os atributos que você nomeou aparecem na tabela da seção 3.*
 
 2. **`ex02.md`** — desenhe em Mermaid a arquitetura em **camadas** do sistema de [delivery de restaurante](../../recursos/projetos-para-praticar.md#5-delivery-de-restaurante-do-bairro), com as três camadas e o banco. Abaixo do diagrama, escreva a regra que o estilo impõe e **um exemplo concreto de violação** que apareceria nesse sistema. *Confere assim: a violação precisa ser algo que alguém faria por atalho — se ela parecer absurda, você não achou a tentação real.*
 
 3. **`ex03.md`** — uma equipe de 3 pessoas propõe microsserviços para o [marketplace de serviços autônomos](../../recursos/projetos-para-praticar.md#9-marketplace-de-serviços-autônomos), alegando escalabilidade. Escreva a resposta que você daria como gerente, contendo: a pergunta que você faria antes de decidir, o custo que a proposta traz e a condição em que ela passaria a fazer sentido. *Confere assim: sua resposta não pode ser "não" — precisa nomear o que faltou na proposta para que ela pudesse ser avaliada.*
 
-4. **`ex04.md`** — escreva o **ADR** da decisão sobre onde guardar o prontuário da [clínica-escola](../../recursos/projetos-para-praticar.md#10-prontuário-de-clínica-escola): no mesmo banco dos dados administrativos ou em um separado. Use as seis linhas do modelo da seção 5, com **ao menos duas alternativas descartadas**. *Confere assim: a linha "revisar se" precisa nomear uma mudança de premissa verificável, e a linha "consequências" precisa conter ao menos uma consequência ruim — decisão sem custo é decisão mal analisada.*
+4. **`ex04.md`** — escreva o **ADR** da decisão sobre onde guardar o prontuário da [clínica-escola](../../recursos/projetos-para-praticar.md#10-prontuário-de-clínica-escola): no mesmo banco dos dados administrativos ou em um separado. Use as seis linhas do modelo da seção 6, com **ao menos duas alternativas descartadas**. *Confere assim: a linha "revisar se" precisa nomear uma mudança de premissa verificável, e a linha "consequências" precisa conter ao menos uma consequência ruim — decisão sem custo é decisão mal analisada.*
 
 5. **`ex05.md`** — 🌶️ **Desafio.** Você é o gerente do projeto da transportadora. A equipe técnica insiste no processamento em tempo real; o gestor de frota não entende a diferença; a diretoria só quer o número da economia. **Escreva a comunicação da decisão** — meia página, endereçada aos três — contendo: (i) a decisão e a restrição do projeto que a determinou; (ii) a consequência traduzida para cada um dos três públicos, na linguagem de cada um; (iii) **o que se perde** com a escolha, dito antes que alguém descubra. *Confere assim: se o mesmo parágrafo servir para os três leitores, você escreveu um comunicado e não uma comunicação — o gestor de frota e a diretoria não precisam saber as mesmas coisas.*
 

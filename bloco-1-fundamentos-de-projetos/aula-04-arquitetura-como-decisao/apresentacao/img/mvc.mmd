@@ -1,0 +1,31 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 52
+    padding: 16
+---
+flowchart LR
+    U(("Usuário"))
+    C["CONTROLADOR<br/>recebe a ação"]
+    M["MODELO<br/>dados e regras"]
+    V["VISÃO<br/>a tela"]
+
+    U -- "age" --> C
+    C -- "altera" --> M
+    M -- "notifica" --> V
+    V -- "mostra" --> U
+
+    classDef caixa fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef ator fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class C,M,V caixa
+    class U ator
+    linkStyle default stroke:#0f766e,stroke-width:3.5px
