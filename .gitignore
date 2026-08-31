@@ -8,6 +8,10 @@ docs/
 # Esta linha existe para o caso de uma cópia local aparecer por engano.
 gabaritos/
 
+respostas/
+
+recursos/notas/
+
 # Arquivos temporários de ferramentas de modelagem
 *.drawio.bkp
 *.puml.bak
