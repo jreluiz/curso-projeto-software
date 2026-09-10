@@ -1,0 +1,34 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 50
+    padding: 16
+    wrappingWidth: 400
+---
+flowchart LR
+    P1["PRINCÍPIO 1<br/>entregar cedo<br/>e com frequência"]
+    P9["PRINCÍPIO 9<br/>atenção contínua à<br/>excelência técnica"]
+    D{"sob<br/>pressão"}
+    R["O MANIFESTO<br/>NÃO RESOLVE<br/>———<br/>é decisão de projeto,<br/>caso a caso,<br/>e alguém assina"]
+
+    P1 --> D
+    P9 --> D
+    D --> R
+
+    classDef princ fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef tens fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    classDef fim fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class P1,P9 princ
+    class D tens
+    class R fim
+    linkStyle 0,1 stroke:#b02a1c,stroke-width:3.5px
+    linkStyle 2 stroke:#0f766e,stroke-width:3.5px

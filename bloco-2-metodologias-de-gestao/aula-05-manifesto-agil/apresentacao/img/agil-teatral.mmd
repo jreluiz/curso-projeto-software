@@ -1,0 +1,32 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 55
+    padding: 16
+    wrappingWidth: 520
+---
+flowchart TD
+    O["A ORGANIZAÇÃO<br/>quer o resultado<br/>do ágil"]
+    B["ADOTOU — é barato<br/>———<br/>sprint, reunião diária,<br/>retrospectiva, quadro"]
+    C["NÃO ADOTOU — é caro<br/>———<br/>mudar contrato,<br/>expectativa da diretoria,<br/>cliente disponível"]
+
+    O --> B
+    O --> C
+
+    classDef org fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef fez fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef naofez fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    class O org
+    class B fez
+    class C naofez
+    linkStyle 0 stroke:#0f766e,stroke-width:3.5px
+    linkStyle 1 stroke:#b02a1c,stroke-width:3.5px

@@ -20,6 +20,8 @@ footer: '🏗️ Curso de Projeto de Software · Aula 05'
 
 ## 🎯 Nesta aula
 
+Abre o Bloco 2. Até aqui, decisões tomadas por quem tinha autoridade formal; a partir de agora, os métodos que **distribuem** essa autoridade.
+
 1. De onde **veio** o Manifesto
 2. Os quatro **valores**, um a um
 3. O que o Manifesto **não diz**
@@ -31,25 +33,43 @@ footer: '🏗️ Curso de Projeto de Software · Aula 05'
 
 ## Utah, 2001
 
-Dezessete pessoas numa estação de esqui. Nenhuma queria criar um método — todas já tinham o seu, e concorriam entre si.
+Dezessete pessoas numa estação de esqui. **Nenhuma queria criar um método** — todas já tinham o seu, e concorriam entre si.
 
-Procuravam o que os métodos tinham **em comum**.
+O que procuravam era o que os métodos tinham **em comum**.
 
-O que saiu de lá tem **68 palavras**. Não é método, não é processo, não tem instruções.
+O que saiu de lá tem **68 palavras**. Não é método, não é processo, não tem instruções: é uma **declaração de preferência** entre coisas que continuam todas valendo.
+
+---
+
+## Uma reação a um contexto
+
+Em 2001, projetos de software eram conduzidos com **meses de levantamento antes da primeira linha de código**, e a taxa de fracasso era pública e alta.
+
+Vinte e cinco anos depois o contexto mudou de novo: hoje é raro alguém defender meses de levantamento, e o excesso oposto — **nenhum planejamento, nenhum registro** — ficou comum.
+
+> ⚠️ Um documento escrito **contra um exagero** costuma ser usado para justificar **o exagero contrário**.
 
 ---
 
 <!-- _class: lead -->
 
+## São 68 palavras
+
+Leia o original antes de aceitar
+qualquer interpretação:
+
+**agilemanifesto.org/iso/ptbr**
+
+Praticamente tudo que se atribui
+ao Manifesto **não está escrito nele**.
+
+---
+
 ## Os quatro valores
 
-**Indivíduos e interações** *mais que* processos e ferramentas
+![w:1000](img/quatro-valores.svg)
 
-**Software em funcionamento** *mais que* documentação abrangente
-
-**Colaboração com o cliente** *mais que* negociação de contratos
-
-**Responder a mudanças** *mais que* seguir um plano
+Os da esquerda são os **preferidos**. Os da direita **continuam valendo** — e é a frase seguinte do documento que deixa isso explícito.
 
 ---
 
@@ -57,31 +77,63 @@ O que saiu de lá tem **68 palavras**. Não é método, não é processo, não t
 
 > *"Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda."*
 
-Os quatro valores **não são negações**. São preferências para quando os dois lados **competem**.
+Essa frase muda tudo. Os quatro valores **não são negações**: são **preferências para quando os dois lados competem**.
 
-Na maior parte do tempo eles não competem — e aí o valor não diz nada.
+E na maior parte do tempo eles **não competem**.
 
 ---
 
+## Quando o valor entra em cena
+
+![w:760](img/quando-competem.svg)
+
+Documentar a decisão de arquitetura da Aula 04 **não atrasa nada** e não disputa com software funcionando. Ali o valor simplesmente não opina.
+
+---
+
+<!-- _class: tabela-densa -->
+
 ## Traduzindo para segunda-feira
 
-| Valor | O que ele decide |
+| Valor | O que ele decide na prática |
 |---|---|
-| Indivíduos e interações | o processo que atrapalha a conversa, muda |
-| Software em funcionamento | entre documentar mais e entregar, entrega-se |
-| Colaboração com o cliente | conversa-se antes de invocar a cláusula |
-| Responder a mudanças | o plano cede — e é **replanejado**, não abandonado |
+| **Indivíduos e interações** | quando o processo atrapalha a conversa que resolveria o problema, muda-se o processo |
+| **Software em funcionamento** | entre documentar mais e entregar algo utilizável, entrega-se |
+| **Colaboração com o cliente** | quando o contrato permite dizer "não estava no escopo", conversa-se antes de invocá-lo |
+| **Responder a mudanças** | quando a realidade contradiz o plano, o plano cede — e é **replanejado**, não abandonado |
+
+---
+
+## ⚠️ O item da direita continua valendo
+
+Processo, documentação, contrato e plano **não são inimigos**. O Manifesto diz que eles **servem ao resultado**, e não o contrário.
+
+Os quatro valores só entram **no momento da escolha**. Fora dele, não dizem nada.
+
+> ⚠️ Um time que não escreve nada e cita o Manifesto está citando **um documento que ele não leu**.
 
 ---
 
 ## O que o Manifesto NÃO diz
 
-- que documentação é desperdício;
-- que não se planeja;
-- que contrato não importa;
-- **Scrum, sprint, story point, reunião diária** — nada disso está lá;
-- que serve para todo projeto;
-- **nada sobre estimativa, prazo ou orçamento.**
+- **não** diz que documentação é desperdício;
+- **não** diz que não se planeja;
+- **não** diz que contrato não importa;
+- **não** menciona Scrum, Kanban, sprint, *story point* nem reunião diária;
+- **não** diz que serve para todo projeto;
+- **não** diz nada sobre estimativa, prazo ou orçamento.
+
+Tudo isso é atribuído a ele. **Nada disso está nas 68 palavras.**
+
+---
+
+## O mal-entendido mais caro
+
+A última da lista merece atenção, porque custa dinheiro: times que concluem, do Manifesto, que **não devem estimar**.
+
+O documento simplesmente **não trata do assunto**.
+
+E o cliente que paga continua precisando saber, **com alguma margem, quando terá o que pediu**. Isso continua sendo responsabilidade de alguém, com ou sem Manifesto.
 
 ---
 
@@ -91,7 +143,6 @@ Na maior parte do tempo eles não competem — e aí o valor não diz nada.
 
 Quando alguém disser
 *"o ágil diz que X"*,
-
 procure X nos quatro valores.
 
 Se X não aparecer de um dos lados
@@ -100,41 +151,115 @@ de um "mais que", **não é o Manifesto** —
 
 ---
 
-<!-- _class: tabela-densa -->
+## Doze princípios decoram-se mal
 
-## Os doze princípios, agrupados
+Os princípios são **mais úteis que os valores**, porque dizem o que fazer. Mas são doze, e ninguém guarda doze.
 
-| Grupo | O que pedem |
-|---|---|
-| **Entrega** (1, 3, 7) | entregar cedo, com frequência; medir por software funcionando |
-| **Mudança** (2) | aceitar mudança mesmo tarde, como vantagem competitiva |
-| **Pessoas** (4, 5, 6, 11) | negócio e desenvolvimento juntos; times auto-organizáveis |
-| **Sustentabilidade** (8, 9, 10) | ritmo constante, excelência técnica, simplicidade |
-| **Melhoria** (12) | refletir e **se ajustar** em intervalos regulares |
+Agrupados por **o que eles decidem**, cabem na cabeça — e a vantagem é prática: dá para perguntar a um time **por grupo**, em vez de por princípio.
+
+Um time que entrega com frequência e **nunca se ajusta** cumpre o primeiro grupo e ignora o último.
 
 ---
 
-## Os dois mais ignorados
+## Os cinco grupos
 
-**Princípio 10 — simplicidade, a arte de maximizar o trabalho não realizado.**
-É o único que fala em **não fazer**. Numa reunião em que todos acrescentam, é a única frase que ampara quem propõe tirar.
+![w:1140](img/doze-principios.svg)
 
-**Princípio 8 — ritmo constante e sustentável.**
-Três iterações seguidas em esforço extra violam um princípio ágil, com todas as cerimônias cumpridas.
+Cinco perguntas em vez de doze frases. É esse agrupamento que o `ex03` cobra: escolher **o grupo de que o marketplace mais precisa**, e justificar.
+
+---
+
+<!-- _class: tabela-densa -->
+
+## Os doze, na íntegra — 1 a 6
+
+| # | Princípio |
+|:---:|---|
+| 1 | Satisfazer o cliente com entrega **contínua e adiantada** de software de valor |
+| 2 | **Aceitar mudanças** de requisitos, mesmo tarde, em favor da vantagem competitiva |
+| 3 | Entregar software funcionando **com frequência**, da quinzena ao mês |
+| 4 | Pessoas de **negócio e desenvolvimento** trabalhando juntas, diariamente |
+| 5 | Construir projetos em torno de **indivíduos motivados** — e **confiar** neles |
+| 6 | A **conversa cara a cara** é o meio mais eficiente de transmitir informação |
+
+---
+
+<!-- _class: tabela-densa -->
+
+## Os doze, na íntegra — 7 a 12
+
+| # | Princípio |
+|:---:|---|
+| 7 | **Software funcionando** é a medida primária de progresso |
+| 8 | Promover **desenvolvimento sustentável**: manter indefinidamente um ritmo constante |
+| 9 | Atenção contínua à **excelência técnica** e a bom projeto aumenta a agilidade |
+| 10 | **Simplicidade** — a arte de maximizar a quantidade de trabalho **não** realizado |
+| 11 | As melhores arquiteturas e requisitos emergem de **times auto-organizáveis** |
+| 12 | Em intervalos regulares, o time **reflete** sobre como ficar mais efetivo e **se ajusta** |
+
+---
+
+## Princípio 10 — o único que fala em não fazer
+
+> *"Simplicidade — a arte de maximizar a quantidade de trabalho **não** realizado."*
+
+É o princípio que **autoriza cortar escopo**.
+
+Numa reunião em que todo mundo propõe acréscimos, ele é **a única frase do Manifesto que ampara quem propõe tirar**.
+
+---
+
+## Princípio 8 — ritmo constante
+
+> *"Promover desenvolvimento sustentável: manter **indefinidamente** um ritmo constante."*
+
+A palavra que carrega o princípio é *indefinidamente*.
+
+Um time que entrega em **regime de esforço extra três iterações seguidas** está violando um princípio ágil — ainda que cumpra todas as cerimônias.
+
+---
+
+## E dois deles se contradizem
+
+![w:1000](img/tensao-1-9.svg)
+
+Entregar mais rápido custa qualidade interna; cuidar da qualidade interna custa velocidade agora. O Manifesto **não resolve, e não deveria**.
+
+---
+
+## ⚠️ O princípio 2 é o mais citado fora de contexto
+
+*"Aceitar mudanças de requisitos, mesmo tarde"* **não significa aceitar sem replanejar**.
+
+A Aula 01 mostrou que é exatamente isso que estoura prazo: a mudança entra, e nada sai nem se move.
+
+> ⚠️ Aceitar mudança é uma **decisão consciente com custo declarado**, não um reflexo.
 
 ---
 
 ## Ágil não é ausência de processo
 
-```
-   DIRIGIDO A PLANO     decide muito ─▶ executa muito ─▶ revisa pouco
+Um time ágil **tem processo**. Ele é diferente — **curto, revisado com frequência e definido pelo próprio time** —, mas existe, é explícito e é seguido.
 
-   ÁGIL                 decide pouco ─▶ executa pouco ─▶ revisa
-                             ▲                             │
-                             └─────────────────────────────┘
-```
+O que muda não é a **quantidade** de processo. É **quando as decisões são tomadas**.
 
-O ciclo da direita **não decide menos** — decide em pedaços menores e mais vezes. Isso exige **mais** rigor.
+---
+
+## Onde as decisões são tomadas
+
+![w:900](img/plano-vs-agil.svg)
+
+O ciclo de baixo **não decide menos no total** — decide em pedaços menores e mais vezes. Isso exige **mais** rigor, não menos.
+
+---
+
+## Decidir muitas vezes cansa
+
+É o custo que o entusiasmo esconde. Um ciclo de duas semanas obriga a **repriorizar 26 vezes por ano**, e cada repriorização exige alguém informado e com autoridade.
+
+Onde essa pessoa não existe, o ciclo curto **não produz adaptação** — produz um backlog que ninguém ordena.
+
+> 💡 É a mesma discussão da Aula 02 com outro nome: o Manifesto é a **defesa argumentada da ponta adaptativa**.
 
 ---
 
@@ -153,28 +278,38 @@ na parte visível.
 
 ---
 
+<!-- _class: tabela-densa -->
+
 ## O ágil teatral
 
-| Sinal | O que é de verdade |
+| Sinal | O que está acontecendo de verdade |
 |---|---|
-| Sprints que são fases | cascata com nomes novos |
-| Daily em que cada um presta contas ao gerente | reunião de status |
-| Backlog que ninguém prioriza | não há quem responda pelo valor |
-| Retrospectiva que nunca muda nada | ritual de desabafo |
-| Time "auto-organizável" que não decide nada | princípio 11 sem autoridade |
+| Sprints que são fases: levantar, desenhar, construir, testar | cascata com nomes novos, e o risco continua no fim |
+| Reunião diária em que cada um presta contas ao gerente | reunião de status, não sincronização do time |
+| Backlog que ninguém prioriza, e tudo é urgente | não há quem responda pelo valor — ver Aula 07 |
+| Retrospectiva que nunca muda nada | ritual de desabafo; o princípio 12 pede ajuste |
+| Time "auto-organizável" que não pode decidir nada | o princípio 11 sem a autoridade que o torna possível |
+
+---
+
+## O barato e o caro
+
+![w:580](img/agil-teatral.svg)
+
+**Nenhum desses times age de má-fé.** Todos adotaram a parte visível — e não a que exige mudar contrato, expectativa da diretoria e disponibilidade do cliente.
 
 ---
 
 ## O que dá para adotar sob contrato fechado
 
-Nem tudo depende de escopo aberto:
+**A organização quer o resultado do ágil e não pode pagar as condições dele.** A resposta profissional não é fingir — é dizer o que dá, porque nem tudo depende de escopo aberto:
 
-- **entregar em incrementos utilizáveis**;
-- **reunião curta e diária** — do time, não para o chefe;
+- **entregar em incrementos utilizáveis**, mesmo com o escopo total fechado;
+- **reunião curta e diária de sincronização** — do time, não para o chefe;
 - **retrospectiva a cada marco**, com uma mudança concreta saindo dela;
-- **limite de trabalho em andamento**.
+- **limite de trabalho em andamento**, que independe de metodologia.
 
-A resposta profissional não é fingir: é dizer **o que dá e o que não dá**.
+> ⚠️ Um contrato público com escopo em edital **não vira adaptativo por decisão do time** — e prometer adaptação cobrando previsibilidade é o teatro mais caro.
 
 ---
 

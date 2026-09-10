@@ -1,0 +1,27 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 24
+    rankSpacing: 24
+    padding: 14
+    wrappingWidth: 400
+---
+flowchart LR
+    G1["ENTREGA<br/>1 · 3 · 7<br/>———<br/>cedo e com<br/>frequência,<br/>medindo pelo<br/>que funciona"]
+    G2["MUDANÇA<br/>2<br/>———<br/>aceitar mesmo<br/>tarde, como<br/>vantagem<br/>competitiva"]
+    G3["PESSOAS<br/>4 · 5 · 6 · 11<br/>———<br/>negócio e dev<br/>juntos, cara<br/>a cara, e<br/>auto-organizar"]
+    G4["SUSTENTABILIDADE<br/>8 · 9 · 10<br/>———<br/>ritmo constante,<br/>excelência<br/>técnica,<br/>simplicidade"]
+    G5["MELHORIA<br/>12<br/>———<br/>refletir e<br/>SE AJUSTAR<br/>em intervalos<br/>regulares"]
+
+    G1 ~~~ G2 ~~~ G3 ~~~ G4 ~~~ G5
+
+    classDef grupo fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    class G1,G2,G3,G4,G5 grupo

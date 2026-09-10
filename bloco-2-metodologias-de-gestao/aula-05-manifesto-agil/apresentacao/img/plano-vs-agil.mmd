@@ -1,0 +1,36 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 44
+    padding: 16
+    wrappingWidth: 400
+---
+flowchart LR
+    P0["DIRIGIDO<br/>A PLANO"]
+    P1["decide<br/>MUITO"]
+    P2["executa<br/>MUITO"]
+    P3["revisa<br/>pouco"]
+    A0["ÁGIL"]
+    A1["decide<br/>pouco"]
+    A2["executa<br/>pouco"]
+    A3["revisa"]
+
+    P0 --> P1 --> P2 --> P3
+    A0 --> A1 --> A2 --> A3
+    A3 -- "e repete" --> A1
+
+    classDef rot fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef caixa fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    class P0,A0 rot
+    class P1,P2,P3,A1,A2,A3 caixa
+    linkStyle 0,1,2,3,4,5 stroke:#0f766e,stroke-width:3px
+    linkStyle 6 stroke:#b02a1c,stroke-width:4px
