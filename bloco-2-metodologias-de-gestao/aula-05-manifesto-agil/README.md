@@ -1,4 +1,4 @@
-# Aula 05 — O Manifesto Ágil, lido devagar
+# Aula 05 — O Manifesto Ágil
 
 > 🎯 Objetivos: interpretar os quatro valores do Manifesto sem os slogans, agrupar os doze princípios pelo que eles decidem, e reconhecer o time que usa o vocabulário ágil sem ter mudado nada.
 > 🎬 Slides da aula: [apresentacao-05-manifesto-agil.pdf](apresentacao/apresentacao-05-manifesto-agil.pdf)
