@@ -1,0 +1,35 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 44
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    M["a velocidade<br/>vira META"]
+    E["o time passa a<br/>estimar mais alto"]
+    N["a velocidade<br/>SOBE"]
+    G["o gráfico<br/>MELHORA"]
+    P["o produto<br/>NÃO ANDA"]
+
+    M --> E --> N --> G
+    E -- "entrega o mesmo" --> P
+
+    classDef passo fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef ilusao fill:#fdfdfb,stroke:#0f766e,stroke-width:2px,color:#1a1a1a
+    classDef real fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    class M,E passo
+    class N,G ilusao
+    class P real
+    linkStyle 0,1,2 stroke:#0f766e,stroke-width:3px
+    linkStyle 3 stroke:#b02a1c,stroke-width:3.5px

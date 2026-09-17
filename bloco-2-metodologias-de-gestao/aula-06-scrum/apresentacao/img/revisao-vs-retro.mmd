@@ -1,0 +1,29 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 40
+    rankSpacing: 50
+    padding: 16
+    wrappingWidth: 600
+---
+flowchart TD
+    F["FIM DA SPRINT — dois eventos, duas lentes"]
+    RV["REVISÃO<br/>———<br/>olha o PRODUTO<br/>aberta aos interessados<br/>vira ajuste no BACKLOG"]
+    RT["RETROSPECTIVA<br/>———<br/>olha o PROCESSO<br/>só o time na sala<br/>vira ajuste no TRABALHO"]
+    F --> RV
+    F --> RT
+
+    classDef topo fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef ev fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    class F topo
+    class RV,RT ev
+    linkStyle default stroke:#0f766e,stroke-width:3.5px

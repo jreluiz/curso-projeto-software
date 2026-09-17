@@ -1,0 +1,27 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 60
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    A1["PRODUCT BACKLOG<br/>tudo o que se quer, ordenado"] -- "compromisso" --> C1["META DO PRODUTO<br/>o objetivo de longo prazo"]
+    A2["SPRINT BACKLOG<br/>o que o time puxou, e o plano"] -- "compromisso" --> C2["META DA SPRINT<br/>o porquê desta Sprint"]
+    A3["INCREMENTO<br/>o resultado utilizável"] -- "compromisso" --> C3["DEFINIÇÃO DE PRONTO<br/>o que 'terminado' significa"]
+
+    classDef art fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef comp fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class A1,A2,A3 art
+    class C1,C2,C3 comp
+    linkStyle default stroke:#0f766e,stroke-width:3px

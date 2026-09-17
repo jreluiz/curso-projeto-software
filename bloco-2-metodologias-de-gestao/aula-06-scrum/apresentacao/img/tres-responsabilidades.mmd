@@ -1,0 +1,25 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 28
+    rankSpacing: 28
+    padding: 16
+    wrappingWidth: 600
+---
+flowchart LR
+    PO["PRODUCT OWNER<br/>———<br/>decide O QUÊ<br/>e em que ordem<br/>———<br/>não decide COMO"]
+    SM["SCRUM MASTER<br/>———<br/>cuida do PROCESSO<br/>remove impedimento<br/>———<br/>não decide O QUÊ"]
+    DV["DESENVOLVEDORES<br/>———<br/>decidem COMO SE FAZ<br/>e QUANTO CABE<br/>———<br/>escopo não é imposto"]
+    PO ~~~ SM ~~~ DV
+
+    classDef papel fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    class PO,SM,DV papel

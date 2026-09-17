@@ -1,0 +1,35 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 34
+    rankSpacing: 40
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    PL["PLANEJAMENTO<br/>puxa do backlog"]
+    S["SPRINT<br/>1 a 4 semanas"]
+    D(["DAILY<br/>15 min"])
+    RV["REVISÃO<br/>o produto"]
+    RT["RETROSPECTIVA<br/>o processo"]
+
+    PL --> S --> RV --> RT
+    S -- "todo dia" --> D
+    D --> S
+    RT -- "próxima Sprint" --> PL
+
+    classDef ev fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef sp fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class PL,RV,RT,D ev
+    class S sp
+    linkStyle 0,1,2,3,4 stroke:#0f766e,stroke-width:3px
+    linkStyle 5 stroke:#b02a1c,stroke-width:4px

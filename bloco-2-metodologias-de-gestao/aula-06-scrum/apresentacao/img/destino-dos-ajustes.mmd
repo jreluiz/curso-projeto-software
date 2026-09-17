@@ -1,0 +1,36 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 26
+    rankSpacing: 70
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    RV["REVISÃO<br/>a portaria: falta buscar por data"]
+    RT["RETROSPECTIVA<br/>dois itens parados na revisão"]
+    SA["SPRINT ATUAL<br/>protegida de escopo novo"]
+    PB["PRODUCT BACKLOG<br/>o PO decide onde entra"]
+    NX["PRÓXIMA SPRINT<br/>com o ajuste já em vigor"]
+
+    RV -. "NÃO entra" .-> SA
+    RV --> PB
+    RT --> NX
+
+    classDef ev fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef ok fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef nao fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    class RV,RT ev
+    class PB,NX ok
+    class SA nao
+    linkStyle 0 stroke:#b02a1c,stroke-width:3px
+    linkStyle 1,2 stroke:#0f766e,stroke-width:3.5px
