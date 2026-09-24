@@ -10,7 +10,7 @@
 - [ ] **03/09** · Aula 04 — [Arquitetura como decisão de projeto](bloco-1-fundamentos-de-projetos/aula-04-arquitetura-como-decisao/README.md) · fecha o Bloco 1
 - [ ] **10/09** · Aula 05 — [O Manifesto Ágil, lido devagar](bloco-2-metodologias-de-gestao/aula-05-manifesto-agil/README.md)
 - [ ] **17/09** · Aula 06 — [Scrum](bloco-2-metodologias-de-gestao/aula-06-scrum/README.md)
-- [ ] **24/09** · 🧠 **Revisão geral para a avaliação** — revisões das Aulas 01–06
+- [ ] **24/09** · 🧠 **Revisão geral para a avaliação** — [10 questões das Aulas 02 a 06](recursos/revisao-geral-aulas-02-a-06.md) · revisões das Aulas 01–06
 - [ ] **01/10** · 📝 **Avaliação Oficial — 1º bimestre** · Aulas 01 a 06
 
 > 🗓️ Semana de avaliação: **28/09 a 02/10**. Notas do 1º bimestre lançadas até **09/10**.
