@@ -1,15 +1,5 @@
 # Revisão geral — Aulas 02 a 06
 
-> 🎯 10 questões que juntam o que foi visto de [ciclos de vida](../bloco-1-fundamentos-de-projetos/aula-02-ciclos-de-vida/README.md) até [Scrum](../bloco-2-metodologias-de-gestao/aula-06-scrum/README.md). Só uma alternativa está correta em cada uma.
-
-**Sem gabarito, de propósito.** Cada questão termina com as seções das aulas onde a resposta está. Responda **tudo primeiro**, sem consultar. Só depois volte às seções indicadas e corrija.
-
-As duas últimas são marcadas **[ENADE]**: trazem um **texto-base** com uma situação de projeto antes do comando, como as três últimas de cada formulário.
-
-Várias questões misturam duas ou três ideias numa situação só. Se errar uma delas, descubra **qual** parte da situação te enganou: é isso que vale a pena revisar.
-
----
-
 ### R-01
 
 Um projeto tem o escopo fechado em edital e será entregue em quatro partes utilizáveis, cada uma acrescentando ao que já está no ar. Segundo a aula, esse projeto:
