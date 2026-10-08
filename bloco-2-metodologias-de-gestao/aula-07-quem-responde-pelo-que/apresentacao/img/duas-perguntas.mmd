@@ -1,0 +1,34 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 24
+    rankSpacing: 44
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    SEG["MESMA<br/>SEGUNDA-FEIRA"]
+    P1["a disputa entra antes ou<br/>depois do pagamento retido?"]
+    P2["a reserva acaba em quatro<br/>meses — o que se faz?"]
+    V["pergunta de VALOR<br/>o que vale mais a pena<br/>construir agora"]
+    E["pergunta de ENTREGA<br/>prazo, custo, risco<br/>e quem precisa saber"]
+
+    SEG --> P1 --> V
+    SEG --> P2 --> E
+
+    classDef dia fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef perg fill:#fdfdfb,stroke:#0f766e,stroke-width:2px,color:#1a1a1a
+    classDef nat fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    class SEG dia
+    class P1,P2 perg
+    class V,E nat
+    linkStyle default stroke:#0f766e,stroke-width:3px

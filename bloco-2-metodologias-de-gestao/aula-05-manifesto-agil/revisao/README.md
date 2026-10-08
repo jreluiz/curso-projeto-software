@@ -8,6 +8,8 @@
 
 Leia as 8 questões aqui e decida suas respostas antes de abrir o formulário: é **uma resposta por aluno**, com conta Google, e não dá para editar depois de enviar. Ele também pede seu usuário do GitHub. Se o seu nome não estiver na lista da turma, marque a última opção e escreva o nome completo no campo seguinte.
 
+✅ **Gabarito comentado:** na [pasta de gabaritos no Google Drive](https://drive.google.com/drive/folders/19K2tPIUy5A0U5yHnWhpz-TGBPxK5gK-M), o arquivo `curso-projeto-software-aula-05-gabarito.pdf` — só depois de enviar o formulário.
+
 As três últimas são marcadas **[ENADE]**: trazem um **texto-base** com uma situação de projeto, seguido do comando. São mais longas de ler e cobram interpretação, não memória — as alternativas continuam simples, como nas demais.
 
 ---

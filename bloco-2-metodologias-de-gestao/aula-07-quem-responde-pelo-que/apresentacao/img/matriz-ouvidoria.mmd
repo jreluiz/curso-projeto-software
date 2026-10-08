@@ -1,0 +1,43 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    quadrant1Fill: "#cfe6e2"
+    quadrant2Fill: "#e7f2f0"
+    quadrant3Fill: "#f6f4ef"
+    quadrant4Fill: "#e7f2f0"
+    quadrant1TextFill: "#0f766e"
+    quadrant2TextFill: "#0f766e"
+    quadrant3TextFill: "#0f766e"
+    quadrant4TextFill: "#0f766e"
+    quadrantPointFill: "#0f766e"
+    quadrantPointTextFill: "#1a1a1a"
+    quadrantXAxisTextFill: "#5c5c5c"
+    quadrantYAxisTextFill: "#5c5c5c"
+    quadrantInternalBorderStrokeFill: "#0f766e"
+    quadrantExternalBorderStrokeFill: "#0f766e"
+  quadrantChart:
+    chartWidth: 1100
+    chartHeight: 390
+    quadrantLabelFontSize: 24
+    pointLabelFontSize: 22
+    xAxisLabelFontSize: 20
+    yAxisLabelFontSize: 20
+    pointRadius: 9
+    pointTextPadding: 16
+    quadrantPadding: 6
+    xAxisPosition: bottom
+---
+quadrantChart
+    x-axis "interesse baixo" --> "interesse alto"
+    y-axis "poder baixo" --> "poder alto"
+    quadrant-1 GERENCIAR DE PERTO
+    quadrant-2 MANTER SATISFEITO
+    quadrant-3 MONITORAR
+    quadrant-4 MANTER INFORMADO
+    Secretário de Governo: [0.62, 0.84]
+    Secretário do órgão que atrasa: [0.78, 0.66] color: #b02a1c, radius: 11
+    Controladoria: [0.22, 0.74]
+    Ouvidor-geral: [0.68, 0.32]
+    Cidadão: [0.86, 0.12]

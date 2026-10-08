@@ -1,0 +1,37 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 18
+    rankSpacing: 56
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    X["INSISTIR<br/>em reuniões que<br/>ele não atende"]
+    S["STAKEHOLDER<br/>QUE NÃO VAI<br/>APARECER<br/>———<br/>o supervisor<br/>da empresa"]
+    S1["SUBSTITUIR A FONTE<br/>alguém de dentro que saiba"]
+    S2["REDUZIR O QUE SE PEDE<br/>um clique num link"]
+    S3["ASSUMIR E REGISTRAR<br/>a premissa escrita"]
+
+    X -. "não é saída" .- S
+    S --> S1
+    S --> S2
+    S --> S3
+
+    classDef topo fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef ok fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef nao fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    class S topo
+    class S1,S2,S3 ok
+    class X nao
+    linkStyle 0 stroke:#b02a1c,stroke-width:3px
+    linkStyle 1,2,3 stroke:#0f766e,stroke-width:3px

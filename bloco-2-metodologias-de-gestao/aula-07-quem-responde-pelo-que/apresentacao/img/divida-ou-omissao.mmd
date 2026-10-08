@@ -1,0 +1,38 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 30
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    Q["o time entrega item<br/>FORA DA DEFINIÇÃO<br/>DE PRONTO"]
+    DT["DÍVIDA TÉCNICA<br/>decisão legítima,<br/>com dono — Aula 14"]
+    SN["SEM NOME<br/>um projeto que parecia<br/>ter cabido no prazo"]
+
+    R1["de propósito,<br/>com registro"]
+    R2["por omissão,<br/>sem ninguém decidir"]
+
+    Q --- R1 --> DT
+    Q -.- R2 -.-> SN
+
+    classDef ponto fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef ok fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef nao fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    class Q ponto
+    class DT ok
+    class SN nao
+    classDef rot fill:none,stroke:none,color:#1a1a1a
+    class R1,R2 rot
+    linkStyle 0,1 stroke:#0f766e,stroke-width:3.5px
+    linkStyle 2,3 stroke:#b02a1c,stroke-width:3.5px

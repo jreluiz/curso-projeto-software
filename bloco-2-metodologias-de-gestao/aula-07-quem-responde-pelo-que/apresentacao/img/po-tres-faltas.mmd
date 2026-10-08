@@ -1,0 +1,34 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 14
+    rankSpacing: 60
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    D["sem<br/>DISPONIBILIDADE"]
+    A["sem<br/>AUTORIDADE"]
+    C["sem CONHECIMENTO<br/>DO NEGÓCIO"]
+    DS["as dúvidas se acumulam;<br/>o time decide sozinho e erra"]
+    AS["toda decisão sobe uma instância;<br/>o time espera por cada resposta"]
+    CS["o backlog é ordenado<br/>por quem grita mais alto"]
+
+    D --> DS
+    A --> AS
+    C --> CS
+
+    classDef falta fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef sint fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    class D,A,C falta
+    class DS,AS,CS sint
+    linkStyle default stroke:#b02a1c,stroke-width:3px

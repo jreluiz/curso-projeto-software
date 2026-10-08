@@ -1,0 +1,43 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#0f766e"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 18
+    rankSpacing: 56
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    F["FALTA UM MÊS<br/>15 itens no backlog"]
+    E["cede o ESCOPO"]
+    D["cede a DATA"]
+    C["cede o CUSTO"]
+    Q["cede a QUALIDADE"]
+    PO["PRODUCT OWNER"]
+    PT["PATROCINADOR ou contrato"]
+    PC["PATROCINADOR"]
+    N["NINGUÉM DECIDIU"]
+
+    F --> E --> PO
+    F --> D --> PT
+    F --> C --> PC
+    F -.-> Q -.-> N
+
+    classDef topo fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef var fill:#fdfdfb,stroke:#0f766e,stroke-width:2px,color:#1a1a1a
+    classDef dono fill:#e7f2f0,stroke:#0f766e,stroke-width:3px,color:#1a1a1a
+    classDef nao fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    class F topo
+    class E,D,C var
+    class PO,PT,PC dono
+    class Q,N nao
+    linkStyle 0,1,2,3,4,5 stroke:#0f766e,stroke-width:3px
+    linkStyle 6,7 stroke:#b02a1c,stroke-width:3px
