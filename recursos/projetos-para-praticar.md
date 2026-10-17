@@ -27,10 +27,10 @@ Cada projeto é **deliberadamente incompleto e um pouco ambíguo**, como todo pr
 > |---|---|
 > | **1 — Fundamentos de projetos** | 2 (Empréstimo de equipamentos) e 8 (Ouvidoria municipal) |
 > | **2 — Metodologias de gestão** | 1 (Achados e perdidos) e 9 (Marketplace de serviços) |
-> | **3 — Ferramentas e qualidade** | 10 (Prontuário de clínica-escola) e 11 (Frota e manutenção) |
-> | **4 — Projeto avançado** | 5 (Delivery de restaurante) e 12 (Assembleia e votação) |
+> | **3 — Do código à produção** | 5 (Delivery de restaurante) e 10 (Prontuário de clínica-escola) |
+> | **Leituras complementares** | 10 (Prontuário), 11 (Frota e manutenção) e 12 (Assembleia e votação) |
 >
-> Os outros quatro entram nos exercícios de variação e nos Desafios 🌶️.
+> Os demais entram nos exercícios de variação e nos Desafios 🌶️.
 
 ---
 

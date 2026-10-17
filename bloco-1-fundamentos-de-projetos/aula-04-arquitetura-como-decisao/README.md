@@ -73,7 +73,7 @@ Volte à transportadora com esse vocabulário. A regra *"avisar sobre manutenç�
 
 > ⚠️ **Atributo sem número não é requisito, é adjetivo.** *"O sistema precisa ser rápido"* não decide nada — qualquer arquitetura atende. *"A tela do entregador precisa abrir em menos de 2 segundos numa rede 4G"* elimina metade das opções na hora. Sempre que alguém disser "escalável", "seguro" ou "robusto", a pergunta seguinte é **quanto**.
 
-> 🧩 **Onde isto reaparece:** os atributos apertados de um projeto são a lista de onde procurar **risco** (Aula 09). E a qualidade que se **mede** depois, na Aula 10, é a verificação de que estes atributos foram entregues — qualidade de produto e qualidade de processo são as duas metades da mesma preocupação.
+> 🧩 **Onde isto reaparece:** os atributos apertados de um projeto são a lista de onde procurar **risco** (leitura complementar [*Risco*](../../leituras-complementares/risco/README.md)). E a qualidade que se **mede** depois (leitura [*Qualidade que se mede*](../../leituras-complementares/qualidade-que-se-mede/README.md)) é a verificação de que estes atributos foram entregues — qualidade de produto e qualidade de processo são as duas metades da mesma preocupação.
 
 ## 4. Estilos arquitetônicos
 
@@ -164,7 +164,7 @@ flowchart LR
 
 É o arranjo natural do delivery: *"pedido confirmado"* precisa acionar cozinha, entregador e cliente ao mesmo tempo, e acrescentar um quarto interessado — o financeiro, digamos — não deveria exigir mexer no código do pedido.
 
-Em troca, ele **torna difícil responder "o que aconteceu com este pedido?"**, porque a história está espalhada por quem reagiu. É preciso instrumentar o sistema para reconstruí-la — assunto da Aula 14.
+Em troca, ele **torna difícil responder "o que aconteceu com este pedido?"**, porque a história está espalhada por quem reagiu. É preciso instrumentar o sistema para reconstruí-la — assunto da [Aula 12](../../bloco-3-do-codigo-a-producao/aula-12-observabilidade-e-manutencao/README.md).
 
 ### O que cada estilo compra, e com o que paga
 

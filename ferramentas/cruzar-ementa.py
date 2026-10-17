@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Cruza os 48 tópicos da ementa oficial contra o conteúdo das 16 aulas.
+Cruza os 48 tópicos da ementa oficial contra o conteúdo das aulas e das
+leituras complementares.
 
     python3 ferramentas/cruzar-ementa.py
 
@@ -21,18 +22,25 @@ a versão anterior do curso cobria 16 dos 48 tópicos, com a Unidade 3 zerada.
    ajustados ao vocabulário real do curso — se uma aula for reescrita com
    outras palavras, ajuste-os junto.
 
-Cada tópico vive em EXATAMENTE UMA aula, por desenho da grade (3 tópicos por
-aula). Concentração numa aula só é o esperado, não um aviso.
+Até outubro de 2026, cada tópico vivia em EXATAMENTE UMA aula (3 por aula, 16
+aulas). Na reformulação do 2º bimestre (17/10/2026) o Bloco 3 virou "Do código à
+produção", com 4 aulas sobre os tópicos 37–42, e os tópicos de risco, qualidade,
+documentação, ferramentas, comunicação, UX e governança passaram a viver nas
+seis leituras complementares — que aparecem na tabela como `L:nome`. Um tópico
+nas duas colunas (aula e leitura) é esperado onde a aula toca o assunto de
+leve, como o risco de implantação da Aula 11.
 """
 
 import re, pathlib, collections
 
 RAIZ = pathlib.Path('/Users/jreluiz/PycharmProjects/curso-projeto-software')
-arquivos = sorted(RAIZ.glob('bloco-*/aula-*/README.md'))
 textos = {}
-for f in arquivos:
+for f in sorted(RAIZ.glob('bloco-*/aula-*/README.md')):
     aula = re.search(r'aula-(\d+)', str(f)).group(1)
     textos[aula] = f.read_text(encoding='utf-8').lower()
+for f in sorted(RAIZ.glob('leituras-complementares/*/README.md')):
+    nome = 'usuario' if f.parent.name.startswith('o-usuario') else f.parent.name.split('-')[0]
+    textos['L:' + nome] = f.read_text(encoding='utf-8').lower()
 
 TOPICOS = [
  ("U1","Equipe do projeto e matriz de responsabilidades", r"matriz de responsabilidade|\braci\b|equipe do projeto"),
@@ -85,8 +93,8 @@ TOPICOS = [
  ("U4","Governança de TI", r"governan(ç|c)a"),
 ]
 
-print(f"{'':2} {'TÓPICO':52} {'AULAS':22} STATUS")
-print("─"*104)
+print(f"{'':2} {'TÓPICO':52} {'AULAS E LEITURAS':34} STATUS")
+print("─"*116)
 resumo = collections.Counter()
 por_unidade = collections.defaultdict(lambda: [0,0,0])
 for uni, nome, rx in TOPICOS:
@@ -102,9 +110,9 @@ for uni, nome, rx in TOPICOS:
         st, idx = "✅ COBERTO", 0
     resumo[st] += 1
     por_unidade[uni][idx] += 1
-    print(f"{uni:2} {nome:52} {aulas:22} {st} ({total})")
+    print(f"{uni:2} {nome:52} {aulas:34} {st} ({total})")
 
-print("─"*104)
+print("─"*116)
 for u in ("U1","U2","U3","U4"):
     c, m, a = por_unidade[u]
     print(f"{u}: ✅ {c:2}   ⚠️ {m:2}   ❌ {a:2}   (de 12)")

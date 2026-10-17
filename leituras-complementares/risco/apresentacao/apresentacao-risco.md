@@ -3,7 +3,7 @@ marp: true
 theme: trilha
 paginate: true
 lang: pt-BR
-footer: '🏗️ Curso de Projeto de Software · Aula 09'
+footer: '🏗️ Curso de Projeto de Software · Leitura complementar'
 ---
 
 <!-- _class: capa -->
@@ -12,13 +12,13 @@ footer: '🏗️ Curso de Projeto de Software · Aula 09'
 
 # Risco
 
-## Aula 09 · Bloco 3 — Ferramentas e Qualidade
+## Leitura complementar · Ferramentas e Qualidade
 
 <div class="meta">Risco sem dono e sem gatilho é literatura</div>
 
 ---
 
-## 🎯 Nesta aula
+## 🎯 Nesta leitura
 
 1. Risco **não é problema**
 2. A natureza do risco — **causa, evento, efeito**
@@ -184,9 +184,9 @@ com número e data.
 
 <!-- _class: checkpoint -->
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar
 
-Na pasta `aula-09/`:
+Na pasta `leitura-risco/`:
 
 1. **`ex01.md`** — seis itens: risco ou problema?
 2. **`ex02.md`** — reescrever cinco riscos em causa → evento → efeito;
@@ -194,16 +194,3 @@ Na pasta `aula-09/`:
 4. **`ex04.md`** — trocar a resposta de cada risco, uma delas "evitar";
 5. **`ex05.md`** 🌶️ — registro completo, com um risco organizacional.
 
----
-
-<!-- _class: lead -->
-
-## ➡️ Próxima aula
-
-**Aula 10 — Qualidade que se mede**
-
-O risco antecipa o que pode acontecer.
-
-A métrica mostra o que
-**está** acontecendo — quando
-alguém escolheu medir a coisa certa.

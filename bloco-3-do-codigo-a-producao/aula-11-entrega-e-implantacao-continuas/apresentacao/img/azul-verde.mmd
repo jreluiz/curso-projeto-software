@@ -1,0 +1,40 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#334155"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+    clusterBkg: "#f8fafc"
+    clusterBorder: "#94a3b8"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 60
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    C["clientes"]
+    R{"roteador"}
+    V["<b>VERDE</b><br/>v2.6.0<br/>no ar"]
+    A["<b>AZUL</b><br/>v2.5.0 · ocioso<br/>pronto para voltar"]
+    C --> R
+    R -- "todo o tráfego" --> V
+    R -. "a volta: segundos" .-> A
+    classDef ind fill:#e0e7ff,stroke:#4338ca,stroke-width:3px,color:#1a1a1a
+    classDef sla fill:#f1f5f9,stroke:#334155,stroke-width:3px,color:#1a1a1a
+    classDef grn fill:#dcfce7,stroke:#15803d,stroke-width:3px,color:#1a1a1a
+    classDef red fill:#fee2e2,stroke:#b91c1c,stroke-width:3px,color:#1a1a1a
+    classDef amb fill:#fef3c7,stroke:#b45309,stroke-width:3px,color:#1a1a1a
+    classDef vio fill:#ede9fe,stroke:#7c3aed,stroke-width:3px,color:#1a1a1a
+    classDef sky fill:#e0f2fe,stroke:#0369a1,stroke-width:3px,color:#1a1a1a
+    classDef azul fill:#dbeafe,stroke:#1d4ed8,stroke-width:3px,color:#1a1a1a
+    classDef teal fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class C sla
+    class R sla
+    class V grn
+    class A azul

@@ -1,6 +1,6 @@
 # 🔗 Links Úteis — Projeto de Software
 
-> A **bibliografia** do curso está no [README](../README.md#-bibliografia), com os três livros-base e as cinco obras de apoio. Esta página é o resto: o que está **online**, e serve para consultar durante a aula.
+> A **bibliografia** do curso está no [README](../README.md#-bibliografia), com os três livros-base e as obras de apoio. Esta página é o resto: o que está **online**, e serve para consultar durante a aula.
 
 ## 🧭 Processos e agilidade
 
@@ -23,12 +23,49 @@
 - [mermaid.live](https://mermaid.live) — editor online, mostra o erro de sintaxe na hora. **Depure aqui antes de commitar**;
 - [Guia de artefatos de gestão do curso](artefatos-de-gestao.md) — RACI, EAP, Gantt, matriz de risco, quadro Kanban e burndown, com um exemplo pronto de cada.
 
+## 🌿 Versão e configuração (Aula 09)
+
+- [Pro Git, em português](https://git-scm.com/book/pt-br/v2) — o livro oficial do Git, gratuito. Os capítulos 2 e 3 (o básico e as ramificações) bastam para a aula;
+- [Versionamento Semântico 2.0.0](https://semver.org/lang/pt-BR/) — a especificação inteira cabe numa página, em português;
+- [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) — a convenção de mensagem de commit que liga `feat` e `fix` ao número de versão;
+- [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) — o formato de CHANGELOG que a aula usa, com as seis categorias de mudança;
+- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/) — o texto original do GitFlow, de 2010. Leia primeiro a **nota de 2020** no topo, em que o próprio autor diz para quem o modelo não serve;
+- [Trunk-based development — DORA](https://dora.dev/capabilities/trunk-based-development/) e [trunkbaseddevelopment.com](https://trunkbaseddevelopment.com/) — a pesquisa por trás dos ramos curtos, e o guia prático;
+- [The Twelve-Factor App — Configurações](https://12factor.net/pt_br/config) — por que configuração e segredo não moram no código;
+- [GitHub — proteção de push](https://docs.github.com/pt/code-security/secret-scanning/introduction/about-push-protection) — o bloqueio que impede um segredo de chegar ao repositório público.
+
+## 🔁 Integração contínua (Aula 10)
+
+- [Continuous Integration, por Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html) — o texto de referência da prática, de 2000, revisto em 2024. A lista das onze práticas cabe numa tela;
+- [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — a pirâmide de testes explicada nível por nível, com exemplos de código, por Ham Vocke;
+- [Continuous integration — DORA](https://dora.dev/capabilities/continuous-integration/) — o que a pesquisa encontrou sobre integração contínua e como medir se o time pratica;
+- [Code Coverage Best Practices — Google Testing Blog](https://testing.googleblog.com/2020/08/code-coverage-best-practices.html) — por que não existe número ideal de cobertura, e como usá-la sem virar meta;
+- [Flaky Tests at Google and How We Mitigate Them](https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html) — de onde vêm os 16% de testes instáveis da aula;
+- [GitHub Actions — fortalecimento de segurança](https://docs.github.com/pt/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) — fixar componentes pelo hash, permissão mínima e segredos no pipeline, em português.
+
+## 🚦 Entrega e implantação contínuas (Aula 11)
+
+- [Continuous Delivery, por Martin Fowler](https://martinfowler.com/bliki/ContinuousDelivery.html) — uma página, com a diferença entre entrega contínua e implantação contínua;
+- [Blue-Green Deployment](https://martinfowler.com/bliki/BlueGreenDeployment.html) e [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html) — as duas estratégias da aula, com o problema do banco de dados em cada uma;
+- [Parallel Change](https://martinfowler.com/bliki/ParallelChange.html) — o expandir e contrair, passo a passo;
+- [Relatório da CrowdStrike sobre 19/07/2024](https://www.crowdstrike.com/en-us/blog/falcon-content-update-preliminary-post-incident-report/) — o caso da seção 3, contado por quem errou, com as medidas que vieram depois;
+- [Relatório do Google Cloud sobre 12/06/2025](https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW) — o caso da flag que faltou, com os compromissos do Google;
+- [Site Reliability Engineering — introdução](https://sre.google/sre-book/introduction/) — o livro de SRE do Google, gratuito, de onde vêm os 70% de interrupções causadas por mudança.
+
+## 🔭 Operação: observabilidade e manutenção (Aula 12)
+
+- [Site Reliability Engineering — o livro inteiro](https://sre.google/sre-book/table-of-contents/) — gratuito. Para a aula: capítulos 4 (SLO), 6 (monitoramento e os quatro sinais de ouro), 14 (incidentes) e 15 (postmortem sem culpa);
+- [Postmortem do GitLab de 31/01/2017](https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/) — o caso da seção 5, com os backups que falhavam em silêncio, contado por quem errou;
+- [Blameless PostMortems and a Just Culture, por John Allspaw](https://www.etsy.com/codeascraft/blameless-postmortems) — por que procurar culpado faz o próximo incidente demorar mais;
+- [OpenTelemetry — documentação](https://opentelemetry.io/pt/docs/) — o padrão aberto para emitir logs, métricas e rastros, com parte em português;
+- [Technical Debt Quadrant, por Martin Fowler](https://martinfowler.com/bliki/TechnicalDebtQuadrant.html) — a dívida deliberada e a inadvertida, a prudente e a imprudente.
+
 ## 🚀 Entrega, operação e usuário
 
-- [DORA — pesquisa e métricas](https://dora.dev/) — as quatro métricas (frequência de implantação, tempo de espera, tempo de restauração, taxa de falha) e os relatórios *State of DevOps*. É a fonte da Aula 10;
+- [DORA — pesquisa e métricas](https://dora.dev/) — as métricas de desempenho de entrega (frequência de implantação, tempo de espera da mudança, taxa de falha, tempo de recuperação e, desde 2024, taxa de retrabalho) e os relatórios *State of DevOps*. É a fonte das Aulas 10 e 11 e da leitura *Qualidade que se mede*;
 - [Feature Toggles, por Pete Hodgson](https://martinfowler.com/articles/feature-toggles.html) — o artigo de referência sobre *feature flags*, com os tipos e o custo de cada um;
 - [GitHub Actions — documentação](https://docs.github.com/pt/actions) — se você quiser ver uma esteira de CI de verdade rodando, é o caminho mais barato, e está em português;
-- [Nielsen Norman Group — as 10 heurísticas de usabilidade](https://www.nngroup.com/articles/ten-usability-heuristics/) — a base da Aula 15, e a lista que pega a maior parte dos problemas de interface;
+- [Nielsen Norman Group — as 10 heurísticas de usabilidade](https://www.nngroup.com/articles/ten-usability-heuristics/) — a base da leitura *O usuário do outro lado*, e a lista que pega a maior parte dos problemas de interface;
 - [WCAG — diretrizes de acessibilidade (W3C)](https://www.w3.org/WAI/standards-guidelines/wcag/) e [eMAG — modelo brasileiro para governo](https://emag.governoeletronico.gov.br/) — de onde saem os requisitos de acessibilidade que ninguém pede e todo mundo precisa.
 
 ## 🏛️ Governança

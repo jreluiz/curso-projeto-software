@@ -1,7 +1,9 @@
-# Aula 15 — O usuário do outro lado
+# Leitura complementar — O usuário do outro lado
 
 > 🎯 Objetivos: levantar contexto de uso antes de desenhar interface, distinguir UX de UI, aplicar heurísticas de usabilidade a uma tela e tratar acessibilidade como decisão de projeto, não como ajuste final.
-> 🎬 Slides da aula: [apresentacao-15-o-usuario-do-outro-lado.pdf](apresentacao/apresentacao-15-o-usuario-do-outro-lado.pdf)
+> 🎬 Slides: [apresentacao-o-usuario-do-outro-lado.pdf](apresentacao/apresentacao-o-usuario-do-outro-lado.pdf)
+
+> 📚 **Leitura complementar.** Este texto cobre tópicos da ementa que não têm aula própria — análise e projeto de interfaces, experiência do usuário e projeto de interação. Leia no seu ritmo: não há revisão nem entrega, e os exercícios ficam como prática opcional. [Ver todas as leituras](../README.md).
 
 ## 1. O sistema que funciona e ninguém usa
 
@@ -9,9 +11,9 @@ O sistema de votação da assembleia digital foi entregue e funciona: apura corr
 
 Na primeira assembleia, 40% dos associados não conseguiram votar. Não por falha — o sistema esteve no ar o tempo todo. Eles não conseguiram **usar**: o botão de confirmar ficava abaixo da dobra numa tela de celular, a mensagem de erro do voto duplicado dizia "operação inválida", e a maioria dos associados tem mais de 60 anos e acessou pelo telefone, na rua.
 
-**A entrega passou em toda verificação e falhou na única coisa que importava.** É a validação sem verificação da Aula 10, agora do lado do usuário.
+**A entrega passou em toda verificação e falhou na única coisa que importava.** É a validação sem verificação da leitura [*Qualidade que se mede*](../qualidade-que-se-mede/README.md), agora do lado do usuário.
 
-Esta aula entra num curso de gestão por um motivo prático: **a interface é onde o projeto encontra a realidade**, e decisões sobre ela são tomadas o tempo todo por quem não é especialista — que é a situação normal.
+Este tema entra num curso de gestão por um motivo prático: **a interface é onde o projeto encontra a realidade**, e decisões sobre ela são tomadas o tempo todo por quem não é especialista — que é a situação normal.
 
 > 💡 **Nenhum manual salva uma interface ruim.** Se a tela precisa de treinamento para uma tarefa que a pessoa fará uma vez por ano, o treinamento não vai acontecer, e o custo cai no suporte.
 
@@ -63,7 +65,7 @@ Uma mensagem de erro útil responde a três coisas, e a maioria responde a nenhu
 | **por que** | — | "cada associado vota uma vez por pauta" |
 | **o que fazer agora** | — | "volte à lista para ver as pautas em aberto" |
 
-Escrever as mensagens de erro é uma tarefa barata que quase nenhum projeto aloca — e que costuma render mais satisfação de usuário por hora investida do que qualquer outra coisa nesta aula.
+Escrever as mensagens de erro é uma tarefa barata que quase nenhum projeto aloca — e que costuma render mais satisfação de usuário por hora investida do que qualquer outra coisa nesta leitura.
 
 > 💡 **Um teste que qualquer um pode fazer:** peça a alguém que não participou do projeto para executar a tarefa, sem ajuda, enquanto você observa em silêncio. Cinco pessoas revelam quase todos os problemas sérios, e o silêncio é a parte difícil.
 
@@ -138,19 +140,19 @@ Ela atravessa quatro camadas, e só uma delas é visual:
 
 E em serviço público ou de interesse coletivo, ela **não é escolha**: é obrigação legal. Na assembleia da entidade, um associado que não consegue votar por causa da interface teve um direito estatutário negado por decisão de projeto.
 
-> ⚠️ **"Depois a gente adapta" é a frase que garante que não vai acontecer.** Ela transfere para o futuro um trabalho que só era barato no passado, e o futuro chega com outras prioridades — que é exatamente o que a dívida técnica da Aula 14 descreve.
+> ⚠️ **"Depois a gente adapta" é a frase que garante que não vai acontecer.** Ela transfere para o futuro um trabalho que só era barato no passado, e o futuro chega com outras prioridades — que é exatamente o que a dívida técnica da [Aula 12](../../bloco-3-do-codigo-a-producao/aula-12-observabilidade-e-manutencao/README.md) descreve.
 
 Há um argumento que costuma destravar a conversa com quem decide, e ele não é moral: **acessibilidade melhora o sistema para todo mundo.** Contraste suficiente serve a quem tem baixa visão e a quem está no sol; alvo de toque grande serve a quem tem tremor e a quem está no ônibus; linguagem simples serve a quem tem dificuldade de leitura e a quem está com pressa.
 
 O público que se beneficia é sempre maior que o público que a exigência nomeia — e num sistema com 40% de não-conclusão, como o da abertura, é impossível separar quem não conseguiu por deficiência de quem não conseguiu por contexto ruim.
 
-E vale fechar a aula com o que ela tem em comum com as quatorze anteriores: **as decisões de interface são decisões de projeto, com custo, dono e alternativa descartada.** O botão abaixo da dobra não foi um descuido de programação — foi uma decisão que ninguém tomou explicitamente, e por isso ninguém a registrou nem a defendeu. É a quarta causa de fracasso da Aula 01, na última tela do sistema.
+E vale fechar com o que este tema tem em comum com todo o resto do curso: **as decisões de interface são decisões de projeto, com custo, dono e alternativa descartada.** O botão abaixo da dobra não foi um descuido de programação — foi uma decisão que ninguém tomou explicitamente, e por isso ninguém a registrou nem a defendeu. É a quarta causa de fracasso da Aula 01, na última tela do sistema.
 
 > 📖 As dez heurísticas de usabilidade do Nielsen Norman Group são a referência clássica e cabem numa página. Para acessibilidade, as diretrizes WCAG do W3C e o modelo brasileiro eMAG. Os três links estão em [links úteis](../../recursos/links-uteis.md).
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar (opcional)
 
-Na pasta `aula-15/` do seu repositório:
+Se quiser praticar, use a pasta `leitura-o-usuario-do-outro-lado/` do seu repositório:
 
 1. **`ex01.md`** — levante o **contexto de uso** de três perfis do [prontuário de clínica-escola](../../recursos/projetos-para-praticar.md#10-prontuário-de-clínica-escola) — aluno, supervisor e secretaria — respondendo às três perguntas da seção 2. Depois diga **qual dos três** determina o desenho da tela principal, e por quê. *Confere assim: os três têm frequências de uso muito diferentes, e é a frequência que decide entre "óbvio" e "rápido".*
 
@@ -164,21 +166,17 @@ Na pasta `aula-15/` do seu repositório:
 
 ### 📤 Entrega
 
-Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+Se fizer os exercícios, eles vão para o **seu repositório** `exercicios-projeto-software`, como os das aulas:
 
 ```bash
 cd ..                 # da pasta da aula para a raiz do repositório
-git add aula-15/
-git commit -m "Resolve exercícios da aula 15"
+git add leitura-o-usuario-do-outro-lado/
+git commit -m "Resolve exercícios da leitura de o usuário do outro lado"
 git push
 ```
 
 Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
 
-## 🧠 Revisão
-
-[8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
 ---
 
-⬅️ [Aula 14 — Entregar e sustentar](../aula-14-entregar-e-sustentar/README.md) | ➡️ [Aula 16 — Governança](../aula-16-governanca/README.md)
+⬅️ [Leituras complementares](../README.md) | 🏠 [Início](../../README.md)

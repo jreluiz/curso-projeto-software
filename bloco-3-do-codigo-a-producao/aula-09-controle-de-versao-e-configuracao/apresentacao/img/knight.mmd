@@ -1,0 +1,45 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#334155"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+    clusterBkg: "#f8fafc"
+    clusterBorder: "#94a3b8"
+  flowchart:
+    nodeSpacing: 26
+    rankSpacing: 30
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    D["INSTALAÇÃO MANUAL<br/>1º/08/2012, de manhã<br/>servidor por servidor"]
+    S7["SERVIDORES 1 A 7<br/>versão nova"]
+    S8["SERVIDOR 8<br/>versão antiga<br/>+ código morto"]
+    F(["sinalizador ligado<br/>na abertura<br/>do pregão"])
+    OK["faz o que<br/>a versão nova manda"]
+    KO["ressuscita o Power Peg<br/>ordens sem parar<br/>45 min · US$ 460 mi"]
+    D --> S7
+    D -. "esquecido" .-> S8
+    S7 --> F
+    S8 --> F
+    F --> OK
+    F --> KO
+
+    classDef base fill:#f1f5f9,stroke:#334155,stroke-width:3px,color:#1a1a1a
+    classDef bom fill:#dcfce7,stroke:#15803d,stroke-width:3px,color:#1a1a1a
+    classDef ruim fill:#fee2e2,stroke:#b91c1c,stroke-width:3px,color:#1a1a1a
+    classDef flag fill:#fef3c7,stroke:#b45309,stroke-width:3px,color:#1a1a1a
+    classDef desastre fill:#b91c1c,stroke:#b91c1c,stroke-width:3px,color:#ffffff
+    class D base
+    class S7,OK bom
+    class S8 ruim
+    class F flag
+    class KO desastre
+    linkStyle 0,2,4 stroke:#15803d,stroke-width:3.5px
+    linkStyle 1,3,5 stroke:#b91c1c,stroke-width:3.5px

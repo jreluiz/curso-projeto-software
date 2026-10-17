@@ -1,7 +1,9 @@
-# Aula 16 — Governança
+# Leitura complementar — Governança
 
 > 🎯 Objetivos: distinguir governança de gestão, saber qual pergunta cada arcabouço responde — PMBOK, ITIL e COBIT —, e reconhecer o impacto ESG de uma decisão técnica.
-> 🎬 Slides da aula: [apresentacao-16-governanca.pdf](apresentacao/apresentacao-16-governanca.pdf)
+> 🎬 Slides: [apresentacao-governanca.pdf](apresentacao/apresentacao-governanca.pdf)
+
+> 📚 **Leitura complementar.** Este texto cobre tópicos da ementa que não têm aula própria — governança de TI, ITIL, COBIT, PMI e PMBOK, e os paradigmas ESG. Leia no seu ritmo: não há revisão nem entrega, e os exercícios ficam como prática opcional. [Ver todas as leituras](../README.md).
 
 ## 1. Governança: quem decide e quem responde
 
@@ -35,7 +37,7 @@ O que ele organiza:
 | **Cinco grupos de processo** | iniciação, planejamento, execução, monitoramento e controle, encerramento (Aula 03) |
 | **Dez áreas de conhecimento** | integração, escopo, cronograma, custos, qualidade, recursos, comunicações, riscos, aquisições, partes interessadas |
 
-Quase tudo o que este curso tratou está em alguma dessas caixas: risco na Aula 09, qualidade na 10, comunicações na 12, partes interessadas na 07.
+Quase tudo o que este curso tratou está em alguma dessas caixas: partes interessadas na Aula 07, e risco, qualidade e comunicações nas leituras complementares.
 
 **A pergunta que o PMBOK responde é: como se conduz um esforço temporário até um resultado aceito?**
 
@@ -57,7 +59,7 @@ O vocabulário dele é outro:
 
 **A pergunta que o ITIL responde é: como se sustenta um serviço em operação, com qualidade previsível?**
 
-Repare que "incidente" e "problema" no ITIL não são os mesmos da Aula 09. Ali, problema era o que já aconteceu; aqui, problema é a **causa** de incidentes repetidos. Vocabulários diferentes, e usá-los trocados numa reunião com a área de operações produz mal-entendido garantido.
+Repare que "incidente" e "problema" no ITIL não são os mesmos da leitura [*Risco*](../risco/README.md). Ali, problema era o que já aconteceu; aqui, problema é a **causa** de incidentes repetidos. Vocabulários diferentes, e usá-los trocados numa reunião com a área de operações produz mal-entendido garantido.
 
 > ⚠️ **Aplicar ITIL a projeto é o erro mais comum entre os três arcabouços.** Um projeto adota gestão de incidentes e catálogo de serviços, afunda em cerimônia e não ganha nada — porque ele não tem operação contínua a sustentar. **ITIL é sobre serviço; PMBOK é sobre projeto.**
 
@@ -75,7 +77,7 @@ Ele separa explicitamente duas coisas que as outras duas misturam:
 
 **A pergunta que o COBIT responde é: como se demonstra que a TI está sob controle?** É o arcabouço da auditoria — e é por isso que ele aparece na clínica-escola, que já tomou uma notificação por dado exposto.
 
-Na prática, ele pede o que a Aula 11 chamou de documentação para **provar**: procedimento definido, execução registrada, e evidência recuperável.
+Na prática, ele pede o que a leitura [*Documentação*](../documentacao/README.md) chamou de documentação para **provar**: procedimento definido, execução registrada, e evidência recuperável.
 
 Numa auditoria, a sequência de perguntas é sempre a mesma, e cada uma depende da anterior:
 
@@ -114,7 +116,7 @@ flowchart LR
 
 Da esquerda para a direita, o horizonte cresce e a frequência de decisão cai: a iteração decide toda quinzena; a organização decide todo ano. **Cobrar de um arcabouço a resposta que está no horizonte do outro é a origem de quase toda a frustração com metodologia.**
 
-> 💡 **Antes de adotar qualquer um, escreva a pergunta que você quer que ele responda.** Se ninguém consegue escrevê-la, a adoção vai importar burocracia sem trazer benefício — que é o mesmo teste da ferramenta na Aula 12 e da oficina na Aula 08.
+> 💡 **Antes de adotar qualquer um, escreva a pergunta que você quer que ele responda.** Se ninguém consegue escrevê-la, a adoção vai importar burocracia sem trazer benefício — que é o mesmo teste da ferramenta na leitura [*Ferramentas e comunicação*](../ferramentas-e-comunicacao/README.md) e da oficina na Aula 08.
 
 ## 6. ESG em projeto de TI
 
@@ -123,43 +125,43 @@ Da esquerda para a direita, o horizonte cresce e a frequência de decisão cai: 
 | Eixo | Como aparece num projeto de TI |
 |---|---|
 | **Ambiental** | consumo de infraestrutura; um relatório que ninguém lê rodando de hora em hora custa energia |
-| **Social** | acessibilidade (Aula 15); exclusão de quem tem celular antigo ou internet ruim; uso de dado pessoal |
-| **Governança** | quem decide, quem responde, quem audita — a seção 1 desta aula |
+| **Social** | acessibilidade ([*O usuário do outro lado*](../o-usuario-do-outro-lado/README.md)); exclusão de quem tem celular antigo ou internet ruim; uso de dado pessoal |
+| **Governança** | quem decide, quem responde, quem audita — a seção 1 desta leitura |
 
 Três decisões deste curso têm impacto ESG direto, e nenhuma foi tomada por esse motivo:
 
 - **Processar telemetria em lote em vez de tempo real** (Aula 04) reduz infraestrutura — decisão ambiental, tomada por custo;
-- **A interface que exclui 40% dos associados** (Aula 15) é decisão social, tomada por descuido;
-- **A trilha de auditoria do prontuário** (Aula 11) é decisão de governança, tomada por exigência legal.
+- **A interface que exclui 40% dos associados** (leitura *O usuário do outro lado*) é decisão social, tomada por descuido;
+- **A trilha de auditoria do prontuário** (leitura *Documentação*) é decisão de governança, tomada por exigência legal.
 
 > ⚠️ **ESG vira decoreba quando é tratado como relatório anual.** Ele só significa alguma coisa num projeto se aparecer nas decisões — e aparece, quase sempre com outro nome: custo de infraestrutura, acessibilidade, LGPD, auditoria.
 
 ## 7. O mapa do curso
 
-Dezesseis aulas, e um fio só:
+Doze aulas, seis leituras, e um fio só:
 
 | Bloco | O que ele respondeu |
 |---|---|
 | **1 — Fundamentos** | o que é projeto, qual ciclo de vida, quais processos, e que arquitetura é decisão de gestão |
 | **2 — Metodologias** | o que o ágil de fato diz, como o Scrum distribui autoridade, e quando descobrir, enxugar ou melhorar |
-| **3 — Ferramentas e qualidade** | como antecipar risco, o que medir, o que documentar e como fazer a informação chegar |
-| **4 — Avançado** | como a mudança chega ao usuário sem quebrar, quem está do outro lado, e quem responde pelo conjunto |
+| **3 — Do código à produção** | como a mudança é versionada, integrada, entregue e acompanhada depois que sobe |
+| **Leituras complementares** | como antecipar risco, o que medir, o que documentar, como fazer a informação chegar, quem está do outro lado e quem responde pelo conjunto |
 
 E o que sobra depois que os nomes forem esquecidos:
 
-**Toda decisão de projeto tem dono, alternativa descartada e custo.** A matriz da Aula 01, o registro de ciclo de vida da 02, a linha de base da 03, o ADR da 04, o registro de risco da 09, o ADR de mudança da 13 — são seis formatos do mesmo hábito.
+**Toda decisão de projeto tem dono, alternativa descartada e custo.** A matriz da Aula 01, o registro de ciclo de vida da 02, a linha de base da 03, o ADR da 04, o registro de risco, o CHANGELOG da Aula 09 — são seis formatos do mesmo hábito.
 
 **"Depende" é resposta legítima, desde que você complete a frase.** Foi a promessa da abertura do curso, e é o que separa quem gerencia de quem preenche formulário.
 
-E há uma terceira, que não estava no plano e apareceu em quase todas as aulas: **a informação precisa chegar a tempo a quem decide.** As quatro causas de fracasso da Aula 01, o risco sem gatilho da 09, a métrica que não muda decisão da 10, o documento sem leitor da 11 e o plano de comunicação da 12 são o mesmo problema com cinco roupas.
+E há uma terceira, que não estava no plano e apareceu em quase todas as aulas: **a informação precisa chegar a tempo a quem decide.** As quatro causas de fracasso da Aula 01, o risco sem gatilho, a métrica que não muda decisão, o documento sem leitor e o plano de comunicação — estes quatro nas leituras complementares — são o mesmo problema com cinco roupas.
 
 > 💡 **O que este curso não ensinou, de propósito:** estimar com precisão, negociar contrato, montar orçamento e conduzir equipe. São assuntos de carreira, não de primeira disciplina — e todos ficam mais fáceis para quem já sabe distinguir uma decisão de um palpite.
 
 > 📖 Para continuar: o **Guia PMBOK** é a referência de projeto; o **ITIL** e o **COBIT** têm material introdutório gratuito em seus sites oficiais, listados em [links úteis](../../recursos/links-uteis.md). Nenhum deles se lê de capa a capa — todos se consultam a partir de uma pergunta.
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar (opcional)
 
-Na pasta `aula-16/` do seu repositório:
+Se quiser praticar, use a pasta `leitura-governanca/` do seu repositório:
 
 1. **`ex01.md`** — ligue cada pergunta ao arcabouço que a responde: (a) quanto tempo temos para restabelecer o serviço após uma queda? (b) quem aprova o encerramento do projeto? (c) como demonstramos à auditoria que os acessos são concedidos com critério? (d) o que entra na próxima iteração? (e) qual é o caminho crítico do cronograma? (f) como tratamos um pedido de acesso novo? *Confere assim: dois para o PMBOK, dois para o ITIL, um para o COBIT e um para o Scrum.*
 
@@ -173,21 +175,17 @@ Na pasta `aula-16/` do seu repositório:
 
 ### 📤 Entrega
 
-Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+Se fizer os exercícios, eles vão para o **seu repositório** `exercicios-projeto-software`, como os das aulas:
 
 ```bash
 cd ..                 # da pasta da aula para a raiz do repositório
-git add aula-16/
-git commit -m "Resolve exercícios da aula 16"
+git add leitura-governanca/
+git commit -m "Resolve exercícios da leitura de governança"
 git push
 ```
 
 Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
 
-## 🧠 Revisão
-
-[8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
 ---
 
-⬅️ [Aula 15 — O usuário do outro lado](../aula-15-o-usuario-do-outro-lado/README.md) | 🏠 [Início](../../README.md)
+⬅️ [Leituras complementares](../README.md) | 🏠 [Início](../../README.md)

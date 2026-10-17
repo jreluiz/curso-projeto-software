@@ -3,7 +3,7 @@ marp: true
 theme: trilha
 paginate: true
 lang: pt-BR
-footer: '🏗️ Curso de Projeto de Software · Aula 12'
+footer: '🏗️ Curso de Projeto de Software · Leitura complementar'
 ---
 
 <!-- _class: capa -->
@@ -12,13 +12,13 @@ footer: '🏗️ Curso de Projeto de Software · Aula 12'
 
 # Ferramentas e Comunicação
 
-## Aula 12 · Bloco 3 — Ferramentas e Qualidade
+## Leitura complementar · Ferramentas e Qualidade
 
 <div class="meta">A ferramenta não decide nada. Ela mostra.</div>
 
 ---
 
-## 🎯 Nesta aula
+## 🎯 Nesta leitura
 
 1. A ferramenta **não é o método**
 2. Ferramentas para modelos **sequenciais**
@@ -199,9 +199,9 @@ seja feito errado.
 
 <!-- _class: checkpoint -->
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar
 
-Na pasta `aula-12/`:
+Na pasta `leitura-ferramentas-e-comunicacao/`:
 
 1. **`ex01.md`** — cinco situações: Gantt, quadro ou burndown?
 2. **`ex02.md`** — caminho crítico, folga, e o efeito de duas semanas de atraso;
@@ -209,14 +209,3 @@ Na pasta `aula-12/`:
 4. **`ex04.md`** — plano de comunicação do prontuário, com o comitê de ética;
 5. **`ex05.md`** 🌶️ — a ferramenta ágil comprada para projetos preditivos.
 
----
-
-<!-- _class: lead -->
-
-## ➡️ Próxima aula
-
-**Aula 13 — Versão, mudança e configuração**
-
-O Bloco 4 começa
-onde a mudança encontra
-o sistema que já está no ar.

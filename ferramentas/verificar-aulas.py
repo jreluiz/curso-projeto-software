@@ -31,6 +31,21 @@ import tempfile
 LINHAS_MIN, LINHAS_MAX = 180, 220   # calibrado com o professor em 13/08/2026
 SECOES_MIN, SECOES_MAX = 4, 7
 EXERCICIOS = 5          # este curso mantém 5, sendo o 5º o Desafio 🌶️ (§7)
+
+# O Bloco 3 foi refeito em outubro de 2026 com outra régua, por decisão do
+# professor (17/10/2026): o encontro da turma tem 80 minutos, então são no
+# máximo 3 exercícios (o 3º é o Desafio 🌶️), e o texto pode ser extenso —
+# "não importa se ficar extenso". O teto existe só para pegar texto que fugiu
+# do controle, não para apertar a aula.
+REGUA_BLOCO_3 = {"linhas": (250, 650), "exercicios": 3}
+
+
+def regua(caminho):
+    """(linhas_min, linhas_max, exercicios) da aula, pelo número dela."""
+    m = re.search(r"aula-(\d\d)-", caminho)
+    if m and int(m.group(1)) >= 9:
+        return (*REGUA_BLOCO_3["linhas"], REGUA_BLOCO_3["exercicios"])
+    return LINHAS_MIN, LINHAS_MAX, EXERCICIOS
 QUESTOES = 8
 DIRETAS, ENADE = 5, 3   # 5 diretas + 3 [ENADE]; TODAS com alternativas a–d (§6)
 
@@ -101,8 +116,9 @@ def problemas_de_aula(caminho, texto):
     linhas = texto.split("\n")
     n = len(linhas)
 
-    if not (LINHAS_MIN <= n <= LINHAS_MAX):
-        p.append(f"{n} linhas (régua: {LINHAS_MIN}–{LINHAS_MAX})")
+    lmin, lmax, n_exerc = regua(caminho)
+    if not (lmin <= n <= lmax):
+        p.append(f"{n} linhas (régua: {lmin}–{lmax})")
 
     secoes = re.findall(r"^## \d+\.", texto, re.M)
     if not (SECOES_MIN <= len(secoes) <= SECOES_MAX):
@@ -123,8 +139,8 @@ def problemas_de_aula(caminho, texto):
     # EXCEÇÃO 3: não existe cabeçalho "### Exercício N" — é lista numerada sob
     # "## 🏋️ Exercícios da aula". Contar as ocorrências de `exNN.md`.
     n_ex = len(set(re.findall(r"`(ex\d\d\.md)`", texto)))
-    if n_ex != EXERCICIOS:
-        p.append(f"{n_ex} exercícios (régua: {EXERCICIOS})")
+    if n_ex != n_exerc:
+        p.append(f"{n_ex} exercícios (régua: {n_exerc})")
 
     # EXCEÇÃO 2: todo rodapé tem DOIS links. O 🏠 só aparece nas pontas,
     # ocupando a vaga do vizinho que não existe (Aula 01 no lugar do ⬅️,
@@ -168,7 +184,7 @@ def problemas_de_revisao(caminho, texto):
     abaixo barra esses formatos, que voltam facilmente por hábito.
 
     Como as 8 questões têm o mesmo número de alternativas, a distribuição de
-    letras é a regra simples da trilha: 2 de cada por aula, 32 no curso.
+    letras é a regra simples da trilha: 2 de cada por aula, 24 no curso (12 aulas).
     """
     p = []
     ids = re.findall(r"^### (Q-A(\d\d)-(\d\d))", texto, re.M)
@@ -358,7 +374,7 @@ def verificar_gabarito(gab, raiz):
                           "titulos": titulos}
 
     # Um gabarito de bloco cobre só as aulas daquele bloco. Comparar contra o
-    # repositório inteiro acusaria as 96 questões dos outros três blocos.
+    # repositório inteiro acusaria as questões dos outros blocos.
     aulas_do_bloco = {qid[2:5] for qid in registro}
     reais = {q: v for q, v in reais.items() if q[2:5] in aulas_do_bloco}
 
@@ -416,7 +432,7 @@ def verificar_gabarito(gab, raiz):
               (f"  ← fora de 2 por letra: {fora}" if fora else ""))
         erros += bool(fora)
     print("  · bloco: " + " ".join(f"{k}={total.get(k, 0)}" for k in "abcd") +
-          "   (alvo: 8 de cada por bloco, 32 no curso)")
+          "   (alvo: 8 de cada por bloco, 24 no curso)")
 
     print(f"  {'✓' if not (erros or falta_gab or falta_rev) else '✗'} "
           f"{len(registro)} questões no gabarito, {len(reais)} na revisão, {erros} erros")
@@ -442,8 +458,10 @@ def main():
         arquivos = [alvo]
     else:
         for dirpath, dirnames, nomes in os.walk(alvo):
+            # docs/ é documento de trabalho do professor, fora do Git, e guarda
+            # o arquivo das aulas que saíram — links velhos ali são esperados
             dirnames[:] = [d for d in dirnames if d not in
-                           (".git", "node_modules", "__pycache__")]
+                           (".git", "node_modules", "__pycache__", "docs")]
             arquivos += [os.path.join(dirpath, n) for n in nomes if n.endswith(".md")]
     arquivos.sort()
 

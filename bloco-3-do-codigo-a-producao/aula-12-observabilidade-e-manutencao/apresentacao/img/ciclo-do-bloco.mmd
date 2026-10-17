@@ -1,0 +1,38 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#334155"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 56
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    V["<b>VERSIONAR</b><br/>Aula 09"]
+    I["<b>INTEGRAR</b><br/>Aula 10"]
+    E["<b>ENTREGAR</b><br/>Aula 11"]
+    O["<b>OBSERVAR E</b><br/><b>RESPONDER</b><br/>Aula 12"]
+    A["<b>APRENDER</b><br/>postmortem, uso,<br/>dívida registrada"]
+    V --> I --> E --> O --> A
+    A -. "vira item do backlog" .-> V
+    classDef ind fill:#e0e7ff,stroke:#4338ca,stroke-width:3px,color:#1a1a1a
+    classDef sla fill:#f1f5f9,stroke:#334155,stroke-width:3px,color:#1a1a1a
+    classDef grn fill:#dcfce7,stroke:#15803d,stroke-width:3px,color:#1a1a1a
+    classDef red fill:#fee2e2,stroke:#b91c1c,stroke-width:3px,color:#1a1a1a
+    classDef amb fill:#fef3c7,stroke:#b45309,stroke-width:3px,color:#1a1a1a
+    classDef vio fill:#ede9fe,stroke:#7c3aed,stroke-width:3px,color:#1a1a1a
+    classDef sky fill:#e0f2fe,stroke:#0369a1,stroke-width:3px,color:#1a1a1a
+    classDef teal fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class V ind
+    class I vio
+    class E sky
+    class O amb
+    class A teal

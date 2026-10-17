@@ -3,7 +3,7 @@ marp: true
 theme: trilha
 paginate: true
 lang: pt-BR
-footer: '🏗️ Curso de Projeto de Software · Aula 10'
+footer: '🏗️ Curso de Projeto de Software · Leitura complementar'
 ---
 
 <!-- _class: capa -->
@@ -12,13 +12,13 @@ footer: '🏗️ Curso de Projeto de Software · Aula 10'
 
 # Qualidade que se Mede
 
-## Aula 10 · Bloco 3 — Ferramentas e Qualidade
+## Leitura complementar · Ferramentas e Qualidade
 
 <div class="meta">Se a métrica virou meta, ela parou de medir</div>
 
 ---
 
-## 🎯 Nesta aula
+## 🎯 Nesta leitura
 
 1. Qualidade **não é ausência de defeito**
 2. **Verificação × validação**
@@ -199,9 +199,9 @@ levando o processo na cabeça.
 
 <!-- _class: checkpoint -->
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar
 
-Na pasta `aula-10/`:
+Na pasta `leitura-qualidade-que-se-mede/`:
 
 1. **`ex01.md`** — seis atividades: verificação ou validação?
 2. **`ex02.md`** — uma exigência por dimensão, e com qual outra ela compete;
@@ -209,16 +209,3 @@ Na pasta `aula-10/`:
 4. **`ex04.md`** — três organizações nos níveis de maturidade;
 5. **`ex05.md`** 🌶️ — a meta de 95% de cobertura com bônus atrelado.
 
----
-
-<!-- _class: lead -->
-
-## ➡️ Próxima aula
-
-**Aula 11 — Documentação**
-
-Medir mostra o que acontece agora.
-
-Documentar preserva
-o que foi **decidido** —
-para quem chegar depois.

@@ -54,7 +54,7 @@ flowchart TD
 
 ## 3. Cronograma (Gantt)
 
-Cada folha da EAP vira tarefa com duração, dependência e responsável. Aula 12.
+Cada folha da EAP vira tarefa com duração, dependência e responsável. Leitura [*Ferramentas e comunicação*](../leituras-complementares/ferramentas-e-comunicacao/README.md).
 
 ```mermaid
 gantt
@@ -79,7 +79,7 @@ O que se lê num Gantt, nesta ordem: **o marco** (o losango do fim), **a cadeia 
 
 ## 4. Matriz de risco
 
-Posiciona cada risco por **probabilidade × impacto**. Aula 09.
+Posiciona cada risco por **probabilidade × impacto**. Leitura [*Risco*](../leituras-complementares/risco/README.md), e a Aula 11 usa a mesma matriz para escolher como implantar.
 
 | | Impacto baixo | Impacto médio | Impacto alto |
 |---|---|---|---|
@@ -100,7 +100,7 @@ E o registro de cada risco, que é onde o trabalho acontece:
 
 ## 5. Quadro Kanban
 
-Torna visível o trabalho em andamento e onde ele trava. Aula 12.
+Torna visível o trabalho em andamento e onde ele trava. Leitura [*Ferramentas e comunicação*](../leituras-complementares/ferramentas-e-comunicacao/README.md).
 
 ```mermaid
 flowchart LR
@@ -129,7 +129,7 @@ O **limite de trabalho em andamento** é o que dá valor ao quadro. Quando "Faze
 
 ## 6. Burndown
 
-Mostra o trabalho que **falta**, contra o tempo. Aula 12.
+Mostra o trabalho que **falta**, contra o tempo. Leitura [*Ferramentas e comunicação*](../leituras-complementares/ferramentas-e-comunicacao/README.md).
 
 | Dia | Restante (ideal) | Restante (real) |
 |:---:|:---:|:---:|

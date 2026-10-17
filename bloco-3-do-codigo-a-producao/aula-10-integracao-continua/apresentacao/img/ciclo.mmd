@@ -1,0 +1,39 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#334155"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+    clusterBkg: "#f8fafc"
+    clusterBorder: "#94a3b8"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 60
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    C["<b>COMMIT</b><br/>no ramo principal"]
+    P["<b>PIPELINE</b><br/>constrói do zero<br/>e roda os testes"]
+    M["<b>VERDE</b><br/>o main continua<br/>pronto para ir ao ar"]
+    F["<b>VERMELHO</b><br/>consertar em minutos<br/>ou reverter"]
+    C --> P
+    P -- "em minutos" --> M
+    P --> F
+    F -. "nova tentativa" .-> C
+    classDef ind fill:#e0e7ff,stroke:#4338ca,stroke-width:3px,color:#1a1a1a
+    classDef sla fill:#f1f5f9,stroke:#334155,stroke-width:3px,color:#1a1a1a
+    classDef grn fill:#dcfce7,stroke:#15803d,stroke-width:3px,color:#1a1a1a
+    classDef red fill:#fee2e2,stroke:#b91c1c,stroke-width:3px,color:#1a1a1a
+    classDef amb fill:#fef3c7,stroke:#b45309,stroke-width:3px,color:#1a1a1a
+    classDef vio fill:#ede9fe,stroke:#7c3aed,stroke-width:3px,color:#1a1a1a
+    classDef teal fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    class C ind
+    class P sla
+    class M grn
+    class F red

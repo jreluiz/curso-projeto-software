@@ -1,7 +1,9 @@
-# Aula 12 — Ferramentas e comunicação
+# Leitura complementar — Ferramentas e comunicação
 
 > 🎯 Objetivos: escolher a ferramenta de acordo com o regime do projeto, ler um Gantt e um quadro Kanban, aplicar limite de trabalho em andamento e montar um plano de comunicação por interessado.
-> 🎬 Slides da aula: [apresentacao-12-ferramentas-e-comunicacao.pdf](apresentacao/apresentacao-12-ferramentas-e-comunicacao.pdf)
+> 🎬 Slides: [apresentacao-ferramentas-e-comunicacao.pdf](apresentacao/apresentacao-ferramentas-e-comunicacao.pdf)
+
+> 📚 **Leitura complementar.** Este texto cobre tópicos da ementa que não têm aula própria — ferramentas para modelos sequenciais, ferramentas para modelos ágeis e gestão da comunicação. Leia no seu ritmo: não há revisão nem entrega, e os exercícios ficam como prática opcional. [Ver todas as leituras](../README.md).
 
 ## 1. A ferramenta não é o método
 
@@ -130,7 +132,7 @@ Ele nasce da matriz poder × interesse da Aula 07 — cada quadrante recebe um t
 
 **Mandar o mesmo para todos falha com todos.** A diretoria não lê o detalhe; a equipe não se orienta por uma página mensal. O e-mail com todos em cópia é a forma mais eficiente de garantir que ninguém se sinta responsável por ler.
 
-Repare que a auditoria aparece com frequência **"sob demanda"**, e isso é uma decisão, não uma omissão: ela não acompanha o projeto, mas precisa encontrar o que procura quando vier. O que o plano promete a ela não é periodicidade — é que o registro exista e esteja localizável, que é o assunto da Aula 11.
+Repare que a auditoria aparece com frequência **"sob demanda"**, e isso é uma decisão, não uma omissão: ela não acompanha o projeto, mas precisa encontrar o que procura quando vier. O que o plano promete a ela não é periodicidade — é que o registro exista e esteja localizável, que é o assunto da leitura [*Documentação*](../documentacao/README.md).
 
 > 💡 **A frequência é o campo mais importante e o mais esquecido.** Sem ela, a comunicação vira reativa: fala-se com o interessado quando há problema — e a primeira notícia que ele recebe do projeto é uma ruim.
 
@@ -148,9 +150,9 @@ E vale fechar o bloco com o fio comum das quatro aulas: risco, qualidade, docume
 
 > 📖 O Guia PMBOK dedica áreas de conhecimento ao cronograma e às comunicações, com o caminho crítico e o plano de comunicações. O Cruz trata do quadro, do limite de trabalho em andamento e do burndown na parte de técnicas ágeis.
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar (opcional)
 
-Na pasta `aula-12/` do seu repositório:
+Se quiser praticar, use a pasta `leitura-ferramentas-e-comunicacao/` do seu repositório:
 
 1. **`ex01.md`** — para cada situação, escolha entre **Gantt**, **quadro Kanban** ou **burndown**, justificando: (a) mostrar à diretoria que a entrega de setembro depende da integração; (b) descobrir por que nada termina, apesar de todos estarem ocupados; (c) prever, no quinto dia, se a iteração vai fechar; (d) decidir qual atraso pode ser absorvido sem mover a data; (e) mostrar que o escopo cresceu no meio da iteração. *Confere assim: duas das cinco são do mesmo instrumento — e ele é o que mostra tempo contra o que falta.*
 
@@ -164,21 +166,17 @@ Na pasta `aula-12/` do seu repositório:
 
 ### 📤 Entrega
 
-Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+Se fizer os exercícios, eles vão para o **seu repositório** `exercicios-projeto-software`, como os das aulas:
 
 ```bash
 cd ..                 # da pasta da aula para a raiz do repositório
-git add aula-12/
-git commit -m "Resolve exercícios da aula 12"
+git add leitura-ferramentas-e-comunicacao/
+git commit -m "Resolve exercícios da leitura de ferramentas e comunicação"
 git push
 ```
 
 Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
 
-## 🧠 Revisão
-
-[8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
 ---
 
-⬅️ [Aula 11 — Documentação](../aula-11-documentacao/README.md) | ➡️ [Aula 13 — Versão, mudança e configuração](../../bloco-4-projeto-avancado/aula-13-versao-mudanca-configuracao/README.md)
+⬅️ [Leituras complementares](../README.md) | 🏠 [Início](../../README.md)

@@ -1,0 +1,42 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#334155"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+    clusterBkg: "#f8fafc"
+    clusterBorder: "#94a3b8"
+  flowchart:
+    nodeSpacing: 26
+    rankSpacing: 46
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    Q{{"Quantas versões<br/>do produto estão<br/>em uso ao mesmo<br/>tempo?"}}
+    U["UMA SÓ<br/>roda no servidor do time<br/>— o delivery"]
+    V["VÁRIAS<br/>cada cliente instala<br/>e atualiza quando quer"]
+    GH["GITHUB FLOW<br/>ramos curtos + PR"]
+    TR["TRONCO<br/>integração diária<br/>+ feature flags"]
+    GF["GITFLOW<br/>ou um ramo de release<br/>por versão mantida"]
+    Q --> U
+    Q --> V
+    U --> GH
+    U --> TR
+    V --> GF
+
+    classDef pergunta fill:#0f766e,stroke:#0f766e,stroke-width:3px,color:#ffffff
+    classDef uma fill:#e0e7ff,stroke:#4338ca,stroke-width:3px,color:#1a1a1a
+    classDef varias fill:#ede9fe,stroke:#7c3aed,stroke-width:3px,color:#1a1a1a
+    classDef estrategia fill:#ffffff,stroke:#334155,stroke-width:3px,color:#1a1a1a
+    class Q pergunta
+    class U uma
+    class V varias
+    class GH,TR,GF estrategia
+    linkStyle 0,2,3 stroke:#4338ca,stroke-width:3.5px
+    linkStyle 1,4 stroke:#7c3aed,stroke-width:3.5px

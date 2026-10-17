@@ -1,0 +1,56 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 24px
+    git0: "#0f766e"
+    git1: "#b91c1c"
+    git2: "#4338ca"
+    git3: "#b45309"
+    git4: "#7c3aed"
+    gitBranchLabel0: "#ffffff"
+    gitBranchLabel1: "#ffffff"
+    gitBranchLabel2: "#ffffff"
+    gitBranchLabel3: "#ffffff"
+    gitBranchLabel4: "#ffffff"
+    commitLabelColor: "#1a1a1a"
+    commitLabelBackground: "#ffffff"
+    commitLabelFontSize: 18px
+    tagLabelColor: "#1a1a1a"
+    tagLabelBackground: "#fef3c7"
+    tagLabelBorder: "#b45309"
+    tagLabelFontSize: 20px
+  gitGraph:
+    showCommitLabel: false
+    mainBranchName: main
+    parallelCommits: false
+---
+gitGraph
+    commit tag: "v1.0.0"
+    branch develop order: 2
+    checkout develop
+    commit
+    branch feature/cupom order: 3
+    checkout feature/cupom
+    commit
+    commit
+    checkout develop
+    commit
+    merge feature/cupom
+    branch release/1.1 order: 4
+    checkout release/1.1
+    commit
+    checkout main
+    merge release/1.1 tag: "v1.1.0"
+    checkout develop
+    merge release/1.1
+    commit
+    checkout main
+    branch hotfix/frete order: 1
+    checkout hotfix/frete
+    commit
+    checkout main
+    merge hotfix/frete tag: "v1.1.1"
+    checkout develop
+    merge hotfix/frete

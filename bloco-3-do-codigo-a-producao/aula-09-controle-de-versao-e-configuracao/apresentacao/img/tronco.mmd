@@ -1,0 +1,43 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 24px
+    git0: "#0f766e"
+    git1: "#4338ca"
+    git2: "#b45309"
+    git3: "#7c3aed"
+    git4: "#b91c1c"
+    gitBranchLabel0: "#ffffff"
+    gitBranchLabel1: "#ffffff"
+    gitBranchLabel2: "#ffffff"
+    gitBranchLabel3: "#ffffff"
+    gitBranchLabel4: "#ffffff"
+    commitLabelColor: "#1a1a1a"
+    commitLabelBackground: "#ffffff"
+    commitLabelFontSize: 18px
+    tagLabelColor: "#1a1a1a"
+    tagLabelBackground: "#fef3c7"
+    tagLabelBorder: "#b45309"
+    tagLabelFontSize: 20px
+  gitGraph:
+    showCommitLabel: true
+    rotateCommitLabel: false
+    mainBranchName: main
+    parallelCommits: false
+---
+gitGraph
+    commit id: "seg"
+    branch ana
+    checkout ana
+    commit id: "3 horas"
+    checkout main
+    merge ana id: "ter"
+    commit id: "qua"
+    branch bruno
+    checkout bruno
+    commit id: "5 horas"
+    checkout main
+    merge bruno id: "qui"
+    commit id: "sex" tag: "v2.5.0"

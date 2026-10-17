@@ -3,7 +3,7 @@ marp: true
 theme: trilha
 paginate: true
 lang: pt-BR
-footer: '🏗️ Curso de Projeto de Software · Aula 15'
+footer: '🏗️ Curso de Projeto de Software · Leitura complementar'
 ---
 
 <!-- _class: capa -->
@@ -12,13 +12,13 @@ footer: '🏗️ Curso de Projeto de Software · Aula 15'
 
 # O Usuário do Outro Lado
 
-## Aula 15 · Bloco 4 — Projeto Avançado
+## Leitura complementar · Projeto Avançado
 
 <div class="meta">40% não conseguiram votar. E o sistema funcionava.</div>
 
 ---
 
-## 🎯 Nesta aula
+## 🎯 Nesta leitura
 
 1. O sistema que funciona e **ninguém usa**
 2. Análise de interface — **quem, para quê, em que contexto**
@@ -49,7 +49,7 @@ e falhou na única coisa
 que importava.
 
 É a validação sem verificação
-da Aula 10 —
+da leitura de Qualidade —
 agora do lado do usuário.
 
 ---
@@ -98,7 +98,7 @@ Onze cliques no prontuário — uso diário — é problema. Na votação anual,
 | **por que** | — | "cada associado vota uma vez por pauta" |
 | **o que fazer agora** | — | "volte à lista para ver as pautas em aberto" |
 
-É a correção **mais barata** desta aula, e a que quase nenhum projeto aloca.
+É a correção **mais barata** deste tema, e a que quase nenhum projeto aloca.
 
 ---
 
@@ -187,9 +187,9 @@ que o público que a exigência nomeia.
 
 <!-- _class: checkpoint -->
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar
 
-Na pasta `aula-15/`:
+Na pasta `leitura-o-usuario-do-outro-lado/`:
 
 1. **`ex01.md`** — contexto de uso de três perfis do prontuário;
 2. **`ex02.md`** — cinco situações, cinco heurísticas violadas;
@@ -197,15 +197,3 @@ Na pasta `aula-15/`:
 4. **`ex04.md`** — fluxo de interação de "solicitar carona", com volta atrás;
 5. **`ex05.md`** 🌶️ — o cliente que pediu confirmação em um clique só.
 
----
-
-<!-- _class: lead -->
-
-## ➡️ Próxima aula
-
-**Aula 16 — Governança**
-
-Quem decide, quem responde,
-quem audita.
-
-E o mapa das dezesseis aulas.

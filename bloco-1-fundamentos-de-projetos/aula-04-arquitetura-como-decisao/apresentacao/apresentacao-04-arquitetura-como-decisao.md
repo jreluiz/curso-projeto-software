@@ -135,7 +135,7 @@ Como não existe a opção que ganha em tudo, **alguém precisa dizer qual atrib
 
 A equipe otimizou um atributo que **ninguém tinha pedido**, e pagou com **custo operacional** e **disponibilidade** — que eram justamente os apertados.
 
-> 🧩 Os atributos apertados são a lista de onde procurar **risco** (Aula 09).
+> 🧩 Os atributos apertados são a lista de onde procurar **risco** (leitura complementar de Risco).
 
 ---
 

@@ -36,17 +36,18 @@ Uma pasta por aula, um arquivo por exercício, tudo em `.md`:
 
 ```
 exercicios-projeto-software/
-├── aula-01-por-que-engenharia-de-software/
+├── aula-01-por-que-gerir-um-projeto/
 │   ├── ex01.md
 │   ├── ex02.md
 │   ├── ex03.md
 │   ├── ex04.md
-│   └── ex05.md          ← o desafio 🌶️
-├── aula-10-casos-de-uso/
+│   └── ex05.md          ← o desafio 🌶️ (Aulas 01–08 têm 5 exercícios)
+├── aula-09-controle-de-versao-e-configuracao/
 │   ├── ex01.md
-│   ├── ex05-diagrama.puml
-│   ├── ex05-diagrama.svg
-│   └── ex05.md
+│   ├── ex02.md
+│   └── ex03.md          ← o desafio 🌶️ (Aulas 09–12 têm 3)
+├── leitura-risco/       ← opcional: exercícios de uma leitura complementar
+│   └── ex01.md
 └── README.md
 ```
 

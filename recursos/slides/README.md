@@ -5,17 +5,17 @@ As apresentações de cada aula são escritas em **Markdown** e convertidas em P
 Cada aula guarda a sua apresentação numa subpasta `apresentacao/`, ao lado do material escrito:
 
 ```
-bloco-3-ferramentas-e-qualidade/aula-12-ferramentas-e-comunicacao/
-├── README.md                                          # a aula escrita
+bloco-3-do-codigo-a-producao/aula-09-controle-de-versao-e-configuracao/
+├── README.md                                                  # a aula escrita
 └── apresentacao/
-    ├── apresentacao-12-ferramentas-e-comunicacao.md   # a fonte   ← edite este
-    ├── apresentacao-12-ferramentas-e-comunicacao.pdf  # o gerado  ← projete este
-    └── img/                                           # opcional — só se o deck tiver diagrama
-        ├── burndown.mmd                               # diagrama para projeção
-        └── burndown.svg                               # gerado do .mmd
+    ├── apresentacao-09-controle-de-versao-e-configuracao.md   # a fonte   ← edite este
+    ├── apresentacao-09-controle-de-versao-e-configuracao.pdf  # o gerado  ← projete este
+    └── img/                                                   # os diagramas do deck
+        ├── tres-estrategias.mmd                               # diagrama para projeção
+        └── tres-estrategias.svg                               # gerado do .mmd
 ```
 
-O `img/` fica **dentro** de `apresentacao/`: os diagramas são feitos para projeção e não são usados pelo README da aula. **Nenhum dos 16 decks atuais tem `img/`** — os diagramas do curso vivem como blocos ` ```mermaid ` nos READMEs das aulas, que o GitHub renderiza sozinho. A pasta só aparece se um deck precisar de um diagrama próprio, com rótulo curto e traço grosso para projeção.
+O `img/` fica **dentro** de `apresentacao/`: os diagramas são feitos para projeção e não são usados pelo README da aula. **Os decks refeitos desde agosto de 2026 têm `img/`**, com diagramas próprios para projeção: rótulo curto, traço grosso e cor. Os decks mais antigos não têm a pasta, e os diagramas deles vivem como blocos ` ```mermaid ` no README da aula, que o GitHub renderiza sozinho.
 
 **O `.md` e o `.pdf` são versionados.** O `.md` para o `git diff` mostrar o que mudou; o `.pdf` para abrir na aula sem depender de gerar nada na hora.
 
@@ -65,7 +65,7 @@ marp: true
 theme: trilha
 paginate: true
 lang: pt-BR
-footer: '🏗️ Curso de Projeto de Software · Aula 11'
+footer: '🏗️ Curso de Projeto de Software · Aula 09'
 ---
 ```
 

@@ -1,0 +1,33 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#334155"
+    primaryColor: "#e7f2f0"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#0f766e"
+    edgeLabelBackground: "#fdfdfb"
+    clusterBkg: "#f8fafc"
+    clusterBorder: "#94a3b8"
+  flowchart:
+    nodeSpacing: 26
+    rankSpacing: 46
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    R["SEXTA, 18h<br/>v2.5.0 publicada<br/><b>release</b>"]
+    I["TERÇA, 10h<br/>v2.5.0 no ar<br/>cupom desligado<br/><b>implantação</b>"]
+    L["QUARTA<br/>cupom ligado para<br/>10% dos clientes<br/><b>liberação</b>"]
+    R -- "longe do pico" --> I
+    I -- "flag" --> L
+
+    classDef rel fill:#ede9fe,stroke:#7c3aed,stroke-width:3px,color:#1a1a1a
+    classDef imp fill:#e0f2fe,stroke:#0369a1,stroke-width:3px,color:#1a1a1a
+    classDef lib fill:#dcfce7,stroke:#15803d,stroke-width:3px,color:#1a1a1a
+    class R rel
+    class I imp
+    class L lib
+    linkStyle 0,1 stroke:#334155,stroke-width:3.5px

@@ -197,10 +197,10 @@ Na pasta `aula-08/`:
 
 ## ➡️ Próxima aula
 
-**Aula 09 — Risco**
+**Aula 09 — Controle de versão e configuração**
 
 Fecha o Bloco 2.
 
-O Bloco 3 abre com o que
-o projeto ainda não sabe —
-e pode custar caro.
+O Bloco 3 sai do plano e entra no código:
+o que mudou, quem mudou —
+e como voltar ao que funcionava.

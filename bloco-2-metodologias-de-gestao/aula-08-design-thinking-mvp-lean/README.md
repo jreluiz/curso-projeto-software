@@ -102,13 +102,13 @@ Os desperdícios que aparecem em projeto de software:
 
 | Desperdício | Como ele aparece |
 |---|---|
-| **Trabalho parcialmente feito** | cinco itens começados e nenhum entregue — o quadro Kanban da Aula 12 |
+| **Trabalho parcialmente feito** | cinco itens começados e nenhum entregue — o quadro Kanban da leitura [*Ferramentas e comunicação*](../../leituras-complementares/ferramentas-e-comunicacao/README.md) |
 | **Espera** | item pronto há seis dias esperando revisão |
 | **Retrabalho** | o que volta porque não estava na Definição de Pronto |
 | **Troca de contexto** | a pessoa em três projetos ao mesmo tempo, produzindo pouco em todos |
 | **Funcionalidade não usada** | o relatório que alguém pediu e ninguém abriu |
 
-A última é a mais cara e a menos visível: ela consumiu o mesmo esforço das outras e não aparece como problema em lugar nenhum — porque **ninguém reclama de um relatório que não usa**. Ela só aparece se alguém medir uso, o que é assunto da Aula 10.
+A última é a mais cara e a menos visível: ela consumiu o mesmo esforço das outras e não aparece como problema em lugar nenhum — porque **ninguém reclama de um relatório que não usa**. Ela só aparece se alguém medir uso, o que é assunto da [Aula 12](../../bloco-3-do-codigo-a-producao/aula-12-observabilidade-e-manutencao/README.md).
 
 O desperdício mais barato de atacar é a **espera**, e o instrumento é o limite de trabalho em andamento. Seis dias de item pronto esperando revisão não custam esforço de ninguém — custam **tempo de calendário**, que é o que o cliente percebe.
 
@@ -185,4 +185,4 @@ Entre com uma conta Google, selecione seu nome na lista e informe seu usuário d
 
 ---
 
-⬅️ [Aula 07 — Quem responde pelo quê](../aula-07-quem-responde-pelo-que/README.md) | ➡️ [Aula 09 — Risco](../../bloco-3-ferramentas-e-qualidade/aula-09-risco/README.md)
+⬅️ [Aula 07 — Quem responde pelo quê](../aula-07-quem-responde-pelo-que/README.md) | ➡️ [Aula 09 — Controle de versão e configuração](../../bloco-3-do-codigo-a-producao/aula-09-controle-de-versao-e-configuracao/README.md)

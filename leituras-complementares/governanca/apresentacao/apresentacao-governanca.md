@@ -3,7 +3,7 @@ marp: true
 theme: trilha
 paginate: true
 lang: pt-BR
-footer: '🏗️ Curso de Projeto de Software · Aula 16'
+footer: '🏗️ Curso de Projeto de Software · Leitura complementar'
 ---
 
 <!-- _class: capa -->
@@ -12,13 +12,13 @@ footer: '🏗️ Curso de Projeto de Software · Aula 16'
 
 # Governança
 
-## Aula 16 · Bloco 4 — Projeto Avançado
+## Leitura complementar · Projeto Avançado
 
 <div class="meta">Quem decide, quem responde, quem audita — e o fim do caminho</div>
 
 ---
 
-## 🎯 Nesta aula
+## 🎯 Nesta leitura
 
 1. Governança — **quem decide e quem responde**
 2. **PMI e PMBOK** — o arcabouço de projeto
@@ -98,7 +98,7 @@ Quase tudo deste curso está em alguma dessas caixas.
 
 ## ⚠️ "Problema" muda de significado
 
-Na Aula 09, problema é
+Na leitura de Risco, problema é
 **o que já aconteceu**.
 
 No ITIL, problema é
@@ -179,8 +179,8 @@ Três decisões deste curso têm impacto ESG — e **nenhuma foi tomada por esse
 |---|---|
 | **1 — Fundamentos** | o que é projeto, qual ciclo, quais processos, arquitetura |
 | **2 — Metodologias** | o que o ágil diz, como o Scrum distribui autoridade |
-| **3 — Ferramentas e qualidade** | antecipar risco, medir, documentar, comunicar |
-| **4 — Avançado** | a mudança chega sem quebrar, quem está do outro lado |
+| **3 — Do código à produção** | versionar, integrar, entregar e acompanhar a mudança |
+| **Leituras complementares** | risco, medida, documento, comunicação, usuário, governança |
 
 ---
 
@@ -202,9 +202,9 @@ a tempo a quem decide.**
 
 <!-- _class: checkpoint -->
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar
 
-Na pasta `aula-16/`:
+Na pasta `leitura-governanca/`:
 
 1. **`ex01.md`** — seis perguntas para os quatro arcabouços;
 2. **`ex02.md`** — seis situações entre projeto e serviço;

@@ -79,7 +79,7 @@ A última linha é a que mais se viola na prática, e ela não aparece por acaso
 
 > ⚠️ **Qualidade não é variável de ajuste, é o que a Definição de Pronto protege.** Se o time começa a entregar itens que não passam na própria lista, o projeto está usando a única folga que ninguém autorizou.
 
-O nome disso, quando acontece de propósito e com registro, é **dívida técnica** — e aí é uma decisão legítima, que a Aula 14 trata. Quando acontece por omissão, não tem nome nenhum: é só um projeto que parecia ter cabido no prazo.
+O nome disso, quando acontece de propósito e com registro, é **dívida técnica** — e aí é uma decisão legítima, que a [Aula 12](../../bloco-3-do-codigo-a-producao/aula-12-observabilidade-e-manutencao/README.md) trata. Quando acontece por omissão, não tem nome nenhum: é só um projeto que parecia ter cabido no prazo.
 
 As quatro variáveis, desenhadas:
 
@@ -110,7 +110,7 @@ E stakeholder tem responsabilidade, não só direito. O que se cobra:
 | assumir a consequência do que pediu | quem exigiu o relatório extra e precisa aceitar o replanejamento |
 | comunicar mudança no próprio contexto | a secretaria que muda de sistema e não avisa a integração |
 
-> ⚠️ **O stakeholder ausente é risco, não detalhe.** No controle de estágio, o supervisor da empresa não é da instituição, não cria conta e não vai a reunião. Planejar validação com ele e descobrir no meio que ele nunca aparecerá é o tipo de coisa que a Aula 09 chama de risco com dono e gatilho.
+> ⚠️ **O stakeholder ausente é risco, não detalhe.** No controle de estágio, o supervisor da empresa não é da instituição, não cria conta e não vai a reunião. Planejar validação com ele e descobrir no meio que ele nunca aparecerá é o tipo de coisa que a leitura complementar [*Risco*](../../leituras-complementares/risco/README.md) chama de risco com dono e gatilho.
 
 Diante de um stakeholder que não vai aparecer, há três saídas — e escolher é do projeto, não dele:
 

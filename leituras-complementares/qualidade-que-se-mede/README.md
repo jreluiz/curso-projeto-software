@@ -1,7 +1,9 @@
-# Aula 10 — Qualidade que se mede
+# Leitura complementar — Qualidade que se mede
 
 > 🎯 Objetivos: distinguir verificação de validação, escolher métricas que apoiam decisão em vez de virarem meta, e situar maturidade de processo separadamente de qualidade de produto.
-> 🎬 Slides da aula: [apresentacao-10-qualidade-que-se-mede.pdf](apresentacao/apresentacao-10-qualidade-que-se-mede.pdf)
+> 🎬 Slides: [apresentacao-qualidade-que-se-mede.pdf](apresentacao/apresentacao-qualidade-que-se-mede.pdf)
+
+> 📚 **Leitura complementar.** Este texto cobre tópicos da ementa que não têm aula própria — sistema de qualidade do software, métricas de qualidade e maturidade em projeto. Leia no seu ritmo: não há revisão nem entrega, e os exercícios ficam como prática opcional. [Ver todas as leituras](../README.md).
 
 ## 1. Qualidade não é ausência de defeito
 
@@ -118,7 +120,7 @@ O que as torna diferentes das métricas ruins é que elas **se equilibram**: as 
 
 > 💡 **DORA mede entrega, não qualidade de produto.** Um time pode implantar dez vezes por dia, com falha baixa, e entregar algo que ninguém quer. As quatro respondem *"conseguimos entregar bem?"*, não *"entregamos o que importa?"* — que é a validação da seção 2.
 
-As quatro também servem como **diagnóstico**, e não só como painel. Tempo de restauração alto costuma indicar falta de observabilidade — o time demora para descobrir o que quebrou, assunto da Aula 14. Frequência baixa com taxa de falha alta indica que implantar dói, e por isso se implanta pouco, o que faz cada implantação carregar mais mudanças e falhar mais. É um ciclo, e as métricas o tornam visível.
+As quatro também servem como **diagnóstico**, e não só como painel. Tempo de restauração alto costuma indicar falta de observabilidade — o time demora para descobrir o que quebrou, assunto da [Aula 12](../../bloco-3-do-codigo-a-producao/aula-12-observabilidade-e-manutencao/README.md). Frequência baixa com taxa de falha alta indica que implantar dói, e por isso se implanta pouco, o que faz cada implantação carregar mais mudanças e falhar mais. É um ciclo, e as métricas o tornam visível.
 
 ## 6. Maturidade: CMMI e MPS.BR
 
@@ -148,9 +150,9 @@ E há um motivo prático para conhecer os dois: **contratos públicos e grandes 
 
 > 📖 O Guia PMBOK trata de garantia e controle da qualidade na área de conhecimento da qualidade, com a distinção entre os dois processos. O Sommerville trata de verificação, validação e gerenciamento da qualidade em capítulos próprios, e discute os modelos de maturidade.
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar (opcional)
 
-Na pasta `aula-10/` do seu repositório:
+Se quiser praticar, use a pasta `leitura-qualidade-que-se-mede/` do seu repositório:
 
 1. **`ex01.md`** — classifique cada atividade em **verificação** ou **validação**: (a) conferir se o cálculo da multa segue a regra escrita; (b) mostrar o sistema à portaria e observar o uso; (c) revisar o código de um colega; (d) perguntar ao supervisor se o fluxo do prontuário corresponde ao que ele faz; (e) executar a bateria de testes automatizados; (f) apresentar o relatório ao financiador antes de publicá-lo. *Confere assim: três de cada, e o critério é sempre contra o que se compara — especificação ou necessidade real.*
 
@@ -164,21 +166,17 @@ Na pasta `aula-10/` do seu repositório:
 
 ### 📤 Entrega
 
-Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+Se fizer os exercícios, eles vão para o **seu repositório** `exercicios-projeto-software`, como os das aulas:
 
 ```bash
 cd ..                 # da pasta da aula para a raiz do repositório
-git add aula-10/
-git commit -m "Resolve exercícios da aula 10"
+git add leitura-qualidade-que-se-mede/
+git commit -m "Resolve exercícios da leitura de qualidade que se mede"
 git push
 ```
 
 Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
 
-## 🧠 Revisão
-
-[8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
 ---
 
-⬅️ [Aula 09 — Risco](../aula-09-risco/README.md) | ➡️ [Aula 11 — Documentação](../aula-11-documentacao/README.md)
+⬅️ [Leituras complementares](../README.md) | 🏠 [Início](../../README.md)

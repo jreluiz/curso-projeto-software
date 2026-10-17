@@ -1,7 +1,9 @@
-# Aula 11 — Documentação
+# Leitura complementar — Documentação
 
 > 🎯 Objetivos: decidir o que documentar a partir de quem lê e de qual decisão o documento apoia, reconhecer documentação como elemento de qualidade e quantificar o custo da ausência.
-> 🎬 Slides da aula: [apresentacao-11-documentacao.pdf](apresentacao/apresentacao-11-documentacao.pdf)
+> 🎬 Slides: [apresentacao-documentacao.pdf](apresentacao/apresentacao-documentacao.pdf)
+
+> 📚 **Leitura complementar.** Este texto cobre tópicos da ementa que não têm aula própria — por que e quando documentar, documentação como elemento de qualidade e os riscos da ausência de documentação. Leia no seu ritmo: não há revisão nem entrega, e os exercícios ficam como prática opcional. [Ver todas as leituras](../README.md).
 
 ## 1. O documento que ninguém leu
 
@@ -72,7 +74,7 @@ Os três critérios se aplicam **item a item**, e não ao projeto inteiro. É co
 
 ## 4. Documentação como elemento de qualidade
 
-Documentação entra nas duas metades do sistema de qualidade da Aula 10:
+Documentação entra nas duas metades do sistema de qualidade da leitura [*Qualidade que se mede*](../qualidade-que-se-mede/README.md):
 
 - Na **garantia**, ela é o processo escrito que a auditoria verifica: existe procedimento para conceder acesso, e ele foi seguido;
 - No **controle**, ela é o critério contra o qual o resultado é conferido: a Definição de Pronto, os critérios de aceite, o registro do que se testou.
@@ -105,9 +107,9 @@ O custo da não-documentação não aparece como item de orçamento, e por isso 
 | a nova pessoa leva três meses para produzir | documentação de entrada, e não de tudo |
 | ninguém sabe se aquele campo pode ser removido | registro de qual regra o criou, e para quem |
 
-Na transportadora, o risco **R-02** da Aula 09 — o único conhecedor do legado se aposenta — é literalmente um risco de ausência de documentação. A resposta escolhida lá, gravar sessões com ele, é uma forma barata de documentar: **o formato não precisa ser um documento formal.**
+Na transportadora, o risco **R-02** da leitura [*Risco*](../risco/README.md) — o único conhecedor do legado se aposenta — é literalmente um risco de ausência de documentação. A resposta escolhida lá, gravar sessões com ele, é uma forma barata de documentar: **o formato não precisa ser um documento formal.**
 
-Repare no que a Aula 09 permite fazer aqui: **a ausência de documentação vira um risco com probabilidade, impacto, dono e gatilho**, e passa a ser tratada como qualquer outro risco. É a forma mais eficaz de justificar o esforço a um patrocinador que acha documentação perda de tempo — porque a conversa deixa de ser sobre boas práticas e passa a ser sobre seis semanas de atraso.
+Repare no que a leitura de Risco permite fazer aqui: **a ausência de documentação vira um risco com probabilidade, impacto, dono e gatilho**, e passa a ser tratada como qualquer outro risco. É a forma mais eficaz de justificar o esforço a um patrocinador que acha documentação perda de tempo — porque a conversa deixa de ser sobre boas práticas e passa a ser sobre seis semanas de atraso.
 
 E quando o risco se concretiza, o custo aparece inteiro de uma vez: a pessoa saiu, e o que ela sabia não está em lugar nenhum. **Não há como documentar retroativamente o conhecimento de quem já foi embora.**
 
@@ -148,9 +150,9 @@ E vale dizer o desconfortável: **o time raramente é cobrado por documentar, e 
 
 > 📖 O Guia PMBOK trata dos documentos do projeto e do registro de decisões na área de integração, e das exigências de registro na área de qualidade. O Sommerville discute documentação de processo e de produto no capítulo sobre gerenciamento de qualidade.
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar (opcional)
 
-Na pasta `aula-11/` do seu repositório:
+Se quiser praticar, use a pasta `leitura-documentacao/` do seu repositório:
 
 1. **`ex01.md`** — para cada documento, identifique **o leitor** e **a decisão** que ele apoia, ou diga que não há nenhum: (a) o ADR sobre bancos separados; (b) o manual de sessenta páginas da abertura; (c) o procedimento de concessão de acesso; (d) um documento descrevendo cada tela do sistema; (e) o registro de quem aprovou cada acesso; (f) um diagrama do fluxo de atendimento da clínica. *Confere assim: dois dos seis não têm leitor nem decisão associada — e um deles é o que mais gente diria ser indispensável.*
 
@@ -164,21 +166,17 @@ Na pasta `aula-11/` do seu repositório:
 
 ### 📤 Entrega
 
-Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+Se fizer os exercícios, eles vão para o **seu repositório** `exercicios-projeto-software`, como os das aulas:
 
 ```bash
 cd ..                 # da pasta da aula para a raiz do repositório
-git add aula-11/
-git commit -m "Resolve exercícios da aula 11"
+git add leitura-documentacao/
+git commit -m "Resolve exercícios da leitura de documentação"
 git push
 ```
 
 Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
 
-## 🧠 Revisão
-
-[8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
 ---
 
-⬅️ [Aula 10 — Qualidade que se mede](../aula-10-qualidade-que-se-mede/README.md) | ➡️ [Aula 12 — Ferramentas e comunicação](../aula-12-ferramentas-e-comunicacao/README.md)
+⬅️ [Leituras complementares](../README.md) | 🏠 [Início](../../README.md)

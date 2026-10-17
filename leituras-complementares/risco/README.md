@@ -1,7 +1,9 @@
-# Aula 09 — Risco
+# Leitura complementar — Risco
 
 > 🎯 Objetivos: distinguir risco de problema, escrever risco no formato causa–evento–efeito, posicioná-lo na matriz probabilidade × impacto e escolher a resposta com dono e gatilho.
-> 🎬 Slides da aula: [apresentacao-09-risco.pdf](apresentacao/apresentacao-09-risco.pdf)
+> 🎬 Slides: [apresentacao-risco.pdf](apresentacao/apresentacao-risco.pdf)
+
+> 📚 **Leitura complementar.** Este texto cobre tópicos da ementa que não têm aula própria — natureza do risco, mapeamento de risco e matriz de risco. Leia no seu ritmo: não há revisão nem entrega, e os exercícios ficam como prática opcional. [Ver todas as leituras](../README.md).
 
 ## 1. Risco não é problema
 
@@ -119,7 +121,7 @@ E há uma resposta que não está na lista de propósito: **esperar para ver**. 
 
 Identificar risco é fácil e agradável; responsabilizar é desconfortável. É por isso que tantas matrizes têm vinte riscos bem classificados e nenhum nome ao lado.
 
-O registro completo, que é o artefato desta aula:
+O registro completo, que é o artefato desta leitura:
 
 | ID | Risco (causa → evento → efeito) | P | I | Resposta | Dono | Gatilho |
 |---|---|:---:|:---:|---|---|---|
@@ -148,9 +150,9 @@ Registrar o destino é o que transforma gestão de risco em aprendizado organiza
 
 > 📖 O Guia PMBOK dedica uma área de conhecimento inteira ao risco, com os processos de identificação, análise qualitativa e quantitativa, planejamento de respostas e monitoramento. As quatro respostas a ameaças estão no processo de planejamento de respostas.
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar (opcional)
 
-Na pasta `aula-09/` do seu repositório:
+Se quiser praticar, use a pasta `leitura-risco/` do seu repositório:
 
 1. **`ex01.md`** — classifique cada item em **risco** ou **problema**: (a) o servidor de relatórios está lento há três semanas; (b) o único conhecedor do legado se aposenta em quatro meses; (c) a equipe não conseguiu entregar duas das cinco funcionalidades da iteração; (d) a legislação sobre dado de saúde pode mudar no ano que vem; (e) o fornecedor atrasou a entrega do ambiente em duas semanas; (f) a diretoria pode trocar na próxima eleição. *Confere assim: três de cada, e o critério é sempre se o evento já ocorreu — não se ele é grave nem se há solução conhecida.*
 
@@ -164,21 +166,17 @@ Na pasta `aula-09/` do seu repositório:
 
 ### 📤 Entrega
 
-Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-projeto-software`:
+Se fizer os exercícios, eles vão para o **seu repositório** `exercicios-projeto-software`, como os das aulas:
 
 ```bash
 cd ..                 # da pasta da aula para a raiz do repositório
-git add aula-09/
-git commit -m "Resolve exercícios da aula 09"
+git add leitura-risco/
+git commit -m "Resolve exercícios da leitura de risco"
 git push
 ```
 
 Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-projeto-software`.
 
-## 🧠 Revisão
-
-[8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
 ---
 
-⬅️ [Aula 08 — Descobrir, enxugar, melhorar](../../bloco-2-metodologias-de-gestao/aula-08-design-thinking-mvp-lean/README.md) | ➡️ [Aula 10 — Qualidade que se mede](../aula-10-qualidade-que-se-mede/README.md)
+⬅️ [Leituras complementares](../README.md) | 🏠 [Início](../../README.md)

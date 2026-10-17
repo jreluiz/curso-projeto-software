@@ -3,7 +3,7 @@ marp: true
 theme: trilha
 paginate: true
 lang: pt-BR
-footer: '🏗️ Curso de Projeto de Software · Aula 11'
+footer: '🏗️ Curso de Projeto de Software · Leitura complementar'
 ---
 
 <!-- _class: capa -->
@@ -12,13 +12,13 @@ footer: '🏗️ Curso de Projeto de Software · Aula 11'
 
 # Documentação
 
-## Aula 11 · Bloco 3 — Ferramentas e Qualidade
+## Leitura complementar · Ferramentas e Qualidade
 
 <div class="meta">Quem lê, e para decidir o quê?</div>
 
 ---
 
-## 🎯 Nesta aula
+## 🎯 Nesta leitura
 
 1. O documento que **ninguém leu**
 2. Por que documentar — **as três razões**
@@ -150,7 +150,7 @@ O custo aparece **disperso**, em horas de várias pessoas ao longo de meses.
 
 ## A ausência de documentação é um risco
 
-Na transportadora, o **R-02** da Aula 09 — o único conhecedor se aposenta — é literalmente isso. A resposta escolhida, gravar sessões, é uma forma barata de documentar.
+Na transportadora, o **R-02** da leitura de Risco — o único conhecedor se aposenta — é literalmente isso. A resposta escolhida, gravar sessões, é uma forma barata de documentar.
 
 **Formulado como risco**, com probabilidade, impacto e dono, o assunto deixa de ser sobre boas práticas e passa a ser sobre **seis semanas de atraso**.
 
@@ -185,9 +185,9 @@ E a mais honesta: **apagar** o documento que não é mantido.
 
 <!-- _class: checkpoint -->
 
-## 🏋️ Exercícios da aula
+## 🏋️ Para praticar
 
-Na pasta `aula-11/`:
+Na pasta `leitura-documentacao/`:
 
 1. **`ex01.md`** — seis documentos: qual leitor, qual decisão?
 2. **`ex02.md`** — documentar ou não, em cinco situações da frota;
@@ -195,16 +195,3 @@ Na pasta `aula-11/`:
 4. **`ex04.md`** — reorganizar o manual de sessenta páginas;
 5. **`ex05.md`** 🌶️ — o mínimo de documentação, com a lista do que **não** será escrito maior.
 
----
-
-<!-- _class: lead -->
-
-## ➡️ Próxima aula
-
-**Aula 12 — Ferramentas e comunicação**
-
-Risco antecipa. Métrica mostra.
-Documento preserva.
-
-Falta o que **leva tudo isso
-a quem precisa**.
