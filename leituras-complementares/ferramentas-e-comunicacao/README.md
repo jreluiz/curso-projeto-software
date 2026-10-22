@@ -96,7 +96,7 @@ E há um comportamento que confunde quem vê pela primeira vez: **burndown que s
 
 A leitura útil acontece no **dia 5**, não no dia 10. No dia 10 o gráfico só confirma o que já era evitável — e é por isso que burndown apresentado apenas na retrospectiva não serve para nada: ele vira registro histórico em vez de instrumento de decisão.
 
-> 💡 **Todos os três instrumentos ágeis são de fluxo, e nenhum deles diz se o que está sendo feito importa.** Um quadro saudável, com fluxo constante e burndown limpo, pode estar entregando funcionalidade que ninguém usa — o quarto desperdício da Aula 08.
+> 💡 **Todos os três instrumentos ágeis são de fluxo, e nenhum deles diz se o que está sendo feito importa.** Um quadro saudável, com fluxo constante e burndown limpo, pode estar entregando funcionalidade que ninguém usa — o desperdício mais caro da Aula 08.
 
 ## 4. Kanban e o limite de trabalho em andamento
 

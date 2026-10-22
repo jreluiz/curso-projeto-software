@@ -48,6 +48,12 @@ Este glossário é para consultar, não para decorar. Guarde o link.
 | Trabalho em andamento | *work in progress* (WIP) | O que já começou e ainda não terminou |
 | Melhoria contínua | *continuous improvement* | — |
 | Programação em par | *pair programming* | Duas pessoas, um teclado |
+| Design Thinking | *design thinking* | Descobrir o problema certo antes da solução: empatia, definição, ideação, prototipação e teste |
+| Duplo diamante | *double diamond* | Abrir e fechar duas vezes — primeiro sobre o problema, depois sobre a solução |
+| Produto mínimo viável | *minimum viable product* (MVP) | O menor produto que testa uma hipótese — com forma de medir e critério de decisão |
+| Construir–medir–aprender | *build–measure–learn* | O ciclo do MVP: cada volta termina numa decisão |
+| Mudar de direção | *pivot* | Trocar a hipótese que o MVP derrubou — o contrário de perseverar |
+| Métrica de vaidade | *vanity metric* | Número que só sobe e não decide nada, como cadastros gratuitos |
 
 > 💡 *Sprint*, *backlog*, *Scrum Master* e *Kanban* praticamente não se traduzem no mercado brasileiro. Use em inglês sem culpa — mas saiba o que significam em português, porque em edital, concurso e livro traduzido eles aparecem vertidos.
 
@@ -94,6 +100,12 @@ Este glossário é para consultar, não para decorar. Guarde o link.
 | Controle da qualidade | *quality control* | Conferir o **resultado** produzido |
 | Maturidade | *maturity* | Quão definido e repetível é o processo da organização — não é qualidade do produto |
 | Métrica | *metric* | Medida que apoia uma decisão; quando vira meta, para de medir |
+| Enxuto | *lean* | Abordagem da Toyota: tirar do fluxo o que o cliente não pagaria para ter |
+| Desperdício | *waste* (*muda*) | O que consome tempo ou esforço sem virar valor — são sete em software |
+| Fluxo de valor | *value stream* | O caminho inteiro do pedido à entrega, com as etapas e as filas entre elas |
+| Eficiência do fluxo | *flow efficiency* | Tempo de trabalho ÷ prazo total — o resto é espera |
+| Seis sigma | *Six Sigma* | Abordagem que ataca a **variação** de um processo repetido, com dados |
+| DMAIC | *Define, Measure, Analyze, Improve, Control* | O roteiro do Six Sigma: definir, medir, analisar, melhorar e controlar |
 
 ---
 

@@ -1,0 +1,33 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#4338ca"
+    primaryColor: "#e0e7ff"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#4338ca"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 34
+    rankSpacing: 34
+    padding: 14
+    wrappingWidth: 600
+---
+flowchart LR
+    H["<b>HIPÓTESE</b><br/>o que achamos<br/>ser verdade"]
+    C["<b>CONSTRUIR</b><br/>o menor produto<br/>que gera a medida"]
+    M["<b>MEDIR</b><br/>o que as pessoas<br/>fizeram de fato"]
+    A["<b>APRENDER</b><br/>seguir, ou mudar<br/>de direção?"]
+    H --> C --> M --> A
+    A -. "nova volta" .-> H
+
+    classDef hip fill:#ffffff,stroke:#4338ca,stroke-width:3px,color:#1a1a1a
+    classDef et fill:#e0e7ff,stroke:#4338ca,stroke-width:3px,color:#1a1a1a
+    classDef dec fill:#4338ca,stroke:#4338ca,stroke-width:3px,color:#ffffff
+    class H hip
+    class C,M et
+    class A dec
+    linkStyle 0,1,2 stroke:#4338ca,stroke-width:3.5px
+    linkStyle 3 stroke:#b45309,stroke-width:3px

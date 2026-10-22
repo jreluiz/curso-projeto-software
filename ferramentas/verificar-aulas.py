@@ -39,12 +39,18 @@ EXERCICIOS = 5          # este curso mantém 5, sendo o 5º o Desafio 🌶️ (�
 # do controle, não para apertar a aula.
 REGUA_BLOCO_3 = {"linhas": (250, 650), "exercicios": 3}
 
+# A Aula 08 foi detalhada em 21/10/2026, a pedido do professor, no texto do
+# Bloco 3 — mas continua com os 5 exercícios do Bloco 2.
+AULAS_DETALHADAS = {8}
+
 
 def regua(caminho):
     """(linhas_min, linhas_max, exercicios) da aula, pelo número dela."""
     m = re.search(r"aula-(\d\d)-", caminho)
     if m and int(m.group(1)) >= 9:
         return (*REGUA_BLOCO_3["linhas"], REGUA_BLOCO_3["exercicios"])
+    if m and int(m.group(1)) in AULAS_DETALHADAS:
+        return (*REGUA_BLOCO_3["linhas"], EXERCICIOS)
     return LINHAS_MIN, LINHAS_MAX, EXERCICIOS
 QUESTOES = 8
 DIRETAS, ENADE = 5, 3   # 5 diretas + 3 [ENADE]; TODAS com alternativas a–d (§6)

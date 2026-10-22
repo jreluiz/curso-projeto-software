@@ -73,7 +73,7 @@ Segundo a aula, aplicar Six Sigma a um projeto único, que acontece uma vez, é 
 - **c)** só produz resultado em organizações com nível de maturidade elevado;
 - **d)** ataca o desperdício, e projetos únicos não acumulam desperdício relevante.
 
-↩︎ *Aula 08, seção 5 — Lean: valor, fluxo e desperdício*
+↩︎ *Aula 08, seção 6 — Six Sigma e o DMAIC*
 
 ---
 
