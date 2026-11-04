@@ -3,7 +3,7 @@
 > 🎯 Objetivos: explicar a integração contínua como prática — integrar todo dia e verificar cada integração —, reconhecer o que torna um build reproduzível, ordenar os estágios de um pipeline e as camadas da pirâmide de testes, e decidir o que barra uma mudança sem deixar a métrica virar meta.
 > 🎬 Slides da aula: [apresentacao-10-integracao-continua.pdf](apresentacao/apresentacao-10-integracao-continua.pdf)
 
-A Aula 09 terminou com uma pendência. Integrar no `main` todo dia, como pedem o GitHub Flow e o tronco, só é seguro se alguém conferir **cada** integração. E conferir à mão, a cada commit, não escala.
+A Aula 09 terminou com uma pendência. Integrar no `main` todo dia, como pedem o GitHub Flow e o trunk-based development, só é seguro se alguém conferir **cada** integração. E conferir à mão, a cada commit, não escala.
 
 Esta aula é sobre quem confere. Não é uma pessoa: é uma máquina, seguindo um roteiro que o time escreveu e versiona junto com o código. Como na Aula 09, não é preciso programar para entender nada aqui. O que se decide é **o que conta como "não quebrou"**, e essa decisão é de projeto.
 
@@ -33,7 +33,7 @@ A prática nasceu na *Extreme Programming* (XP), de Kent Beck, nos anos 1990. O 
 
 | Exigência | O que significa | Sem ela |
 |---|---|---|
-| **Integrar no principal, todo dia** | ramos curtos, como no GitHub Flow e no tronco da Aula 09 | a máquina confere trabalho isolado, e o problema de juntar tudo fica para depois |
+| **Integrar no principal, todo dia** | ramos curtos, como no GitHub Flow e no trunk-based development da Aula 09 | a máquina confere trabalho isolado, e o problema de juntar tudo fica para depois |
 | **Verificar cada integração, automaticamente** | a cada envio, uma máquina constrói o sistema e roda os testes | depende de alguém lembrar, e ninguém lembra às 19h30 de sábado |
 | **Consertar o vermelho antes de qualquer outra coisa** | integração quebrada é a prioridade do time até voltar a passar | o vermelho vira paisagem, e a verificação deixa de significar alguma coisa |
 

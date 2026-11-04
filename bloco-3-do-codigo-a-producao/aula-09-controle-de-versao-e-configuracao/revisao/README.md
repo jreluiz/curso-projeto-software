@@ -57,7 +57,7 @@ Segundo a pesquisa do DORA citada na aula, que prática de ramificação está a
 
 - **a)** manter um ramo de desenvolvimento separado do principal, integrado ao fim de cada ciclo;
 - **b)** criar um ramo por funcionalidade e integrá-lo só quando a funcionalidade estiver completa;
-- **c)** manter três ou menos ramos ativos e integrar no tronco pelo menos uma vez por dia;
+- **c)** manter três ou menos ramos ativos e integrar no ramo principal pelo menos uma vez por dia;
 - **d)** congelar o código antes de cada versão, para estabilizar a integração.
 
 ↩︎ *Aula 09, seção 4 — Estratégias de ramificação*
@@ -126,7 +126,7 @@ Cada integração ao `main` tem custado dois dias de conflitos e correções. De
 Considerando a situação descrita e o conteúdo da aula, a mudança de estratégia mais adequada é:
 
 - **a)** acrescentar um ramo de release para estabilizar cada versão antes de ela chegar ao `main`;
-- **b)** adotar ramos curtos, integrados ao `main` pelo menos uma vez por dia, como no GitHub Flow ou no desenvolvimento baseado em tronco;
+- **b)** adotar ramos curtos, integrados ao `main` pelo menos uma vez por dia, como no GitHub Flow ou no trunk-based development;
 - **c)** aumentar o intervalo entre integrações para seis semanas, reduzindo o número de rodadas de conflito;
 - **d)** designar uma pessoa para cuidar exclusivamente dos conflitos de integração.
 

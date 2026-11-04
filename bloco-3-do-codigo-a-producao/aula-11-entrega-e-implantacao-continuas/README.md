@@ -207,7 +207,7 @@ return pagarComCartao(pedido);
 
 Com ela, **implantar e liberar deixam de ser o mesmo momento**. O código do Pix vai ao ar na terça, desligado para todos. Na quarta, a flag é ligada para os funcionários do restaurante; na quinta, para 5% dos clientes; na semana seguinte, para todos. Nenhum desses passos é uma implantação, e cada um se desfaz desligando a flag.
 
-É também o que torna o desenvolvimento baseado em tronco da Aula 09 possível: o trabalho incompleto entra no `main` todo dia, **desligado**, sem esperar num ramo longo.
+É também o que torna o trunk-based development da Aula 09 possível: o trabalho incompleto entra no `main` todo dia, **desligado**, sem esperar num ramo longo.
 
 ### Os quatro tipos de flag
 

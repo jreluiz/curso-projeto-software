@@ -268,7 +268,7 @@ gitGraph
 
 Serve para aplicações web e serviços com **uma única versão em produção**. Custa uma exigência: o `main` precisa estar sempre em condição de ir ao ar, e isso só se sustenta com verificação automática a cada integração — o assunto da Aula 10.
 
-**Desenvolvimento baseado em tronco** (*trunk-based development*). Todos integram no tronco — o `main` — **pelo menos uma vez por dia**. Se existem ramos, eles vivem horas. A funcionalidade que ainda não está pronta entra no tronco **desligada**, escondida atrás de um sinalizador (*feature flag*), que a Aula 11 detalha.
+**Trunk-based development**. Todos integram no ramo principal — o `main` — **pelo menos uma vez por dia**. Se existem ramos, eles vivem horas. A funcionalidade que ainda não está pronta entra no `main` **desligada**, escondida atrás de um sinalizador (*feature flag*), que a Aula 11 detalha.
 
 ```mermaid
 %%{init: {"gitGraph": {"showCommitLabel": false}}}%%
@@ -289,13 +289,13 @@ gitGraph
 
 Serve para times que entregam com muita frequência e confiam na própria verificação automática. Custa disciplina: mudanças pequenas, testes automáticos confiáveis e o hábito de esconder o que está incompleto.
 
-E há evidência a favor dele. O **DORA** — o programa de pesquisa sobre desempenho de entrega de software, hoje mantido pelo Google — encontrou que times com **três ou menos ramos ativos**, que integram no tronco **pelo menos uma vez por dia** e não têm períodos de "congelamento de código" entregam com mais velocidade e mais estabilidade.
+E há evidência a favor dele. O **DORA** — o programa de pesquisa sobre desempenho de entrega de software, hoje mantido pelo Google — encontrou que times com **três ou menos ramos ativos**, que integram no ramo principal **pelo menos uma vez por dia** e não têm períodos de "congelamento de código" entregam com mais velocidade e mais estabilidade.
 
-| | GitFlow | GitHub Flow | Baseado em tronco |
+| | GitFlow | GitHub Flow | Trunk-based development |
 |---|---|---|---|
 | **ramos permanentes** | `main` e `develop` | `main` | `main` |
 | **o ramo de trabalho vive** | dias a semanas | horas a poucos dias | horas, quando existe |
-| **está sempre pronto para ir ao ar** | o `main`, a cada release | o `main` | o tronco |
+| **está sempre pronto para ir ao ar** | o `main`, a cada release | o `main` | o `main` |
 | **serve para** | várias versões em uso ao mesmo tempo | uma versão em produção | uma versão, com entrega muito frequente |
 | **depende de** | disciplina de integração entre ramos | revisão e verificação automática | verificação automática e *feature flags* |
 
@@ -303,7 +303,7 @@ E há evidência a favor dele. O **DORA** — o programa de pesquisa sobre desem
 
 A pergunta que decide é uma só: **quantas versões do produto existem ao mesmo tempo nas mãos de quem usa?**
 
-- **Uma só**, porque o sistema roda num servidor do próprio time — como o delivery: **GitHub Flow** ou **tronco**. Manter um `develop` ali só cria mais um lugar onde o trabalho espera.
+- **Uma só**, porque o sistema roda num servidor do próprio time — como o delivery: **GitHub Flow** ou **trunk-based development**. Manter um `develop` ali só cria mais um lugar onde o trabalho espera.
 - **Várias**, porque cada cliente instala e atualiza quando quer: **GitFlow**, ou ramos de release por versão mantida.
 
 E uma confusão frequente: **aprovação formal não exige ramo longo.** No prontuário, o comitê de ética aprova cada implantação e se reúne uma vez por mês. Não é preciso deixar um ramo vivo esperando a reunião. O comitê aprova uma **baseline** — uma tag, que não muda —, e o time continua integrando no `main` enquanto isso. O que espera a aprovação é a versão marcada, não o trabalho de todo mundo.

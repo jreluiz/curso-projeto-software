@@ -175,7 +175,7 @@ A correção do frete, da Aula 09, passou a calcular com **três casas decimais*
 ## O que é integração contínua
 
 <div class="grid3">
-<div class="card ind"><b class="t">Integrar no principal, todo dia</b>ramos curtos, como no GitHub Flow e no tronco da Aula 09<span class="pe">sem isso: a máquina confere trabalho isolado</span></div>
+<div class="card ind"><b class="t">Integrar no principal, todo dia</b>ramos curtos, como no GitHub Flow e no <span style="white-space:nowrap">trunk-based</span> development da Aula 09<span class="pe">sem isso: a máquina confere trabalho isolado</span></div>
 <div class="card teal"><b class="t">Verificar cada integração</b>a cada envio, uma máquina constrói o sistema e roda os testes<span class="pe">sem isso: depende de alguém lembrar</span></div>
 <div class="card red"><b class="t">Consertar o vermelho primeiro</b>integração quebrada é a prioridade do time até voltar a passar<span class="pe">sem isso: o vermelho vira paisagem</span></div>
 </div>

@@ -118,7 +118,7 @@ section {
 1. O que o **histórico** responde — e a cópia de segurança não
 2. **Item de configuração**: o que entra e o que nunca entra
 3. **Baseline**: o retrato aprovado, e a mudança rastreável
-4. **Estratégias de ramificação**: GitFlow, GitHub Flow e tronco
+4. **Estratégias de ramificação**: GitFlow, GitHub Flow e trunk-based development
 5. **Versionamento semântico**, release e CHANGELOG
 
 ---
@@ -349,9 +349,9 @@ Ana integra o ramo dela no dia seguinte. Bruno integra o dele três semanas depo
 
 ---
 
-## Tronco — todo mundo integra, todo dia
+## Trunk-based development — todo mundo integra, todo dia
 
-![w:900](img/tronco.svg)
+![w:900](img/trunk-based.svg)
 
 <p class="legenda">Ramos de horas. O que ainda não está pronto entra <b>desligado</b>, atrás de uma <i>feature flag</i> — Aula 11.</p>
 
@@ -369,7 +369,7 @@ Ana integra o ramo dela no dia seguinte. Bruno integra o dele três semanas depo
 
 <div class="grid3">
 <div class="card teal"><span class="num">≤ 3</span>ramos ativos no repositório</div>
-<div class="card ind"><span class="num">1× / dia</span>integração no tronco, no mínimo</div>
+<div class="card ind"><span class="num">1× / dia</span>integração no <code>main</code>, no mínimo</div>
 <div class="card amb"><span class="num">0</span>períodos de congelamento de código</div>
 </div>
 
