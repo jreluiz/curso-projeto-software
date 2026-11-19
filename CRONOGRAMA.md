@@ -19,21 +19,21 @@
 
 - [x] **08/10** · 🔍 **Correção da avaliação do 1º bimestre** e devolução das provas · sem matéria nova
 - [x] **15/10** · Aula 07 — [Quem responde pelo quê](bloco-2-metodologias-de-gestao/aula-07-quem-responde-pelo-que/README.md)
-- [ ] **22/10** · Aula 08 — [Descobrir, enxugar, melhorar](bloco-2-metodologias-de-gestao/aula-08-design-thinking-mvp-lean/README.md) · fecha o Bloco 2
-- [ ] **29/10** · Aula 09 — [Controle de versão e configuração](bloco-3-do-codigo-a-producao/aula-09-controle-de-versao-e-configuracao/README.md)
-- [ ] **05/11** · Aula 10 — [Integração contínua](bloco-3-do-codigo-a-producao/aula-10-integracao-continua/README.md)
-- [ ] **12/11** · Aula 11 — [Entrega e implantação contínuas](bloco-3-do-codigo-a-producao/aula-11-entrega-e-implantacao-continuas/README.md)
-- [ ] **19/11** · Aula 12 — [Operação: observabilidade e manutenção](bloco-3-do-codigo-a-producao/aula-12-observabilidade-e-manutencao/README.md) · fecha o Bloco 3 · revisões das Aulas 07–12 em casa
-- [ ] **26/11** · 📝 **Avaliação Oficial — 2º bimestre** · Aulas 07 a 12
+- [x] **22/10** · Aula 08 — [Descobrir, enxugar, melhorar](bloco-2-metodologias-de-gestao/aula-08-design-thinking-mvp-lean/README.md) · fecha o Bloco 2
+- [x] **29/10** · Aula 09 — [Controle de versão e configuração](bloco-3-do-codigo-a-producao/aula-09-controle-de-versao-e-configuracao/README.md)
+- [x] **05/11** · Aula 10 — [Integração contínua](bloco-3-do-codigo-a-producao/aula-10-integracao-continua/README.md)
+- [x] **12/11** · Aula 11 — [Entrega e implantação contínuas](bloco-3-do-codigo-a-producao/aula-11-entrega-e-implantacao-continuas/README.md)
+- [ ] **19/11** · 🧠 **Revisão geral para a avaliação** — [14 questões das Aulas 07 a 11](recursos/revisao-geral-aulas-07-a-11.md) · revisões das Aulas 07–11
+- [ ] **26/11** · 📝 **Avaliação Oficial — 2º bimestre** · Aulas 07 a 11
 
 > 🗓️ Semana de avaliação: **23 a 27/11**. Notas do 2º bimestre lançadas até **04/12**.
 
 ## Fechamento
 
-- [ ] **03/12** · 🔍 **Correção da avaliação do 2º bimestre** e devolução das provas
+- [ ] **03/12** · 🔍 **Correção da avaliação do 2º bimestre** e devolução das provas · Aula 12 — [Operação: observabilidade e manutenção](bloco-3-do-codigo-a-producao/aula-12-observabilidade-e-manutencao/README.md) · fecha o Bloco 3
 - [ ] **10/12** · 🧠 **Revisão para o Exame Final**
 
-> ⚠️ 03/12 e 10/12 caem no **período de bancas (01 a 12/12)** — são as duas quintas mais sujeitas a remarcação. Por isso nenhuma matéria nova fica para depois da avaliação.
+> ⚠️ 03/12 e 10/12 caem no **período de bancas (01 a 12/12)** — são as duas quintas mais sujeitas a remarcação. A Aula 12 fica em 03/12, depois da avaliação, e não entra nela.
 >
 > 📚 Os tópicos da ementa que não têm aula própria — risco, qualidade, documentação, ferramentas e comunicação, o usuário e governança — estão nas [leituras complementares](leituras-complementares/README.md), para ler no seu ritmo. Elas não entram nas avaliações oficiais.
 
@@ -58,4 +58,4 @@ Nenhum cai numa quinta-feira. O Dia do Professor (**15/10**) chegou a constar aq
 
 ---
 
-*18 quintas no semestre: 2 avaliações oficiais, 2 correções, 1 revisão para a 1ª avaliação e 1 para o Exame Final — 12 encontros para 12 aulas, sem encontro duplo, e 6 leituras complementares.*
+*18 quintas no semestre: 2 avaliações oficiais, 2 correções, 2 revisões para as avaliações e 1 para o Exame Final — 12 aulas sem encontro duplo, a última delas no encontro de correção de 03/12, e 6 leituras complementares.*
